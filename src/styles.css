@@ -13,3 +13,23 @@ h4{
 h6{
   color: #9fa1a3;
 }
+
+/* icon stylings */
+.fa{
+  padding-left: .5em;
+  padding-right: .5em;
+  color: black;
+}
+
+/* image stylings for home component */
+img.home-image{
+  padding-top: 3em;
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.home-blurb{
+  text-align: center;
+}
