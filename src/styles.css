@@ -18,7 +18,7 @@ h6{
 .fa{
   padding-left: .5em;
   padding-right: .5em;
-  color: black;
+  color: #9fa1a3;
 }
 
 /* image stylings for home component */
@@ -32,4 +32,29 @@ img.home-image{
 
 .home-blurb{
   text-align: center;
+}
+
+/* dashboard styling */
+.right-align{
+  text-align: right;
+}
+.search{
+  padding-top: .5em;
+}
+
+.search .fa-search{
+  position: relative;
+  left: 2.2em;
+}
+.search input {
+  text-indent: 30px;
+}
+
+.dashboard-button-area{
+  position: relative;
+}
+
+.dashboard-button{
+  position: absolute;
+  transform: translateY(50%);
 }

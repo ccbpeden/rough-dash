@@ -1,11 +1,21 @@
 <div class="container">
   <br>
   <div class="header">
-    <h4>
-      My TrueTours
-    </h4>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>
+          My TrueTours
+        </h4>
+      </div>
+      <div class="col-md-8 right-align search">
+        <i class="fa fa-th" aria-hidden="true"></i>
+        <i class="fa fa-th-list" aria-hidden="true"></i>
+        <span class="fa fa-search"></span>
+        <input type="text" value="" placeholder="Search">
+      </div>
+    </div>
   </div>
-  <hr>
+  <hr style="border-top: solid 1px;">
   <!-- this will be inside an ngfor directive for each object -->
   <div class="">
     <div class="row">
@@ -22,13 +32,16 @@
             <a href="#"><i class="fa fa-compass" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
           </div>
-          <div class="col-md-5">
-            <a href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-code fa-3x" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></a>
+          <div class="col-md-5 dashboard-button-area">
+            <div class="dashboard-button">
+              <a href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-code fa-3x" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <hr style="border-top: dotted 1px;" />
   </div>
 </div>
