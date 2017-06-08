@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BillingComponent } from './billing/billing.component';
 import { AccountComponent } from './account/account.component';
 import { HelpComponent } from './help/help.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HelpComponent } from './help/help.component';
     DashboardComponent,
     BillingComponent,
     AccountComponent,
-    HelpComponent
+    HelpComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -5,10 +5,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BillingComponent } from './billing/billing.component';
 import { AccountComponent } from './account/account.component';
 import { HelpComponent } from './help/help.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   {
     path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'dashboard',
     component: DashboardComponent
   },
   {

@@ -1,0 +1,12 @@
+.homey{
+  padding-top: 3em;
+  position: relative;
+}
+img{
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+.blurb{
+  text-align: center;
+}
