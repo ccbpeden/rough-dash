@@ -4,19 +4,65 @@
     <hr style="border-top: solid 1px;">
   </div>
   <div class="row">
-    <div class="col-md-3">
-      <button type="button" class="btn btn-default" type="button">360 Photos</button><br>
-      <button type="button" class="btn btn-default" type="button">Promo Banner</button><br>
-      <button type="button" class="btn btn-default" type="button">Menu Links</button><br>
-      <button type="button" class="btn btn-default" type="button">Video Gallery</button><br>
-      <button type="button" class="btn btn-default" type="button">Photo Gallery</button><br>
-      <button type="button" class="btn btn-default" type="button">Map & Directions</button><br>
-      <button type="button" class="btn btn-default" type="button">Info & Links</button><br>
-      <button type="button" class="btn btn-default" type="button">Analytics</button><br>
-
+    <div class="col-md-3 vertical-line-right">
+      <div class="" (click)="activateDetail('360-photos')">
+        <h4>360 Photos</h4>
+      </div>
+      <hr style="border-top: solid 1px;">
+      <div class="" (click)="activateDetail('promo-banner')">
+        <h4>Promo Banner</h4>
+      </div>
+      <hr style="border-top: solid 1px;">
+      <div class="" (click)="activateDetail('menu-links')">
+        <h4>Menu Links</h4>
+      </div>
+      <hr style="border-top: solid 1px;">
+      <div class="" (click)="activateDetail('video-gallery')">
+        <h4>Video Gallery</h4>
+      </div>
+      <hr style="border-top: solid 1px;">
+      <div class="" (click)="activateDetail('photo-gallery')">
+        <h4>Photo Gallery</h4>
+      </div>
+      <hr style="border-top: solid 1px;">
+      <div class="" (click)="activateDetail('map-directions')">
+        <h4>Map & Directions</h4>
+      </div>
+      <hr style="border-top: solid 1px;">
+      <div class="" (click)="activateDetail('info-links')">
+        <h4>Info & Links</h4>
+      </div>
+      <hr style="border-top: solid 1px;">
+      <div class="" (click)="activateDetail('analytics')">
+        <h4>Analytics</h4>
+      </div>
+      <hr style="border-top: solid 1px;">
     </div>
     <div class="col-md-9">
-
+      <div *ngIf="detailToDisplay == '360-photos'">
+        <editor-detail-360-photos></editor-detail-360-photos>
+      </div>
+      <div *ngIf="detailToDisplay == 'promo-banner'">
+        <editor-detail-promo-banner></editor-detail-promo-banner>
+      </div>
+      <div *ngIf="detailToDisplay == 'menu-links'">
+        <editor-detail-menu-links></editor-detail-menu-links>
+      </div>
+      <div *ngIf="detailToDisplay == 'video-gallery'">
+        <editor-detail-video-gallery></editor-detail-video-gallery>
+      </div>
+      <div *ngIf="detailToDisplay == 'photo-gallery'">
+        <editor-detail-photo-gallery></editor-detail-photo-gallery>
+      </div>
+      <div *ngIf="detailToDisplay == 'map-directions'">
+        <editor-detail-map-directions></editor-detail-map-directions>
+      </div>
+      <div *ngIf="detailToDisplay == 'info-links'">
+        <editor-detail-info-links></editor-detail-info-links>
+      </div>
+      <div *ngIf="detailToDisplay == 'analytics'">
+        <editor-detail-analytics></editor-detail-analytics>
+      </div>
     </div>
   </div>
   <hr style="border-top: solid 1px;">

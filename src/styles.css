@@ -63,3 +63,11 @@ img.home-image{
   position: absolute;
   transform: translateY(50%);
 }
+
+/*editor component*/
+.vertical-line-right{
+  border-right: thin solid #9fa1a3;
+}
+hr{
+  color: #9fa1a3;
+}
