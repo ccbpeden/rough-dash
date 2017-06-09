@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./billing-detail-invoices.component.css']
 })
 export class BillingDetailInvoicesComponent implements OnInit {
-
+  imgSrc="/assets/images/cross-box.png";
   constructor() { }
 
   ngOnInit() {

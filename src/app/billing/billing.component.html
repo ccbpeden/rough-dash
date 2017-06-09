@@ -1,24 +1,24 @@
 <div class="">
   <h4>Billing</h4>
   <div class="row boxed">
-    <div class="col-sm-3 vertical-line-right">
+    <div class="col-sm-2 vertical-line-right">
       <div [id]="highlightSelectedDetail('invoices')" (click)="selectDetail('invoices')" class="bottom-wall">
         <a routerLink="invoices">
-          <h4>Invoices</h4>
+          <h4>Invoices<span *ngIf="invoiceAlerts" class="numberCircle"> {{invoiceAlerts}} </span> </h4>
         </a>
       </div>
       <div [id]="highlightSelectedDetail('alerts')" (click)="selectDetail('alerts')" class="bottom-wall">
         <a routerLink="alerts">
-          <h4>Alerts</h4>
+          <h4>Alerts<span *ngIf="alertAlerts" class="numberCircle">{{alertAlerts}}</span></h4>
         </a>
       </div>
       <div [id]="highlightSelectedDetail('payment-method')" (click)="selectDetail('payment-method')" class="">
         <a routerLink="payment">
-          <h4>Payment Method</h4>
+          <h4>Payment Method<span *ngIf="paymentAlerts" class="numberCircle">{{paymentAlerts}}</span></h4>
         </a>
       </div>
     </div>
-    <div class="col-sm-9">
+    <div class="col-sm-10">
       <router-outlet></router-outlet>
     </div>
   </div>

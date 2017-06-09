@@ -8,6 +8,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BillingComponent implements OnInit {
   detailSelected = "invoices";
+  invoiceAlerts = 1;
+  alertAlerts = 2;
+  paymentAlerts = null;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(){
