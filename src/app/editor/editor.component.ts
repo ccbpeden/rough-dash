@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-editor',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditorComponent implements OnInit {
   detailToDisplay = "360-photos";
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
   }
