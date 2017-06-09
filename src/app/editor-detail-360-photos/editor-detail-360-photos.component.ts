@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./editor-detail-360-photos.component.css']
 })
 export class EditorDetail360PhotosComponent implements OnInit {
-
+  imgSrc="/assets/images/cross-box.png";
   constructor() { }
 
   ngOnInit() {
