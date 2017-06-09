@@ -11,6 +11,7 @@ import { BillingComponent } from './billing/billing.component';
 import { AccountComponent } from './account/account.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
+import { EditorComponent } from './editor/editor.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
     BillingComponent,
     AccountComponent,
     HelpComponent,
-    HomeComponent
+    HomeComponent,
+    EditorComponent
   ],
   imports: [
     BrowserModule,

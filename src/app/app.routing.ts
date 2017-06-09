@@ -6,6 +6,7 @@ import { BillingComponent } from './billing/billing.component';
 import { AccountComponent } from './account/account.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
+import { EditorComponent } from './editor/editor.component';
 
 const appRoutes: Routes = [
   {
@@ -27,6 +28,10 @@ const appRoutes: Routes = [
   {
   path: 'help',
   component: HelpComponent
+  },
+  {
+  path: 'editor',
+  component: EditorComponent
   },
 ];
 
