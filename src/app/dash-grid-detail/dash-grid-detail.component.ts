@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dash-grid-detail',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashGridDetailComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router) { }
+  tourName = "Lovely Wedding Venue";
   ngOnInit() {
   }
-
+  goToEditor(){
+    this.router.navigate(['editor']);
+  }
 }

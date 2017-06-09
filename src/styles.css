@@ -38,6 +38,11 @@ img.home-image{
 .right-align{
   text-align: right;
 }
+
+.center-align{
+  text-align: center;
+}
+
 .search{
   padding-top: .5em;
 }
