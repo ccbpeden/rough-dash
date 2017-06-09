@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
+  viewAsList = true;
+  viewAsGrid = false;
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -15,6 +16,16 @@ export class DashboardComponent implements OnInit {
 
   goToEditor(){
     this.router.navigate(['editor']);
+  }
+
+  gridView(){
+    this.viewAsList = false;
+    this.viewAsGrid = true;
+  }
+
+  listView(){
+    this.viewAsList = true;
+    this.viewAsGrid = false;
   }
 
 }
