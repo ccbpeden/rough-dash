@@ -87,3 +87,15 @@ hr{
 .bottom-wall{
   border-bottom: thin solid #9fa1a3;
 }
+
+.acct-img{
+  width: 14em;
+  text-align: center;
+}
+
+.left-pad{
+  margin-left: 1em;
+}
+.top-pad{
+  margin-top: 2.5em;
+}
