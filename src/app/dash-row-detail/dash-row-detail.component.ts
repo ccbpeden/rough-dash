@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./dash-row-detail.component.css']
 })
 export class DashRowDetailComponent implements OnInit {
-
+  tourName = "Lovely Wedding Venue";
   constructor(private router: Router) { }
 
   ngOnInit() {
