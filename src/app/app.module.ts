@@ -22,6 +22,9 @@ import { EditorDetailPhotoGalleryComponent } from './editor-detail-photo-gallery
 import { EditorDetailMapDirectionsComponent } from './editor-detail-map-directions/editor-detail-map-directions.component';
 import { EditorDetailInfoLinksComponent } from './editor-detail-info-links/editor-detail-info-links.component';
 import { EditorDetailAnalyticsComponent } from './editor-detail-analytics/editor-detail-analytics.component';
+import { BillingDetailInvoicesComponent } from './billing-detail-invoices/billing-detail-invoices.component';
+import { BillingDetailAlertsComponent } from './billing-detail-alerts/billing-detail-alerts.component';
+import { BillingDetailPaymentMethodComponent } from './billing-detail-payment-method/billing-detail-payment-method.component';
 
 
 @NgModule({
@@ -43,6 +46,9 @@ import { EditorDetailAnalyticsComponent } from './editor-detail-analytics/editor
     EditorDetailMapDirectionsComponent,
     EditorDetailInfoLinksComponent,
     EditorDetailAnalyticsComponent,
+    BillingDetailInvoicesComponent,
+    BillingDetailAlertsComponent,
+    BillingDetailPaymentMethodComponent,
   ],
   imports: [
     BrowserModule,

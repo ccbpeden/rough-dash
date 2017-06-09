@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-billing',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./billing.component.css']
 })
 export class BillingComponent implements OnInit {
+  detailSelected = "invoices";
+  constructor(private route: ActivatedRoute) { }
 
-  constructor() { }
+  ngOnInit(){
 
-  ngOnInit() {
   }
 
+  selectDetail(detail){
+    this.detailSelected = detail;
+  }
+
+  highlightSelectedDetail(detail){
+    if (this.detailSelected == detail){
+      return "selectedDetail";
+    }
+  }
 }

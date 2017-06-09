@@ -64,8 +64,9 @@ img.home-image{
   transform: translateY(50%);
 }
 
-/*editor component*/
+/*editor component & subs*/
 .vertical-line-right{
+  /*also used in billing*/
   border-right: thin solid #9fa1a3;
 }
 hr{
@@ -73,5 +74,16 @@ hr{
 }
 
 #selectedDetail{
+  /*also used in billing*/
   background: radial-gradient(#d6d6d6, white);
+}
+
+/*billing component*/
+
+.boxed{
+  border: thin solid #9fa1a3;
+}
+
+.bottom-wall{
+  border-bottom: thin solid #9fa1a3;
 }

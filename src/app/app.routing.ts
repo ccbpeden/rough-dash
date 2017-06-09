@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { EditorComponent } from './editor/editor.component';
 import { DashGridDetailComponent } from './dash-grid-detail/dash-grid-detail.component';
 import { DashRowDetailComponent } from './dash-row-detail/dash-row-detail.component';
+import { BillingDetailInvoicesComponent } from './billing-detail-invoices/billing-detail-invoices.component';
+import { BillingDetailAlertsComponent } from './billing-detail-alerts/billing-detail-alerts.component';
+import { BillingDetailPaymentMethodComponent } from './billing-detail-payment-method/billing-detail-payment-method.component';
 
 const appRoutes: Routes = [
   {
@@ -21,7 +24,13 @@ const appRoutes: Routes = [
   },
   {
   path: 'billing',
-  component: BillingComponent
+  component: BillingComponent,
+  children: [
+    { path: '', redirectTo: 'invoices', pathMatch: 'full' },
+    { path: 'invoices', component: BillingDetailInvoicesComponent },
+    { path: 'alerts', component: BillingDetailAlertsComponent },
+    { path: 'payment', component: BillingDetailPaymentMethodComponent },
+  ]
   },
   {
   path: 'account',
