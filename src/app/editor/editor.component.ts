@@ -14,4 +14,10 @@ export class EditorComponent implements OnInit {
   activateDetail(detail){
     this.detailToDisplay = detail;
   }
+
+  currentFocus(detail){
+    if (this.detailToDisplay == detail){
+      return "selectedDetail";
+    }
+  }
 }

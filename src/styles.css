@@ -71,3 +71,7 @@ img.home-image{
 hr{
   color: #9fa1a3;
 }
+
+#selectedDetail{
+  background: radial-gradient(#d6d6d6, white);
+}
