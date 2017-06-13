@@ -32,6 +32,7 @@ import { BillingDetailInvoicesComponent } from './billing-detail-invoices/billin
 import { BillingDetailAlertsComponent } from './billing-detail-alerts/billing-detail-alerts.component';
 import { BillingDetailPaymentMethodComponent } from './billing-detail-payment-method/billing-detail-payment-method.component';
 import { LoginComponent } from './login/login.component';
+import { CakeComponent } from './cake/cake.component';
 
 const APP_PROVIDERS = [
   AppState,
@@ -67,6 +68,7 @@ export type StoreType = {
     BillingDetailAlertsComponent,
     BillingDetailPaymentMethodComponent,
     LoginComponent,
+    CakeComponent,
   ],
   imports: [
     BrowserModule,
