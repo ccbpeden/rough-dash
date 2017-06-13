@@ -20,10 +20,15 @@ import { EditorDetailAnalyticsComponent } from './editor-detail-analytics/editor
 import { BillingDetailInvoicesComponent } from './billing-detail-invoices/billing-detail-invoices.component';
 import { BillingDetailAlertsComponent } from './billing-detail-alerts/billing-detail-alerts.component';
 import { BillingDetailPaymentMethodComponent } from './billing-detail-payment-method/billing-detail-payment-method.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   {
     path: '',
+    component: LoginComponent
+  },
+  {
+    path: 'home',
     component: HomeComponent
   },
   {
