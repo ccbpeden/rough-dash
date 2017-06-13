@@ -1,0 +1,119 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+h4{
+  color: #9fa1a3;
+}
+
+h6{
+  color: #9fa1a3;
+}
+
+/* navbar logo sizing */
+img.smaller-logo{
+  height: 1.5em;
+}
+// navbar icons
+
+.navbar-right{
+  transform: translateY(50%);
+}
+
+.search input {
+  color: #F0F3F4;
+}
+
+/* icon stylings */
+.fa{
+  padding-left: .5em;
+  padding-right: .5em;
+  color: #F0F3F4;
+}
+
+/* image stylings for home component */
+img.home-image{
+  padding-top: 3em;
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.home-blurb{
+  text-align: center;
+}
+
+/* dashboard styling */
+.right-align{
+  text-align: right;
+}
+
+.center-align{
+  text-align: center;
+}
+
+
+
+.dashboard-button-area{
+  position: relative;
+}
+
+.dashboard-button{
+  position: absolute;
+  transform: translateY(50%);
+}
+
+/*editor component & subs*/
+.vertical-line-right{
+  /*also used in billing*/
+  border-right: thin solid #9fa1a3;
+}
+hr{
+  color: #9fa1a3;
+}
+
+#selectedDetail{
+  /*also used in billing*/
+  background: radial-gradient(#d6d6d6, white);
+}
+
+/*billing component*/
+.numberCircle{
+  border-radius: 100%;
+
+  width: .4em;
+  height: .3em;
+  margin-left: 1em;
+  padding: .3em;
+
+  background: #fff;
+  border: 1px solid #9fa1a3;
+  color: #9fa1a3;
+  text-align: center;
+}
+
+.boxed{
+  border: thin solid #9fa1a3;
+}
+
+.bottom-wall{
+  border-bottom: thin solid #9fa1a3;
+}
+
+.acct-img{
+  width: 14em;
+  text-align: center;
+}
+
+.left-pad{
+  margin-left: 1em;
+}
+.top-pad{
+  margin-top: 2.5em;
+}
+
+.margin-1{
+  margin: .5em;
+}

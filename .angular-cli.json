@@ -30,6 +30,7 @@
         "../node_modules/handsontable/dist/handsontable.full.css",
         "../node_modules/ng2-slim-loading-bar/style.css",
         "app/theme/theme.scss",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.scss"
       ],
       "scripts": [
@@ -70,7 +71,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "component": {}
   }
 }

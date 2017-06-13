@@ -1,24 +1,18 @@
-<div class="page-top clearfix" baScrollPosition maxHeight="50" (scrollChange)="scrolledChanged($event)"
-     [ngClass]="{scrolled: isScrolled}">
-  <a routerLink="/pages/dashboard" class="al-logo clearfix"><span>ng2-</span>admin</a>
-  <a href (click)="toggleMenu()" class="collapse-menu-link ion-navicon"></a>
+<div class="page-top clearfix" baScrollPosition maxHeight="50" (scrollChange)="scrolledChanged($event)" [ngClass]="{scrolled: isScrolled}">
+  <a routerLink="/dashboard" class="al-logo clearfix"><img class="smaller-logo" src="/assets/images/logo-visiting-media-small.png" alt="visiting media logo"/></a>
+  <a href (click)="toggleMenu()" class="collapse-menu-link fa fa-bars fa-2x"></a>
 
   <div class="search">
-    <i class="ion-ios-search-strong" ng-click="startSearch()"></i>
+    <i class="fa fa-search fa-2x" ng-click="startSearch()"></i>
     <input id="searchInput" type="text" placeholder="Search for...">
   </div>
-
-  <div class="user-profile clearfix">
-    <div class="dropdown al-user-profile">
-      <a class="profile-toggle-link dropdown-toggle" id="user-profile-dd" data-toggle="dropdown" aria-expanded="false">
-        <img src="{{ ( 'Nasta' | baProfilePicture ) }}">
-      </a>
-      <ul class="dropdown-menu top-dropdown-menu profile-dropdown" aria-labelledby="user-profile-dd">
-        <li class="dropdown-item"><a href><i class="fa fa-user"></i>Profile</a></li>
-        <li class="dropdown-item"><a href><i class="fa fa-cog"></i>Settings</a></li>
-        <li class="dropdown-item"><a href class="signout"><i class="fa fa-power-off"></i>Sign out</a></li>
-      </ul>
-    </div>
-    <ba-msg-center></ba-msg-center>
+  <div class="navbar-right right-align">
+    <a href="#"><i class="fa fa-sliders fa-2x"></i></a>
+    <a href="#"><i class="fa fa-comments fa-2x"></i></a>
+    <a href="#"><i class="fa fa-cog fa-2x"></i></a>
   </div>
-</div>
+  <!-- <a routerLink="dashboard"><i class="fa fa-history" aria-hidden="true"></i>TrueTours</a>
+  <a routerLink="billing"><i class="fa fa-usd" aria-hidden="true"></i>Billing</a>
+  <a routerLink="account"><i class="fa fa-user" aria-hidden="true"></i>Account</a>
+  <a routerLink="help"><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a>
+  <a><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a> -->
