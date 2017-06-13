@@ -1,22 +1,22 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-    </div>
-    <ul class="nav navbar-nav navbar-left">
-      <li><a routerLink="">Member Dashboard</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="dashboard"><i class="fa fa-history" aria-hidden="true"></i>TrueTours</a></li>
-      <li><a routerLink="billing"><i class="fa fa-usd" aria-hidden="true"></i>Billing</a></li>
-      <li><a routerLink="account"><i class="fa fa-user" aria-hidden="true"></i>Account</a></li>
-      <li><a routerLink="help"><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a></li>
-      <li><a><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
-    </ul>
-  </div>
-</nav>
-<!-- <h1>
-  {{title}}
-</h1>
-<hr> -->
 
+
+<main [class.menu-collapsed]="isMenuCollapsed" baThemeRun>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a routerLink="">Member Dashboard</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="dashboard"><i class="fa fa-history" aria-hidden="true"></i>TrueTours</a></li>
+        <li><a routerLink="billing"><i class="fa fa-usd" aria-hidden="true"></i>Billing</a></li>
+        <li><a routerLink="account"><i class="fa fa-user" aria-hidden="true"></i>Account</a></li>
+        <li><a routerLink="help"><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a></li>
+        <li><a><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="additional-bg"></div>
   <router-outlet></router-outlet>
+</main>

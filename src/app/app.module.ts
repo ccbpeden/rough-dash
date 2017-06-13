@@ -1,9 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { NgModule, ApplicationRef } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { AngularFireModule } from 'angularfire2';
+import { RouterModule } from '@angular/router';
+import { AppState, InternalStateType } from './app.service';
+import { GlobalState } from './global.state';
+import { NgaModule } from './theme/nga.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TranslateService } from '@ngx-translate/core';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -26,6 +32,16 @@ import { BillingDetailInvoicesComponent } from './billing-detail-invoices/billin
 import { BillingDetailAlertsComponent } from './billing-detail-alerts/billing-detail-alerts.component';
 import { BillingDetailPaymentMethodComponent } from './billing-detail-payment-method/billing-detail-payment-method.component';
 
+const APP_PROVIDERS = [
+  AppState,
+  GlobalState
+];
+
+export type StoreType = {
+  state: InternalStateType,
+  restoreInputValues: () => void,
+  disposeOldHosts: () => void
+};
 
 @NgModule({
   declarations: [
@@ -54,8 +70,18 @@ import { BillingDetailPaymentMethodComponent } from './billing-detail-payment-me
     BrowserModule,
     FormsModule,
     HttpModule,
+    RouterModule,
+    ReactiveFormsModule,
+    NgaModule.forRoot(),
+    NgbModule.forRoot(),
     routing,
   ],
   bootstrap: [AppComponent],
+  providers: [ // expose our Services and Providers into Angular's dependency injection
+    APP_PROVIDERS
+  ]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(public appState: AppState) {
+  }
+}
