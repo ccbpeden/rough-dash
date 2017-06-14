@@ -3,7 +3,23 @@
 .container{
   padding-top: 6em;
 }
+.community{
+  padding-left: .5em;
+  font-size: .5em;
+  vertical-align: middle;
+}
+.dropdown-menu{
+  background-color: $primary;
+  color: $legris;
+}
 
-.fa{
-  color: $danger;
+.dropdown-text{
+  color: $legris;
+}
+
+.ion{
+  font-size: 2rem;
+  color: $legris;
+  padding-left: .5em;
+  vertical-align: middle;
 }
