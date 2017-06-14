@@ -1,62 +1,47 @@
 <div class="container">
-  <div class="header">
-    <h4>TrueTour Name "Lovely Wedding Venue"</h4>
-    <hr style="border-top: solid 1px;">
-  </div>
   <div class="row">
-    <div class="col-sm-3 vertical-line-right">
-      <div [id]="currentFocus('360-photos')" (click)="activateDetail('360-photos')">
-        <a routerLink="360-photos">
-          <h4>360 Photos</h4>
-        </a>
-      </div>
-      <hr style="border-top: solid 1px;">
-      <div [id]="currentFocus('promo-banner')" (click)="activateDetail('promo-banner')">
-        <a routerLink="promo-banner">
-          <h4>Promo Banner</h4>
-        </a>
-      </div>
-      <hr style="border-top: solid 1px;">
-      <div [id]="currentFocus('menu-links')" (click)="activateDetail('menu-links')">
-        <a routerLink="menu-links">
-          <h4>Menu Links</h4>
-        </a>
-      </div>
-      <hr style="border-top: solid 1px;">
-      <div [id]="currentFocus('video-gallery')" (click)="activateDetail('video-gallery')">
-        <a routerLink="video-gallery">
-          <h4>Video Gallery</h4>
-        </a>
-      </div>
-      <hr style="border-top: solid 1px;">
-      <div [id]="currentFocus('photo-gallery')" (click)="activateDetail('photo-gallery')">
-        <a routerLink="photo-gallery">
-          <h4>Photo Gallery</h4>
-        </a>
-      </div>
-      <hr style="border-top: solid 1px;">
-      <div [id]="currentFocus('map-directions')" (click)="activateDetail('map-directions')">
-        <a routerLink="map-directions">
-          <h4>Map & Directions</h4>
-        </a>
-      </div>
-      <hr style="border-top: solid 1px;">
-      <div [id]="currentFocus('info-links')" (click)="activateDetail('info-links')">
-        <a routerLink="info-links">
-          <h4>Info & Links</h4>
-        </a>
-      </div>
-      <hr style="border-top: solid 1px;">
-      <div [id]="currentFocus('analytics')" (click)="activateDetail('analytics')">
-        <a routerLink="analytics">
-          <h4>Analytics</h4>
-        </a>
-      </div>
-      <hr style="border-top: solid 1px;">
+    <div class="col-sm-4">
+      <h4>
+        My TrueTours
+      </h4>
     </div>
-    <div class="col-sm-9">
-      <router-outlet></router-outlet>
+    <div class="col-sm-8 right-align">
+      <a routerLink="grid"><i class="ion ion-ios-keypad-outline" aria-hidden="true"></i></a>
+      <a routerLink="rows"><i class="ion ion-ios-list-outline" aria-hidden="true"></i></a>
     </div>
   </div>
   <hr style="border-top: solid 1px;">
+  <div class="row">
+    <div class="col col-sm-3">
+      <!-- ngfor directive here for each association -->
+      <div class="dropdown">
+        <i class="ion ion-ios-world-outline dropdown-toggle" data-toggle="dropdown"><span class="community">Community Account</span><span class="caret"></span></i>
+        <ul class="dropdown-menu">
+          <li><a href="#">Menu Item 1</a></li>
+          <li><a href="#">Menu Item 2</a></li>
+          <li><a href="#">Menu Item 3</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <i class="ion ion-ios-world-outline dropdown-toggle" data-toggle="dropdown"><span class="community">Community Account</span><span class="caret"></span></i>
+        <ul class="dropdown-menu">
+          <li>Menu Item 1</li>
+          <li><a href="#">Menu Item 2</a></li>
+          <li><a href="#">Menu Item 3</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <i class="ion ion-ios-world-outline dropdown-toggle" data-toggle="dropdown"><span class="community">Community Account</span><span class="caret"></span></i>
+        <ul class="dropdown-menu">
+          <li><a href="#">Menu Item 1</a></li>
+          <li><a href="#">Menu Item 2</a></li>
+          <li><a href="#">Menu Item 3</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-sm-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <hr style="border-top: dotted 1px;" />
 </div>
