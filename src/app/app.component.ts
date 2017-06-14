@@ -1,6 +1,6 @@
 import { Component, ViewContainerRef } from '@angular/core';
 import * as $ from 'jquery';
-
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { GlobalState } from './global.state';
 import { BaImageLoaderService, BaThemePreloader, BaThemeSpinner } from './theme/services';
 import { BaThemeConfig } from './theme/theme.config';
@@ -20,7 +20,8 @@ export class AppComponent {
               private _imageLoader: BaImageLoaderService,
               private _spinner: BaThemeSpinner,
               private viewContainerRef: ViewContainerRef,
-              private themeConfig: BaThemeConfig) {
+              private themeConfig: BaThemeConfig,
+              private db: AngularFireDatabase) {
 
     themeConfig.config();
 
