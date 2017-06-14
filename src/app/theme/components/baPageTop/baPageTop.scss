@@ -3,6 +3,10 @@
 
 :host /deep/ {
 
+  .fa{
+    padding-top: .1em;
+  }
+
   .page-top {
     background-color: $sidebar;
     position: fixed;
@@ -45,8 +49,8 @@
 
   .user-profile {
     float: right;
-    min-width: 230px;
-    margin-top: 10px;
+    // min-width: 230px;
+    // margin-top: 10px;
   }
 
   .al-user-profile {
