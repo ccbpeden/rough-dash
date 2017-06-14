@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-dash-row-detail',
   templateUrl: './dash-row-detail.component.html',
-  styleUrls: ['./dash-row-detail.component.css']
+  styleUrls: ['./dash-row-detail.component.scss']
 })
 export class DashRowDetailComponent implements OnInit {
   tourName = "Lovely Wedding Venue";

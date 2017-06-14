@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-dash-grid-detail',
   templateUrl: './dash-grid-detail.component.html',
-  styleUrls: ['./dash-grid-detail.component.css']
+  styleUrls: ['./dash-grid-detail.component.scss']
 })
 export class DashGridDetailComponent implements OnInit {
 
