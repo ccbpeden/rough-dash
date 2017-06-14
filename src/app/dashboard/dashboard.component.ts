@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,23 +10,8 @@ import { Router } from '@angular/router';
 export class DashboardComponent implements OnInit {
   viewAsList = true;
   viewAsGrid = false;
-  constructor(private router: Router) { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
   }
-
-  goToEditor(){
-    this.router.navigate(['editor']);
-  }
-
-  gridView(){
-    this.viewAsList = false;
-    this.viewAsGrid = true;
-  }
-
-  listView(){
-    this.viewAsList = true;
-    this.viewAsGrid = false;
-  }
-
 }

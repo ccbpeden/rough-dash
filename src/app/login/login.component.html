@@ -12,9 +12,9 @@
 
       </div>
       <div class="col-sm-4">
-        <input class="form-control" type="text" name="name" value="" placeholder="Email Address"><br>
-        <input class="form-control"type="text" name="name" value="" placeholder="Password"><br>
-        <button (click)="login()"class="form-control btn btn-danger" type="button" name="button">Log In</button>
+        <input #email class="form-control" type="text" name="name" value="" placeholder="Email Address"><br>
+        <input #password class="form-control"type="text" name="name" value="" placeholder="Password"><br>
+        <button (click)="login(email.value, password.value)"class="form-control btn btn-danger" type="button" name="button">Log In</button>
         <a href="#">Forgot Password?</a>
         <a href="#">First Time Here?</a>
       </div>

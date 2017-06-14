@@ -29,44 +29,52 @@ const appRoutes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: 'dashboard',
-    component: DashboardComponent
-  },
-  {
-  path: 'billing',
-  component: BillingComponent,
-  children: [
-    { path: '', redirectTo: 'invoices', pathMatch: 'full' },
-    { path: 'invoices', component: BillingDetailInvoicesComponent },
-    { path: 'alerts', component: BillingDetailAlertsComponent },
-    { path: 'payment', component: BillingDetailPaymentMethodComponent },
-  ]
-  },
-  {
-  path: 'account',
-  component: AccountComponent
-  },
-  {
-  path: 'help',
-  component: HelpComponent
-  },
-  {
-  path: 'editor',
-  component: EditorComponent,
-  children: [
-    { path: '', redirectTo: '360-photos', pathMatch: 'full' },
-    { path: '360-photos', component: EditorDetail360PhotosComponent },
-    { path: 'analytics', component: EditorDetailAnalyticsComponent },
-    { path: 'info-links', component: EditorDetailInfoLinksComponent },
-    { path: 'map-directions', component: EditorDetailMapDirectionsComponent },
-    { path: 'menu-links', component: EditorDetailMenuLinksComponent },
-    { path: 'photo-gallery', component: EditorDetailPhotoGalleryComponent },
-    { path: 'promo-banner', component: EditorDetailPromoBannerComponent },
-    { path: 'video-gallery', component: EditorDetailVideoGalleryComponent },
-  ]
+    component: HomeComponent,
+    children: [
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+        children: [
+          { path: '', redirectTo: 'rows', pathMatch: 'full' },
+          { path: 'grid', component: DashGridDetailComponent },
+          { path: 'rows', component: DashRowDetailComponent },
+        ]
+      },
+      {
+      path: 'editor',
+      component: EditorComponent,
+      children: [
+        { path: '', redirectTo: '360-photos', pathMatch: 'full' },
+        { path: '360-photos', component: EditorDetail360PhotosComponent },
+        { path: 'analytics', component: EditorDetailAnalyticsComponent },
+        { path: 'info-links', component: EditorDetailInfoLinksComponent },
+        { path: 'map-directions', component: EditorDetailMapDirectionsComponent },
+        { path: 'menu-links', component: EditorDetailMenuLinksComponent },
+        { path: 'photo-gallery', component: EditorDetailPhotoGalleryComponent },
+        { path: 'promo-banner', component: EditorDetailPromoBannerComponent },
+        { path: 'video-gallery', component: EditorDetailVideoGalleryComponent },
+      ]
+      },
+      {
+      path: 'billing',
+      component: BillingComponent,
+      children: [
+        { path: '', redirectTo: 'invoices', pathMatch: 'full' },
+        { path: 'invoices', component: BillingDetailInvoicesComponent },
+        { path: 'alerts', component: BillingDetailAlertsComponent },
+        { path: 'payment', component: BillingDetailPaymentMethodComponent },
+      ]
+      },
+      {
+        path: 'account',
+        component: AccountComponent
+      },
+      {
+        path: 'help',
+        component: HelpComponent
+      },
+    ]
   },
 ];
 
