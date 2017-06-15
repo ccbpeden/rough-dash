@@ -5,11 +5,11 @@
 
   .fa{
     padding-top: .1em;
-    color: $legris;
+    color: $primary;
   }
 
   .page-top {
-    background-color: $sidebar;
+    background-color: $danger;
     position: fixed;
     z-index: 904;
     box-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);

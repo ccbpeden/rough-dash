@@ -14,8 +14,8 @@ $input-border: shade($border, 5%);
 $input-background: #ffffff;
 $dropdown-text: #7d7d7d;
 
-$sidebar: #990039;
-$sidebar-text: #ffffff;
+$sidebar: #F0F3F4;
+$sidebar-text: #9fa1a3;
 
 $mail-box: whitesmoke;
 $auth-panel-background: #ffffff;
@@ -30,11 +30,13 @@ $bootstrap-panel-header-border: 1px solid rgba(0, 0, 0, 0.12);
 $bootstrap-panel-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
 
 $primary: #F0F3F4;
-$info: #2dacd1;
+$info: #9fa1a3;
 $success: #90b900;
 $warning: #dfb81c;
 $danger: #990039;
 $legris: #9fa1a3;
+$vm-maroon: #990039;
+$shade-of-pale: #F0F3F4;
 
 $primary-light: tint($primary, 30%);
 $info-light: tint($info, 30%);
