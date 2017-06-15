@@ -25,6 +25,7 @@ export const routes: Routes = [
       { path: 'menu-links',  loadChildren: './desk-detail-menu-links/desk-detail-menu-links.module#DeskDetailMenuLinksModule' },
       { path: 'vid-gallery',  loadChildren: './desk-detail-vid-gallery/desk-detail-vid-gallery.module#DeskDetailVidGalleryModule' },
       { path: 'photo-gallery', loadChildren: './desk-detail-photo-gallery/desk-detail-photo-gallery.module#DeskDetailPhotoGalleryModule' },
+      { path: 'map-directions', loadChildren: './desk-detail-map-directions/desk-detail-map-directions.module#DeskDetailMapDirectionsModule'  },
       { path: 'editors', loadChildren: './editors/editors.module#EditorsModule' },
       { path: 'components', loadChildren: './components/components.module#ComponentsModule' },
       { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },

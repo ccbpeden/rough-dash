@@ -80,6 +80,19 @@ export const PAGES_MENU = [
         }
       },
       {
+        path: 'map-directions',  // path for our page
+        data: { // custom menu declaration
+          menu: {
+            title: 'Map & Directions', // menu title
+            icon: 'ion-ios-world-outline', // menu icon
+            pathMatch: 'prefix', // use it if item children not displayed in menu
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
         path: 'editors',
         data: {
           menu: {
