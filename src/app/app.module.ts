@@ -30,6 +30,14 @@ import { BillingDetailPaymentMethodComponent } from './billing-detail-payment-me
 import { LoginComponent } from './login/login.component';
 import { CakeComponent } from './cake/cake.component';
 import { AuthService } from './providers/auth.service';
+import { DesktopComponent } from './desktop/desktop.component';
+import { DeskDetail360PhotosComponent } from './desk-detail-360-photos/desk-detail-360-photos.component';
+import { DeskDetailPromoBannerComponent } from './desk-detail-promo-banner/desk-detail-promo-banner.component';
+import { DeskDetailMenuLinksComponent } from './desk-detail-menu-links/desk-detail-menu-links.component';
+import { DeskDetailVidGalleryComponent } from './desk-detail-vid-gallery/desk-detail-vid-gallery.component';
+import { DeskDetailPhotoGalleryComponent } from './desk-detail-photo-gallery/desk-detail-photo-gallery.component';
+import { DeskDetailMapDirectionsComponent } from './desk-detail-map-directions/desk-detail-map-directions.component';
+import { DeskDetailInfoLinksComponent } from './desk-detail-info-links/desk-detail-info-links.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -65,6 +73,14 @@ export type StoreType = {
     BillingDetailPaymentMethodComponent,
     LoginComponent,
     CakeComponent,
+    DesktopComponent,
+    DeskDetail360PhotosComponent,
+    DeskDetailPromoBannerComponent,
+    DeskDetailMenuLinksComponent,
+    DeskDetailVidGalleryComponent,
+    DeskDetailPhotoGalleryComponent,
+    DeskDetailMapDirectionsComponent,
+    DeskDetailInfoLinksComponent,
   ],
   imports: [
     BrowserModule,

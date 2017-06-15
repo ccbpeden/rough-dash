@@ -3,12 +3,12 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  selector: 'app-desktop',
+  templateUrl: './desktop.component.html',
+  styleUrls: ['./desktop.component.scss']
 })
-export class DashboardComponent implements OnInit {
-  detailToDisplay="360-photos";
+export class DesktopComponent implements OnInit {
+  detailToDisplay="dashboard";
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {

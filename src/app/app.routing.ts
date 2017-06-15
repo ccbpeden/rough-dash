@@ -13,6 +13,15 @@ import { BillingDetailInvoicesComponent } from './billing-detail-invoices/billin
 import { BillingDetailAlertsComponent } from './billing-detail-alerts/billing-detail-alerts.component';
 import { BillingDetailPaymentMethodComponent } from './billing-detail-payment-method/billing-detail-payment-method.component';
 import { LoginComponent } from './login/login.component';
+import { DesktopComponent } from './desktop/desktop.component';
+import { DeskDetail360PhotosComponent } from './desk-detail-360-photos/desk-detail-360-photos.component';
+import { DeskDetailPromoBannerComponent } from './desk-detail-promo-banner/desk-detail-promo-banner.component';
+import { DeskDetailMenuLinksComponent } from './desk-detail-menu-links/desk-detail-menu-links.component';
+import { DeskDetailVidGalleryComponent } from './desk-detail-vid-gallery/desk-detail-vid-gallery.component';
+import { DeskDetailPhotoGalleryComponent } from './desk-detail-photo-gallery/desk-detail-photo-gallery.component';
+import { DeskDetailMapDirectionsComponent } from './desk-detail-map-directions/desk-detail-map-directions.component';
+import { DeskDetailInfoLinksComponent } from './desk-detail-info-links/desk-detail-info-links.component';
+
 
 const appRoutes: Routes = [
   {
@@ -23,14 +32,20 @@ const appRoutes: Routes = [
     path: 'home',
     component: HomeComponent,
     children: [
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+      { path: '', redirectTo: 'desktop', pathMatch: 'full' },
       {
-        path: 'dashboard',
-        component: DashboardComponent,
+        path: 'desktop',
+        component: DesktopComponent,
         children: [
-          { path: '', redirectTo: 'rows', pathMatch: 'full' },
-          { path: 'grid', component: EditGridDetailComponent },
-          { path: 'rows', component: EditRowDetailComponent },
+          { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+          { path: 'dashboard', component: DashboardComponent },
+          { path: '360-photos', component: DeskDetail360PhotosComponent },
+          { path: 'promo-banner', component: DeskDetailPromoBannerComponent },
+          { path: 'menu-links', component: DeskDetailMenuLinksComponent },
+          { path: 'vid-gallery', component: DeskDetailVidGalleryComponent },
+          { path: 'photo-gallery', component: DeskDetailPhotoGalleryComponent },
+          { path: 'map-directions', component: DeskDetailMapDirectionsComponent },
+          { path: 'info-links', component: DeskDetailInfoLinksComponent },
         ]
       },
       {
