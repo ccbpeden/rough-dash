@@ -14,30 +14,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { masterFirebaseConfig } from './api-keys';
 import { TranslateService } from '@ngx-translate/core';
 import * as firebase from 'firebase/app';
+import { AuthService } from './providers/auth.service';
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { BillingComponent } from './billing/billing.component';
-import { AccountComponent } from './account/account.component';
-import { HelpComponent } from './help/help.component';
-import { HomeComponent } from './home/home.component';
-import { EditorComponent } from './editor/editor.component';
-import { EditRowDetailComponent } from './edit-row-detail/edit-row-detail.component';
-import { EditGridDetailComponent } from './edit-grid-detail/edit-grid-detail.component';
-import { BillingDetailInvoicesComponent } from './billing-detail-invoices/billing-detail-invoices.component';
-import { BillingDetailAlertsComponent } from './billing-detail-alerts/billing-detail-alerts.component';
-import { BillingDetailPaymentMethodComponent } from './billing-detail-payment-method/billing-detail-payment-method.component';
-import { LoginComponent } from './login/login.component';
-import { CakeComponent } from './cake/cake.component';
-import { AuthService } from './providers/auth.service';
-import { DesktopComponent } from './desktop/desktop.component';
-import { DeskDetail360PhotosComponent } from './desk-detail-360-photos/desk-detail-360-photos.component';
-import { DeskDetailPromoBannerComponent } from './desk-detail-promo-banner/desk-detail-promo-banner.component';
-import { DeskDetailMenuLinksComponent } from './desk-detail-menu-links/desk-detail-menu-links.component';
-import { DeskDetailVidGalleryComponent } from './desk-detail-vid-gallery/desk-detail-vid-gallery.component';
-import { DeskDetailPhotoGalleryComponent } from './desk-detail-photo-gallery/desk-detail-photo-gallery.component';
-import { DeskDetailMapDirectionsComponent } from './desk-detail-map-directions/desk-detail-map-directions.component';
-import { DeskDetailInfoLinksComponent } from './desk-detail-info-links/desk-detail-info-links.component';
+import { PagesModule } from './pages/pages.module';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -60,27 +41,7 @@ export type StoreType = {
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    BillingComponent,
-    AccountComponent,
-    HelpComponent,
-    HomeComponent,
-    EditorComponent,
-    EditRowDetailComponent,
-    EditGridDetailComponent,
-    BillingDetailInvoicesComponent,
-    BillingDetailAlertsComponent,
-    BillingDetailPaymentMethodComponent,
-    LoginComponent,
-    CakeComponent,
-    DesktopComponent,
-    DeskDetail360PhotosComponent,
-    DeskDetailPromoBannerComponent,
-    DeskDetailMenuLinksComponent,
-    DeskDetailVidGalleryComponent,
-    DeskDetailPhotoGalleryComponent,
-    DeskDetailMapDirectionsComponent,
-    DeskDetailInfoLinksComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -94,6 +55,7 @@ export type StoreType = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+    PagesModule
   ],
   bootstrap: [AppComponent],
   providers: [ // expose our Services and Providers into Angular's dependency injection

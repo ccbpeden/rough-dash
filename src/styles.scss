@@ -7,6 +7,10 @@
   padding-top: 6em;
 }
 
+body{
+  font-family: "Open Sans";
+}
+
 h4{
   color: #9fa1a3;
 }
@@ -81,10 +85,7 @@ hr{
   color: #9fa1a3;
 }
 
-#selectedDetail{
-  /*also used in billing*/
-  background: radial-gradient(#d6d6d6, white);
-}
+
 
 /*billing component*/
 .numberCircle{
