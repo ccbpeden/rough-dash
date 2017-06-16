@@ -1,1 +1,18 @@
 @import "../theme/sass/conf/conf";
+
+.modal-header{
+  background-color: $danger;
+}
+
+.modal-title{
+  text-align: center;
+}
+
+.auth-sep, .modal-body, .al-share{
+  margin-top: 1em;
+  text-align: center;
+}
+
+.al-share{
+  
+}

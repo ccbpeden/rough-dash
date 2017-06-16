@@ -43,7 +43,7 @@ export class AppComponent {
     this.authService.user.subscribe(
       (auth) => {
         if(auth == null){
-          const activeModal = this.modalService.open(LoginModalComponent, {size: 'lg', backdrop: 'static'});
+          const activeModal = this.modalService.open(LoginModalComponent, {size: 'sm', backdrop: 'static'});
         }
       });
   }
