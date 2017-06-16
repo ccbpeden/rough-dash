@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['dashboard']);
   }
   login(email, password) {
-    this.authService.loginWithGoogle().then((data) => {
+    this.authService.loginWithEmail(email, password).then((data) => {
       this.router.navigate(['pages']);
     })
   }
