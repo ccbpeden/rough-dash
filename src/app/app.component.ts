@@ -7,6 +7,9 @@ import { BaThemeConfig } from './theme/theme.config';
 import { layoutPaths } from './theme/theme.constants';
 import { Router } from '@angular/router';
 import { AuthService } from './providers/auth.service';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Location } from '@angular/common';
+import { LoginModalComponent } from './login-modal/login-modal.component';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +27,11 @@ export class AppComponent {
               private themeConfig: BaThemeConfig,
               private db: AngularFireDatabase,
               private authService: AuthService,
-              private router: Router) {
+              private router: Router,
+              private location: Location,
+              private activeModal: NgbActiveModal,
+              private modalService: NgbModal,
+            ) {
 
     themeConfig.config();
 
@@ -36,7 +43,7 @@ export class AppComponent {
     this.authService.user.subscribe(
       (auth) => {
         if(auth == null){
-          this.router.navigate(['']);
+          const activeModal = this.modalService.open(LoginModalComponent, {size: 'lg', backdrop: 'static'});
         }
       });
   }

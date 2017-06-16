@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
 import { AppState, InternalStateType } from './app.service';
 import { GlobalState } from './global.state';
 import { NgaModule } from './theme/nga.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { masterFirebaseConfig } from './api-keys';
 import { TranslateService } from '@ngx-translate/core';
 import * as firebase from 'firebase/app';
@@ -19,6 +19,8 @@ import { AuthService } from './providers/auth.service';
 import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { LoginComponent } from './login/login.component';
+import { LoginModalComponent } from './login-modal/login-modal.component';
+
 
 
 export const firebaseConfig = {
@@ -43,6 +45,7 @@ export type StoreType = {
   declarations: [
     AppComponent,
     LoginComponent,
+    LoginModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +63,10 @@ export type StoreType = {
   ],
   bootstrap: [AppComponent],
   providers: [ // expose our Services and Providers into Angular's dependency injection
-    APP_PROVIDERS, AuthService
+    APP_PROVIDERS, AuthService, NgbActiveModal
+  ],
+  entryComponents: [
+    LoginModalComponent,
   ]
 })
 export class AppModule {
