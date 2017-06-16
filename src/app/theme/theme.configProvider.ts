@@ -34,7 +34,7 @@ export class BaThemeConfigProvider {
       surfieGreen: '#00abff',
       silverTree: '#1b70ef',
       gossip: '#3c4eb9',
-      white: '#ffffff',
+      white: '#9fa1a3',
     };
 
     this.conf = {

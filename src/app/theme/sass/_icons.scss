@@ -1,6 +1,7 @@
 @mixin svg-icon($url, $width:'', $height:'') {
   display: inline-block;
   background: url($url) no-repeat center;
+  background-color: $legris;
   background-size: contain;
   vertical-align: middle;
   @if ($width != '') {
