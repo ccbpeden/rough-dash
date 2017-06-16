@@ -6,6 +6,7 @@ import { BaImageLoaderService, BaThemePreloader, BaThemeSpinner } from './theme/
 import { BaThemeConfig } from './theme/theme.config';
 import { layoutPaths } from './theme/theme.constants';
 import { Router } from '@angular/router';
+import { AuthService } from './providers/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,9 @@ export class AppComponent {
               private _spinner: BaThemeSpinner,
               private viewContainerRef: ViewContainerRef,
               private themeConfig: BaThemeConfig,
-              private db: AngularFireDatabase) {
+              private db: AngularFireDatabase,
+              private authService: AuthService,
+              private router: Router) {
 
     themeConfig.config();
 
@@ -30,6 +33,12 @@ export class AppComponent {
     this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
       this.isMenuCollapsed = isCollapsed;
     });
+    this.authService.user.subscribe(
+      (auth) => {
+        if(auth == null){
+          this.router.navigate(['']);
+        }
+      });
   }
 
   public ngAfterViewInit(): void {
