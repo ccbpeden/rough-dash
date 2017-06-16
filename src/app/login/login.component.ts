@@ -18,7 +18,17 @@ export class LoginComponent implements OnInit {
   }
   login(email, password) {
     this.authService.loginWithGoogle().then((data) => {
-      this.router.navigate(['home']);
+      this.router.navigate(['pages']);
+    })
+  }
+  googleLogin(){
+    this.authService.loginWithGoogle().then((data) => {
+      this.router.navigate(['pages']);
+    })
+  }
+  facebookLogin(){
+    this.authService.loginWithFacebook().then((data) => {
+      this.router.navigate(['pages']);
     })
   }
 }

@@ -15,8 +15,18 @@
         <input #email class="form-control" type="text" name="name" value="" placeholder="Email Address"><br>
         <input #password class="form-control"type="text" name="name" value="" placeholder="Password"><br>
         <button (click)="login(email.value, password.value)"class="form-control btn btn-danger" type="button" name="button">Log In</button>
-        <a href="#">Forgot Password?</a>
-        <a href="#">First Time Here?</a>
+        <div class="help-login">
+          <a href="#">Forgot Password?</a><span>||</span>
+          <a href="#">First Time Here?</a>
+        </div>
+        <div class="auth-sep"><span><span translate>login from your favorite Apps!</span></span></div>
+
+        <div class="al-share-auth">
+          <ul class="al-share clearfix">
+            <li (click)="facebookLogin()">><i class="socicon socicon-facebook" title="login from Facebook"></i></li>
+            <li (click)="googleLogin()"><i class="socicon socicon-google" title="login from Google"></i></li>
+          </ul>
+        </div>
       </div>
       <div class="col-sm-4">
 
