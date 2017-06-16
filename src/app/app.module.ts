@@ -18,6 +18,7 @@ import { AuthService } from './providers/auth.service';
 
 import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
+import { LoginComponent } from './login/login.component';
 
 
 export const firebaseConfig = {
@@ -41,7 +42,7 @@ export type StoreType = {
 @NgModule({
   declarations: [
     AppComponent,
-
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,7 +56,7 @@ export type StoreType = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    PagesModule
+    PagesModule,
   ],
   bootstrap: [AppComponent],
   providers: [ // expose our Services and Providers into Angular's dependency injection
