@@ -3,7 +3,7 @@ export const PAGES_MENU = [
     path: 'pages',
     children: [
       {
-        path: 'dashboard',
+        path: '',
         data: {
           menu: {
             title: 'general.menu.dashboard',
@@ -15,7 +15,7 @@ export const PAGES_MENU = [
         },
         children: [
           {
-            path: 'treeview',
+            path: 'dashboard',
             data: {
               menu: {
                 title: 'general.menu.tree_view',
