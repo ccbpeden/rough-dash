@@ -3,8 +3,12 @@
 
 :host /deep/ {
 
+  .topbar-right-icons{
+    margin-top: .7em;
+  }
+
   .fa{
-    padding-top: .1em;
+    padding-top: .3em;
     color: $primary;
   }
 
@@ -115,7 +119,7 @@
 
     &:hover {
       text-decoration: none;
-      color: $warning;
+      color: $primary;
     }
   }
 
