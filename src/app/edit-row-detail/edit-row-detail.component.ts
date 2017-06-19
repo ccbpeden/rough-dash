@@ -12,7 +12,7 @@ export class EditRowDetailComponent implements OnInit {
 
   ngOnInit() {
   }
-  goToEditor(){
-    this.router.navigate(['editor']);
+  goToDashboard(){
+    this.router.navigate(['pages']);
   }
 }
