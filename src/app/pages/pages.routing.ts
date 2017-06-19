@@ -1,6 +1,9 @@
 import { Routes, RouterModule }  from '@angular/router';
 import { Pages } from './pages.component';
 import { ModuleWithProviders } from '@angular/core';
+import { EditorComponent } from '../editor/editor.component';
+import { EditRowDetailComponent } from '../edit-row-detail/edit-row-detail.component';
+import { EditGridDetailComponent } from '../edit-grid-detail/edit-grid-detail.component';
 // noinspection TypeScriptValidateTypes
 
 // export function loadChildren(path) { return System.import(path); };
@@ -27,6 +30,15 @@ export const routes: Routes = [
       { path: 'photo-gallery', loadChildren: './desk-detail-photo-gallery/desk-detail-photo-gallery.module#DeskDetailPhotoGalleryModule' },
       { path: 'map-directions', loadChildren: './desk-detail-map-directions/desk-detail-map-directions.module#DeskDetailMapDirectionsModule'  },
       { path: 'info-links', loadChildren: './desk-detail-info-links/desk-detail-info-links.module#DeskDetailInfoLinksModule' },
+    ]
+  },
+  {
+    path: 'editor',
+    component: EditorComponent,
+    children: [
+      {path: '', redirectTo: 'edit-row-detail', pathMatch: 'full' },
+      {path: 'edit-row-detail', component: EditRowDetailComponent },
+      {path: 'edit-grid-detail', component: EditGridDetailComponent },
     ]
   }
 ];
