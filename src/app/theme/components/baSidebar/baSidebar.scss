@@ -34,6 +34,7 @@ $angle-right: '\f101';
     &.selected:not(.with-sub-menu) > a {
       border: none;
       background-color: $info;
+      color: $primary;
       &:hover {
         color: $danger-light;
       }
