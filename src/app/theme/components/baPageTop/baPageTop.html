@@ -1,6 +1,8 @@
-<div class="page-top clearfix" baScrollPosition maxHeight="50" (scrollChange)="scrolledChanged($event)" [ngClass]="{scrolled: isScrolled}">
-  <a routerLink="/dashboard" class="al-logo clearfix"><img class="smaller-logo" src="/assets/images/logo-visiting-media-small.png" alt="visiting media logo"/></a>
-  <a href (click)="toggleMenu()" class="collapse-menu-link fa fa-bars fa-2x"></a>
+<div class="page-top clearfix" baScrollPosition maxHeight="50"
+(scrollChange)="scrolledChanged($event)"
+     [ngClass]="{scrolled: isScrolled}">
+  <a href="https://visitingmedia.com/" class="al-logo clearfix"><img class="smaller-logo" src="/assets/images/logo-visiting-media-small.png" alt="visiting media logo"/></a>
+  <a href (click)="toggleMenu()" class="collapse-menu-link ion-navicon"></a>
 
   <div class="search">
     <i class="fa fa-search fa-2x" ng-click="startSearch()"></i>
@@ -22,3 +24,4 @@
       </div>
     </div>
   </div>
+</div>

@@ -3,13 +3,25 @@
 
 :host /deep/ {
 
+  .search input {
+    color: #F0F3F4;
+  }
+
+  /* icon stylings */
+  .fa{
+    padding-left: .5em;
+    padding-right: .5em;
+    color: #F0F3F4;
+    padding-top: .3em;
+    color: $primary;
+  }
+
   .topbar-right-icons{
     margin-top: .7em;
   }
 
-  .fa{
-    padding-top: .3em;
-    color: $primary;
+  img.smaller-logo{
+    height: 1.5em;
   }
 
   .page-top {
