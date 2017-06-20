@@ -3,14 +3,18 @@ import { Observable } from 'rxjs/Observable';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
+import { CanActivate, Router } from '@angular/router';
 import * as firebase from 'firebase/app';
+import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/take';
 
 @Injectable()
-export class AuthService {
+export class AuthService implements CanActivate {
   user: Observable<firebase.User>;
   items: FirebaseListObservable<any[]>;
 
-  constructor(public afAuth: AngularFireAuth, db: AngularFireDatabase) {
+  constructor(private afAuth: AngularFireAuth, db: AngularFireDatabase, private router: Router) {
     this.user = afAuth.authState;
     this.items = db.list('items');
   }
@@ -29,6 +33,16 @@ export class AuthService {
 
   logout() {
     return this.afAuth.auth.signOut();
+  }
+
+  canActivate(): Observable<boolean> {
+    return Observable.from(this.user)
+      .take(1)
+      .map(state => !!state)
+      .do(authenticated => {
+    if
+      (!authenticated) this.router.navigate([ '' ]);
+    })
   }
 
 }
