@@ -3,6 +3,19 @@
 
 :host /deep/ {
 
+  .suggestions{
+    background-color: $primary;
+    font-size: 1.2em;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #cccccc;
+    border-width: 1px;
+  }
+  .suggestions-list{
+    padding: .5em;
+    li{ padding-left: .25em;}
+  }
+
   .search input {
     color: #F0F3F4;
   }

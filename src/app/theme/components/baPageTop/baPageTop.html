@@ -6,7 +6,14 @@
 
   <div class="search">
     <i class="fa fa-search fa-2x" ng-click="startSearch()"></i>
-    <input id="searchInput" type="text" placeholder="Search for...">
+    <input id="searchInput" [(ngModel)]=query (keyup)=filter() type="text" placeholder="Search for...">
+    <div class="suggestions dropdown" *ngIf="filteredList.length > 0">
+      <ul class="suggestions-list">
+        <li *ngFor="let item of filteredList" class="dropdown-item">
+          <a (click)="select(item)">{{item}}</a>
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="topbar-right-icons right-align">
   <a href="https://visitingmedia.com/truetour-support/"><i class="fa fa-question fa-2x"></i></a>
