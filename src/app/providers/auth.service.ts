@@ -36,7 +36,7 @@ export class AuthService implements CanActivate {
   }
 
   canActivate(): Observable<boolean> {
-    return Observable.from(this.user)
+    return this.user
       .take(1)
       .map(state => !!state)
       .do(authenticated => {

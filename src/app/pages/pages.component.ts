@@ -38,6 +38,9 @@ export class Pages {
       (auth) => {
         if(auth == null){
           const activeModal = this.modalService.open(LoginModalComponent, {size: 'sm', backdrop: 'static'});
+          console.log(auth);
+        } else {
+          console.log(auth);
         }
       });
   }

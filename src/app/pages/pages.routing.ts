@@ -32,7 +32,7 @@ export const routes: Routes = [
       { path: 'map-directions', loadChildren: './desk-detail-map-directions/desk-detail-map-directions.module#DeskDetailMapDirectionsModule'  },
       { path: 'info-links', loadChildren: './desk-detail-info-links/desk-detail-info-links.module#DeskDetailInfoLinksModule' },
     ],
-    canActivate: [AuthService]
+    canActivate: [AuthService],
   },
   {
     path: 'editor',
