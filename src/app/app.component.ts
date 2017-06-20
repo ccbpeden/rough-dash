@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 import { AuthService } from './providers/auth.service';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Location } from '@angular/common';
-import { LoginModalComponent } from './login-modal/login-modal.component';
+
 
 @Component({
   selector: 'app-root',
@@ -26,11 +26,9 @@ export class AppComponent {
               private viewContainerRef: ViewContainerRef,
               private themeConfig: BaThemeConfig,
               private db: AngularFireDatabase,
-              private authService: AuthService,
               private router: Router,
               private location: Location,
               private activeModal: NgbActiveModal,
-              private modalService: NgbModal,
             ) {
 
     themeConfig.config();
@@ -40,12 +38,6 @@ export class AppComponent {
     this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
       this.isMenuCollapsed = isCollapsed;
     });
-    this.authService.user.subscribe(
-      (auth) => {
-        if(auth == null){
-          const activeModal = this.modalService.open(LoginModalComponent, {size: 'sm', backdrop: 'static'});
-        }
-      });
   }
 
   public ngAfterViewInit(): void {
