@@ -1,48 +1,72 @@
 <ba-page-top></ba-page-top>
 <!-- <div class="container"> -->
+
   <div class="row commence-content">
-    <div class="col-sm-4">
-      <h4>
-        My TrueTours
-      </h4>
-    </div>
-    <div class="col-sm-8 right-align">
-      <a routerLink="edit-grid-detail"><i class="ion ion-ios-keypad-outline" aria-hidden="true"></i></a>
-      <a routerLink="edit-row-detail"><i class="ion ion-ios-list-outline" aria-hidden="true"></i></a>
-    </div>
-  </div>
-  <hr style="border-top: solid 1px;">
-  <div class="row">
-    <div class="col col-sm-3">
+    <div class="sidebar" [class]="checkCollapse()">
       <!-- ngfor directive here for each association -->
       <div class="dropdown">
-        <i class="ion ion-ios-world-outline dropdown-toggle" data-toggle="dropdown"><span class="community">Community Account</span><span class="caret"></span></i>
-        <ul class="dropdown-menu">
-          <li><a href="#">Menu Item 1</a></li>
-          <li><a href="#">Menu Item 2</a></li>
-          <li><a href="#">Menu Item 3</a></li>
-        </ul>
+        <div class="menu-item" data-toggle="collapse" data-target=#collapse1>
+          <i class="ion ion-ios-world-outline"></i><span class="menu-label">Community Account</span><i class="fa fa-angle-down fa-2x" ></i>
+        </div>
+        <div class="collapse" id="collapse1">
+          <div class="sub-menu-item">
+            <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
+          </div>
+          <div class="sub-menu-item">
+            <a class="sub-menu-item" href="#">Another Item</a><br>
+          </div>
+          <div class="sub-menu-item">
+            <a class="sub-menu-item" href="#">A Third Item</a><br>
+          </div>
+        </div>
       </div>
       <div class="dropdown">
-        <i class="ion ion-ios-world-outline dropdown-toggle" data-toggle="dropdown"><span class="community">Community Account</span><span class="caret"></span></i>
-        <ul class="dropdown-menu">
-          <li>Menu Item 1</li>
-          <li><a href="#">Menu Item 2</a></li>
-          <li><a href="#">Menu Item 3</a></li>
-        </ul>
+        <div class="menu-item" data-toggle="collapse" data-target=#collapse2>
+          <i class="ion ion-ios-world-outline"></i><span class="menu-label">Community Account</span><i class="fa fa-angle-down fa-2x" ></i>
+        </div>
+        <div class="collapse" id="collapse2">
+          <div class="sub-menu-item">
+            <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
+          </div>
+          <div class="sub-menu-item">
+            <a class="sub-menu-item" href="#">Another Item</a><br>
+          </div>
+          <div class="sub-menu-item">
+            <a class="sub-menu-item" href="#">A Third Item</a><br>
+          </div>
+        </div>
       </div>
       <div class="dropdown">
-        <i class="ion ion-ios-world-outline dropdown-toggle" data-toggle="dropdown"><span class="community">Community Account</span><span class="caret"></span></i>
-        <ul class="dropdown-menu">
-          <li><a href="#">Menu Item 1</a></li>
-          <li><a href="#">Menu Item 2</a></li>
-          <li><a href="#">Menu Item 3</a></li>
-        </ul>
+        <div class="menu-item" data-toggle="collapse" data-target=#collapse3>
+          <i class="ion ion-ios-world-outline"></i><span class="menu-label">Community Account</span><i class="fa fa-angle-down fa-2x" ></i>
+        </div>
+        <div class="collapse" id="collapse3">
+          <div class="sub-menu-item">
+            <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
+          </div>
+          <div class="sub-menu-item">
+            <a class="sub-menu-item" href="#">Another Item</a><br>
+          </div>
+          <div class="sub-menu-item">
+            <a class="sub-menu-item" href="#">A Third Item</a><br>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col col-sm-9">
+    <div class="col col-sm-9 body-commence">
+      <div class="row">
+        <div class="col-sm-6 header">
+          <h4>
+            Manage TrueTours
+          </h4>
+        </div>
+        <div class="col-sm-6 right-align">
+          <a routerLink="edit-grid-detail"><i class="ion ion-ios-keypad-outline" aria-hidden="true"></i></a>
+          <a routerLink="edit-row-detail"><i class="ion ion-ios-list-outline" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <hr class="detail-seperator">
       <router-outlet></router-outlet>
     </div>
   </div>
-  <hr style="border-top: dotted 1px;" />
 <!-- </div> -->

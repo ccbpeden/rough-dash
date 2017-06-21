@@ -1,15 +1,44 @@
 @import '../theme/sass/conf/conf.scss';
 
 .commence-content{
-  padding-top: 6em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-top: 4.8em;
 }
 
-.community{
+.sidebar{
+  background-color: $sidebar;
+  padding-left: 1em;
+}
+
+.sidebar-collapsed{
+  background-color: $sidebar;
+  padding-left: 1em;
+  width: 5em;
+  overflow: hidden;
+  .menu-label, .fa {
+    display: none;
+  }
+}
+
+.collapse{
+  padding-left: 3.5em;
+  a{
+    padding-top: 1em;
+  }
+}
+
+
+.menu-item{
+  padding-top: 1em;
+}
+.sub-menu-item{
+  padding-top: 1em;
+}
+
+.menu-label{
   padding-left: .5em;
-  font-size: .5em;
+  font-size: 1em;
   vertical-align: middle;
+  color: $legris;
 }
 .dropdown-menu{
   background-color: $primary;
@@ -25,4 +54,12 @@
   color: $legris;
   padding-left: .5em;
   vertical-align: middle;
+}
+.fa{
+  color: $info;
+}
+
+.body-commence{
+  padding: 1em 0em 0em 0em;
+  margin-left: 2em;
 }
