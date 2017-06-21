@@ -1,9 +1,28 @@
 @import '../theme/sass/conf/conf.scss';
 
 .container{
-  padding-top: 6em;
+  padding: 0em;
 }
 
-.fa{
+.dashboard-button-area{
+  display: inline-block;
+}
+.dashboard-button{
+  text-align: right;
+  padding-left: 1em;
   color: $danger;
+  font-size: 3.5em;
+}
+
+.tour-title{
+  font-size: 1.3em;
+}
+
+.ion{
+  padding-left: 1em;
+  font-size: 2em;
+}
+
+.col-sm-9{
+  padding-top: 1em;
 }
