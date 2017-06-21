@@ -11,7 +11,7 @@ export class EditGridDetailComponent implements OnInit {
   tourName = "Lovely Wedding Venue";
   ngOnInit() {
   }
-  goToEditor(){
-    this.router.navigate(['editor']);
+  goToDashboard(){
+    this.router.navigate(['pages']);
   }
 }
