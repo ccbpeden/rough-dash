@@ -4,31 +4,46 @@
 .detail-body{
   text-align: center;
   margin-bottom: 1em;
+  background-color: $primary;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .detail-title{
+  margin-top: 2em;
+  margin-bottom: 2em;
   color: $info;
 }
 
 .detail-image{
-  margin: 0 auto;
+  // margin-left: .3em;
   height: 2em;
-  width: 2em;
+  width: 60%;
   background-color: $sidebar;
   color: $info;
-  font-size: 4.5em;
+  font-size: 6em;
   .ion{
     padding-top: .5em;
   }
 }
 
 .detail-status-icons{
+  width: 20%;
+  margin-top: 1em;
+  font-size: 1.5em;
   .fa{
     color: $info;
+    padding-bottom: .5em;
   }
 }
 
+.detail-right-center{
+  width: 20%;
+}
+
 .dashboard-button-area{
+  margin-top: .5em;
+  margin-bottom: .5em;
   font-size: 3.5em;
   color: $danger;
 }
