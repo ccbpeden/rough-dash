@@ -1,11 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.min.css";
-@import "~font-awesome/css/font-awesome.css";
-@import '../node_modules/bootstrap/scss/bootstrap';
-
-.container{
-  padding-top: 6em;
-}
+@import './app/theme/sass/conf/conf';
 
 body{
   font-family: "Open Sans";
@@ -19,19 +13,6 @@ h6{
   color: #9fa1a3;
 }
 
-/* navbar logo sizing */
-img.smaller-logo{
-  height: 1.5em;
-}
-// navbar icons
-
-.navbar-right{
-  transform: translateY(50%);
-}
-
-.search input {
-  color: #F0F3F4;
-}
 
 /* icon stylings */
 .fa{
@@ -41,6 +22,7 @@ img.smaller-logo{
 }
 
 .container{
+  padding-top: 6em;
   margin-left: 3em;
   margin-right: 3em;
 }
@@ -56,24 +38,6 @@ img.home-image{
 
 .home-blurb{
   text-align: center;
-}
-
-/* dashboard styling */
-.right-align{
-  text-align: right;
-}
-
-.center-align{
-  text-align: center;
-}
-
-.dashboard-button-area{
-  position: relative;
-}
-
-.dashboard-button{
-  position: absolute;
-  transform: translateY(50%);
 }
 
 /*editor component & subs*/

@@ -35,6 +35,8 @@
 .detail-right-column{
   margin-top: .9em;
   .dashboard-button{
+    position: absolute;
+    transform: translateY(50%);
     text-align: right;
     padding: 0em, 0em, 0em, 1em;
     color: $danger;

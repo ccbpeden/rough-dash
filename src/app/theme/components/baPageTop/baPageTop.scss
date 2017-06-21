@@ -3,6 +3,18 @@
 
 :host /deep/ {
 
+  .right-align{
+    text-align: right;
+  }
+
+  .search input {
+    color: $primary;
+  }
+
+  img.smaller-logo{
+    height: 1.5em;
+  }
+
   .suggestions{
     background-color: $primary;
     font-size: 1.2em;
