@@ -7,8 +7,11 @@
     text-align: right;
   }
 
-  .search input {
+  input#searchInput {
+    border-radius: 5px;
     color: $primary;
+    background-color: $sidebar;
+
   }
 
   img.smaller-logo{
@@ -49,6 +52,10 @@
     height: 1.5em;
   }
 
+  ul.dropdown-menu.top-dropdown-menu.profile-dropdown{
+    background-color: $sidebar;
+  }
+
   .page-top {
     background-color: $danger;
     position: fixed;
@@ -61,6 +68,12 @@
 
     .dropdown-toggle::after {
       display: none;
+    }
+  }
+
+  .dropdown-item{
+    i.fa{
+      color: $legris;
     }
   }
 
