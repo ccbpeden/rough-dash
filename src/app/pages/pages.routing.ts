@@ -4,20 +4,13 @@ import { ModuleWithProviders } from '@angular/core';
 import { EditorComponent } from '../editor/editor.component';
 import { EditRowDetailComponent } from '../edit-row-detail/edit-row-detail.component';
 import { EditGridDetailComponent } from '../edit-grid-detail/edit-grid-detail.component';
+import { AccountComponent } from '../account/account.component';
 import { AuthService } from '../providers/auth.service';
 // noinspection TypeScriptValidateTypes
 
 // export function loadChildren(path) { return System.import(path); };
 
 export const routes: Routes = [
-  {
-    path: 'login',
-    loadChildren: 'app/pages/login/login.module#LoginModule'
-  },
-  {
-    path: 'register',
-    loadChildren: 'app/pages/register/register.module#RegisterModule'
-  },
   {
     path: 'pages',
     component: Pages,
@@ -43,6 +36,11 @@ export const routes: Routes = [
       {path: 'edit-grid-detail', component: EditGridDetailComponent },
     ],
     canActivate: [AuthService]
+  },
+  {
+    path: 'account',
+    component: AccountComponent,
+    canActivate: [AuthService],
   }
 ];
 

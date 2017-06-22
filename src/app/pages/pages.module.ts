@@ -9,10 +9,11 @@ import { Pages } from './pages.component';
 import { EditorComponent } from '../editor/editor.component';
 import { EditRowDetailComponent } from '../edit-row-detail/edit-row-detail.component';
 import { EditGridDetailComponent } from '../edit-grid-detail/edit-grid-detail.component';
+import { AccountComponent } from '../account/account.component';
 
 @NgModule({
   imports: [CommonModule, AppTranslationModule, NgaModule, routing],
-  declarations: [Pages, EditorComponent, EditRowDetailComponent, EditGridDetailComponent],
+  declarations: [Pages, EditorComponent, EditRowDetailComponent, EditGridDetailComponent, AccountComponent],
   providers: [AuthService],
 })
 export class PagesModule {
