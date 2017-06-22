@@ -1,0 +1,43 @@
+@import '../theme/sass/conf/conf.scss';
+
+.container{
+  padding: 0em;
+}
+
+.detail-header{
+  padding: 2em 0em 2em 1em
+}
+
+.input-section{
+  width: 25em;
+}
+
+.current-account-details{
+  padding: 2em 0 2em 0;
+  text-align: center;
+}
+
+.billing-choice{
+  padding: 2em 0 2em 11em;
+}
+
+.space-break{
+  padding-top: 2em;
+}
+
+.upgrade-account{
+  padding: 2em 0 3em 0;
+  text-align: center;
+}
+
+input.upgrade-account-button{
+  display: block;
+  margin: 0 auto;
+  width: 33%;
+}
+
+input.save-settings-button{
+  display: block;
+  margin: 0 auto;
+  width: 20em;
+}
