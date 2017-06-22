@@ -1,0 +1,36 @@
+@import '../theme/sass/conf/conf.scss';
+
+.container{
+  padding: 0em;
+}
+
+.detail-header{
+  padding: 2em 0em 2em 1em
+}
+
+.jumbotron{
+  padding: 4em 6em 4em 6em;
+  position: relative;
+}
+
+.submit-button-section{
+  position: relative;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.submit-button{
+  position: relative;
+  text-align: center;
+  display: block;
+}
+
+.user-image-section{
+  text-align: center;
+}
+
+.user-image{
+  width: 18em;
+  padding: 2em 0em 2em 0em;
+  text-align: center;
+}

@@ -1,3 +1,69 @@
-<p>
-  profile-detail works!
-</p>
+<div class="container clearfix">
+  <div class="row commence-content">
+    <div class="detail-header">
+      <h2>Profile</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="jumbotron">
+        <form>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input class="form-control" type="text" name="firstName" value="" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input class="form-control" type="text" name="lastName" value="" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="website">Website</label>
+            <input class="form-control" type="text" name="website" value="" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input class="form-control" type="text" name="company" value="" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="Phone #">Phone #</label>
+            <input class="form-control" type="text" name="Phone #" value="" placeholder="">
+          </div>
+          <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+              <div class="form-group submit-button-section">
+                <input class="clearfix form-control submit-button" type="button" name="name" value="Save Profile">
+              </div>
+            </div>
+            <div class="col-3">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="jumbotron">
+        <div class="user-image-section">
+          <img class="user-image"src={{userImageUrl}} alt="profile picture"/>
+        </div>
+        <form>
+          <div class="form-group image-input">
+            <input class="form-control" type="text" name="imageLocation" value="">
+          </div>
+          <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+              <div class="form-group submit-button-section">
+                <input class="clearfix form-control submit-button" type="button" name="name" value="Save Profile">
+              </div>
+            </div>
+            <div class="col-3">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
