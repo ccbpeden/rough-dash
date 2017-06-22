@@ -1,3 +1,120 @@
-<p>
-  account works!
-</p>
+<ba-page-top></ba-page-top>
+<div class="row commence-content">
+  <div class="sidebar" [class]="checkCollapse()">
+    <!-- ngfor directive here for each association -->
+    <div class="row dropdown">
+      <div class="menu-item" data-toggle="collapse" data-target=#collapse1>
+        <i class="ion ion-ios-world-outline"></i><span class="menu-label">Profile</span>
+      </div>
+      <div class="menu-caret">
+        <i class="fa fa-angle-down fa-2x" ></i>
+      </div>
+      <div class="collapse" id="collapse1">
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Another Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">A Third Item</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="row dropdown">
+      <div class="menu-item" data-toggle="collapse" data-target=#collapse2>
+        <i class="ion ion-ios-world-outline"></i><span class="menu-label">Email</span>
+      </div>
+      <div class="menu-caret">
+        <i class="fa fa-angle-down fa-2x" ></i>
+      </div>
+      <div class="collapse" id="collapse2">
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Another Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">A Third Item</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="row dropdown">
+      <div class="menu-item" data-toggle="collapse" data-target=#collapse3>
+        <i class="ion ion-ios-world-outline"></i><span class="menu-label">Password</span>
+      </div>
+      <div class="menu-caret">
+        <i class="fa fa-angle-down fa-2x" ></i>
+      </div>
+      <div class="collapse" id="collapse3">
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Another Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">A Third Item</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="row dropdown">
+      <div class="menu-item" data-toggle="collapse" data-target=#collapse4>
+        <i class="ion ion-ios-world-outline"></i><span class="menu-label">Billing</span>
+      </div>
+      <div class="menu-caret">
+        <i class="fa fa-angle-down fa-2x" ></i>
+      </div>
+      <div class="collapse" id="collapse4">
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Another Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">A Third Item</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="row dropdown">
+      <div class="menu-item" data-toggle="collapse" data-target=#collapse5>
+        <i class="ion ion-ios-world-outline"></i><span class="menu-label">Invoices</span>
+      </div>
+      <div class="menu-caret">
+        <i class="fa fa-angle-down fa-2x"></i>
+      </div>
+      <div class="collapse" id="collapse5">
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Another Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">A Third Item</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="row dropdown">
+      <div class="menu-item" data-toggle="collapse" data-target=#collapse6>
+        <i class="ion ion-ios-world-outline"></i><span class="menu-label">Logout</span>
+      </div>
+      <div class="menu-caret">
+        <i class="fa fa-angle-down fa-2x"></i>
+      </div>
+      <div class="collapse" id="collapse6">
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">Another Item</a><br>
+        </div>
+        <div class="sub-menu-item">
+          <a class="sub-menu-item" href="#">A Third Item</a><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

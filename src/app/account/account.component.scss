@@ -1,0 +1,82 @@
+@import '../theme/sass/conf/conf.scss';
+
+.commence-content{
+  padding-top: 4.8em;
+}
+
+.sidebar{
+  width: 25%;
+  background-color: $sidebar;
+  padding-left: 1em;
+  height: 100vh;
+}
+
+.sidebar-collapsed{
+  background-color: $sidebar;
+  padding-left: 1em;
+  width: 5em;
+  overflow: hidden;
+  .menu-label, .fa {
+    display: none;
+  }
+}
+
+.collapse{
+  padding-left: 3.5em;
+  a{
+    padding-top: 1em;
+  }
+}
+
+.menu-item{
+  width: 75%;
+  padding-top: 1em;
+  padding-right: 0em;
+  padding-left: 1em;
+}
+
+.sub-menu-item{
+  padding-top: 1em;
+}
+
+.menu-label{
+  padding-left: 1em;
+  font-size: 1em;
+  vertical-align: middle;
+  color: $legris;
+}
+
+.menu-caret{
+  width: 25%;
+  padding-left: 0em;
+  padding-right: 3em;
+  padding-top: 1em;
+  text-align: right;
+}
+
+.dropdown{
+  position: relative;
+}
+.dropdown-menu{
+  background-color: $primary;
+  color: $legris;
+}
+
+.dropdown-text{
+  color: $legris;
+}
+
+.ion{
+  font-size: 2rem;
+  color: $legris;
+  padding-left: .5em;
+  vertical-align: middle;
+}
+.fa{
+  color: $info;
+}
+
+.body-commence{
+  padding: 1em 0em 0em 0em;
+  margin-left: 2em;
+}
