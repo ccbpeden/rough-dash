@@ -1,0 +1,35 @@
+@import '../theme/sass/conf/conf.scss';
+
+.container{
+  padding-top: 0em;
+}
+
+.detail-header{
+  padding: 2em 0em 1em 1em;
+}
+
+.table{
+  color: $legris;
+  width: 90%;
+  text-align: center;
+}
+
+.invoice{
+  text-align: center;
+  width: 45%;
+}
+
+.status{
+  text-align: center;
+  width: 15%;
+}
+
+.date{
+  text-align: center;
+  width: 15%;
+}
+
+.amount{
+  text-align: center;
+  width: 15%;
+}
