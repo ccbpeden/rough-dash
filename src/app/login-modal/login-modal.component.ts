@@ -16,19 +16,16 @@ export class LoginModalComponent implements OnInit {
   }
   login(email, password) {
     this.authService.loginWithEmail(email, password).then((data) => {
-      this.router.navigate(['pages']);
       this.activeModal.close();
     })
   }
   googleLogin(){
     this.authService.loginWithGoogle().then((data) => {
-      this.router.navigate(['pages']);
       this.activeModal.close();
     })
   }
   facebookLogin(){
     this.authService.loginWithFacebook().then((data) => {
-      this.router.navigate(['pages']);
       this.activeModal.close();
     })
   }
