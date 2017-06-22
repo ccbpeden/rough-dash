@@ -7,15 +7,14 @@
 .sidebar{
   width: 20%;
   background-color: $sidebar;
-  padding-left: 1em;
   height: 100vh;
 }
 
 .sidebar-collapsed{
   background-color: $sidebar;
-  padding-left: 1em;
   width: 5em;
   overflow: hidden;
+  height: 100vh;
   .menu-label, .fa {
     display: none;
   }
