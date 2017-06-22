@@ -1,0 +1,25 @@
+@import '../theme/sass/conf/conf.scss';
+
+.container{
+  padding: 0em;
+}
+
+.detail-header{
+  padding: 2em 0em 2em 1em;
+}
+
+.space-break{
+  padding-top: 5em;
+}
+
+.jumbotron{
+  margin-left: 1em;
+  width: 60em;
+  padding: 8em;
+}
+
+input.save-settings{
+  display: block;
+  margin: 0 auto;
+  width: 20em;
+}
