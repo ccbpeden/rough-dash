@@ -1,20 +1,25 @@
 @import '../theme/sass/conf/conf.scss';
 
+.right-side-buttons{
+  text-align: right;
+}
+
 .commence-content{
-  padding-top: 4.8em;
+  padding-top: 6em;
 }
 
 .sidebar{
-  width: 20%;
   background-color: $sidebar;
+  padding: 3.2em 0 0 1em;
+  width: $sidebar-width;
   height: 100vh;
 }
 
 .sidebar-collapsed{
   background-color: $sidebar;
+  padding: 3.2em 0 0 1em;
   width: 5em;
   overflow: hidden;
-  height: 100vh;
   .menu-label, .fa {
     display: none;
   }
@@ -27,8 +32,9 @@
   }
 }
 
+
 .menu-item{
-  padding: 1em 0 1em 1em;
+  padding: 0.5em 0 0.5em .5em;
   &:hover {
     color: $danger !important;
     background-color: $sidebar-dark;

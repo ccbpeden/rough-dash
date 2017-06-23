@@ -5,18 +5,19 @@
 }
 
 .commence-content{
-  padding-top: 4.8em;
+  padding-top: 6em;
 }
 
 .sidebar{
   background-color: $sidebar;
-  padding-left: 1em;
+  padding: 2.9em 0 0 1em;
+  width: $sidebar-width;
   height: 100vh;
 }
 
 .sidebar-collapsed{
   background-color: $sidebar;
-  padding-left: 1em;
+  padding: 3.2em 0 0 1em;
   width: 5em;
   overflow: hidden;
   .menu-label, .fa {
@@ -33,21 +34,35 @@
 
 
 .menu-item{
-  padding: 1em 0 1em 1em;
+  padding: 0.5em 0 0.5em .5em;
   &:hover {
     color: $danger !important;
     background-color: $sidebar-dark;
   }
 }
+
 .sub-menu-item{
-  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 .menu-label{
-  padding-left: .5em;
+  padding-left: 1em;
   font-size: 1em;
   vertical-align: middle;
   color: $legris;
+}
+
+.menu-caret{
+  width: 25%;
+  padding-left: 0em;
+  padding-right: 3em;
+  padding-top: 1em;
+  text-align: right;
+}
+
+.dropdown{
+  position: relative;
+  margin: 0;
 }
 .dropdown-menu{
   background-color: $primary;
@@ -69,6 +84,7 @@
 }
 
 .body-commence{
+  width: 75%;
   padding: 1em 0em 0em 0em;
   margin-left: 2em;
 }
