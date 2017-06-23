@@ -60,4 +60,8 @@ export class BaPageTop {
       this.router.navigate(['login']);
     })
   }
+  public gotoAccount(){
+    console.log('hi you are going to the account page now');
+    this.router.navigate(['account']);
+  }
 }
