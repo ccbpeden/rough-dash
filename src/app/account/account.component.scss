@@ -28,10 +28,11 @@
 }
 
 .menu-item{
-  width: 75%;
-  padding-top: 1em;
-  padding-right: 0em;
-  padding-left: 1em;
+  padding: 1em 0 1em 1em;
+  &:hover {
+    color: $danger !important;
+    background-color: $sidebar-dark;
+  }
 }
 
 .sub-menu-item{

@@ -33,10 +33,14 @@
 
 
 .menu-item{
-  padding-top: 1em;
+  padding: 1em 0 1em 1em;
+  &:hover {
+    color: $danger !important;
+    background-color: $sidebar-dark;
+  }
 }
 .sub-menu-item{
-  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .menu-label{
