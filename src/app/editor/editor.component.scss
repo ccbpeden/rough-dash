@@ -1,6 +1,7 @@
 @import '../theme/sass/conf/conf.scss';
 
 .right-side-buttons{
+  padding: 4em 0 0 2em;
   text-align: right;
 }
 
@@ -83,6 +84,11 @@
   color: $info;
 }
 
-.body-commence{
-  padding: 1em 0em 0em 0em;
+.header{
+  padding: 4em 0 0 2em;
+}
+
+.detail-seperator{
+  width: 100%;
+  margin-left: 2em;
 }
