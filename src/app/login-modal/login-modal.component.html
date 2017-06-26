@@ -1,23 +1,25 @@
-<div class="modal-content">
-  <div class="modal-header">
-    <h4 class="modal-title">Please Log In</h4>
-  </div>
-  <div class="modal-body">
-    <h5>It appears your session has expired.</h5>
-      <input #email class="form-control" type="email" name="name" value="" placeholder="Email Address"><br>
-      <input #password class="form-control"type="password" name="name" value="" placeholder="Password"><br>
-      <button (click)="login(email.value, password.value)"class="form-control btn btn-danger" type="button" name="button">Log In</button>
-      <!-- <div class="help-login">
-        <a href="#">Forgot Password?</a><span>||</span>
-        <a href="#">First Time Here?</a>
-      </div> -->
-      <div class="auth-sep"><span><span translate>login from your favorite Apps!</span></span></div>
 
+<div id="login-modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="modal-header">
+        <h2>Access Your TrueTour</h2>
+      </div>
+      <div class="login-section">
+        <input #email class="form-control login-inputs" type="email" name="name" value="" placeholder="Email Address"><br>
+        <input #password class="form-control login-inputs"type="password" name="name" value="" placeholder="Password"><br>
+        <button (click)="login(email.value, password.value)"class="form-control btn btn-danger login-inputs login-button" type="button" name="button">Log In</button>
+      </div>
+      <div class="help-login">
+        <a href="#">Forgot Password? </a>
+      </div>
+      <div class="auth-sep"><span translate>Or log in from your favorite apps!</span></div>
       <div class="al-share-auth">
         <ul class="al-share clearfix">
           <li (click)="facebookLogin()"><i class="socicon socicon-facebook" title="login from Facebook"></i></li>
           <li (click)="googleLogin()"><i class="socicon socicon-google" title="login from Google"></i></li>
         </ul>
       </div>
+    </div>
   </div>
 </div>
