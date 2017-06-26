@@ -1,91 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import './app/theme/sass/conf/conf';
 
-body{
-  font-family: "Open Sans";
-}
-
-h4{
-  color: #9fa1a3;
-}
-
-h6{
-  color: #9fa1a3;
-}
-
-
-/* icon stylings */
-.fa{
-  padding-left: .5em;
-  padding-right: .5em;
-  color: #F0F3F4;
+.login-modal{
+  top: 100px;
 }
 
 .container{
   padding-top: 6em;
   margin-left: 3em;
   margin-right: 3em;
-}
-
-/* image stylings for home component */
-img.home-image{
-  padding-top: 3em;
-  position: relative;
-  display: block;
-  margin: auto;
-  width: 40%;
-}
-
-.home-blurb{
-  text-align: center;
-}
-
-/*editor component & subs*/
-.vertical-line-right{
-  /*also used in billing*/
-  border-right: thin solid #9fa1a3;
-}
-hr{
-  color: #9fa1a3;
-}
-
-
-
-/*billing component*/
-.numberCircle{
-  border-radius: 100%;
-
-  width: .4em;
-  height: .3em;
-  margin-left: 1em;
-  padding: .3em;
-
-  background: #fff;
-  border: 1px solid #9fa1a3;
-  color: #9fa1a3;
-  text-align: center;
-}
-
-.boxed{
-  border: thin solid #9fa1a3;
-}
-
-.bottom-wall{
-  border-bottom: thin solid #9fa1a3;
-}
-
-.acct-img{
-  width: 14em;
-  text-align: center;
-}
-
-.left-pad{
-  margin-left: 1em;
-}
-.top-pad{
-  margin-top: 2.5em;
-}
-
-.margin-1{
-  margin: .5em;
 }
