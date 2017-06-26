@@ -16,13 +16,6 @@ export class AccountComponent implements OnInit {
   public isMenuCollapsed:boolean = false;
 
   constructor(private router: Router, private route: ActivatedRoute, private authService: AuthService, private modalService: NgbModal, private _state:GlobalState,) {
-    // this.authService.user.subscribe(
-    //   (auth) => {
-    //     if(auth == null){
-    //       console.log('invoking login modal from account')
-    //       const activeModal = this.modalService.open(LoginModalComponent, {size: 'sm', backdrop: 'static', windowClass: 'login-modal'});
-    //     }
-    //   });
       this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
         this.isMenuCollapsed = isCollapsed;
         console.log(isCollapsed);
