@@ -1,5 +1,50 @@
 @import '../theme/sass/auth';
 
-.container-fluid{
+.logo-section{
+  margin-top: 75px;
+  display: block;
   text-align: center;
+  img{
+    padding-top: 3em;
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 225px;
+  }
+}
+
+.tagline-section{
+  margin: 20px 0 30px 0;
+  text-align: center;
+  h1{
+    color: black;
+  }
+  h6{
+    color: black;
+  }
+}
+
+
+.home-blurb{
+  text-align: center;
+}
+
+.login-section{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-inputs{
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  width: 263px;
+}
+
+.login-button{
+  margin: 15px 0 0 0;
+  height: 35px;
+}
+
+.third-party-logins{
+  margin: 20px 0 20px 0;
 }

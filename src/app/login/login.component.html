@@ -1,36 +1,35 @@
 <div class="header">
-  <img class="smaller-logo" src="/assets/images/logo-visiting-media-small.png">
+  <img class="smaller-logo" src="/assets/images/logo-visiting-media-small-white.png">
   <a class="support" href="help">SUPPORT</a>
 </div>
 <div class="container-fluid">
-  <div class="center-align">
-    <img class="home-image" src="/assets/images/square-light.png" alt="Visiting Media" />
-    <h4>Welcome to TrueTour &#8482;</h4>
+  <div class="logo-section">
+    <img src="/assets/images/square-light.png" alt="Visiting Media Logo"/>
+  </div>
+  <div class="tagline-section">
+    <h1>Welcome to TrueTour &#8482;</h1>
     <h6>Experience the power of a Single Profile Dashboard</h6>
-    <div class="row">
-      <div class="col-sm-4">
-
+  </div>
+  <div class="row">
+    <!-- <div class="col-sm-4"></div> -->
+    <div class="col-12 login-section">
+      <input #email class="form-control login-inputs" type="email" name="name" value="" placeholder="Email Address"><br>
+      <input #password class="form-control login-inputs"type="password" name="name" value="" placeholder="Password"><br>
+      <button (click)="login(email.value, password.value)"class="form-control btn btn-danger login-inputs login-button" type="button" name="button">Log In</button>
+      <div class="help-login">
+        <a href="#">Forgot Password? </a><span>|</span>
+        <a href="#">First Time Here?</a>
       </div>
-      <div class="col-sm-4">
-        <input #email class="form-control" type="email" name="name" value="" placeholder="Email Address"><br>
-        <input #password class="form-control"type="password" name="name" value="" placeholder="Password"><br>
-        <button (click)="login(email.value, password.value)"class="form-control btn btn-danger" type="button" name="button">Log In</button>
-        <div class="help-login">
-          <a href="#">Forgot Password?</a><span>||</span>
-          <a href="#">First Time Here?</a>
-        </div>
-        <div class="auth-sep"><span><span translate>login from your favorite Apps!</span></span></div>
-
-        <div class="al-share-auth">
-          <ul class="al-share clearfix">
-            <li (click)="facebookLogin()"><i class="socicon socicon-facebook" title="login from Facebook"></i></li>
-            <li (click)="googleLogin()"><i class="socicon socicon-google" title="login from Google"></i></li>
-          </ul>
-        </div>
+      <div class="third-party-logins">
+        <h6>Or log in using your favorite Apps!</h6>
       </div>
-      <div class="col-sm-4">
-
+      <div class="al-share-auth">
+        <ul class="al-share clearfix">
+          <li (click)="facebookLogin()"><i class="socicon socicon-facebook" title="login from Facebook"></i></li>
+          <li (click)="googleLogin()"><i class="socicon socicon-google" title="login from Google"></i></li>
+        </ul>
       </div>
-    </div>
+    <!-- </div>
+    <div class="col-sm-4"></div> -->
   </div>
 </div>
