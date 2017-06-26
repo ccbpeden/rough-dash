@@ -19,7 +19,7 @@ export class EditorComponent implements OnInit {
     this.authService.user.subscribe(
       (auth) => {
         if(auth == null){
-          const activeModal = this.modalService.open(LoginModalComponent, {size: 'sm', backdrop: 'static'});
+          const activeModal = this.modalService.open(LoginModalComponent, {size: 'sm', backdrop: 'static', windowClass: 'login-modal'});
         }
       });
       this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
