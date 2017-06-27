@@ -8,6 +8,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'pages',
+  styleUrls: ['./pages.scss'],
   template: `
     <ba-sidebar></ba-sidebar>
     <ba-page-top></ba-page-top>
