@@ -15,13 +15,7 @@ export class EditorComponent implements OnInit {
   viewAsList = true;
   viewAsGrid = false;
   public isMenuCollapsed:boolean = false;
-  constructor(private router: Router, private route: ActivatedRoute, private authService: AuthService, private modalService: NgbModal, private _state:GlobalState,) {
-    this.authService.user.subscribe(
-      (auth) => {
-        if(auth == null){
-          const activeModal = this.modalService.open(LoginModalComponent, {size: 'sm', backdrop: 'static', windowClass: 'login-modal'});
-        }
-      });
+  constructor(private router: Router, private route: ActivatedRoute, private _state:GlobalState,) {
       this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
         this.isMenuCollapsed = isCollapsed;
         console.log(isCollapsed);
