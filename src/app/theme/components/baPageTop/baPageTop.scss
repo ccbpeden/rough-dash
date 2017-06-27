@@ -37,6 +37,9 @@
     color: #F0F3F4;
     padding-top: .3em;
     color: $primary;
+    &:hover {
+      color: $info;
+    }
   }
 
   .topbar-right-icons{
