@@ -27,8 +27,14 @@ $angle-right: '\f101';
       padding-left: 52px;
       height: auto;
       line-height: 29px;
+      span {
+        padding-bottom: 5px;
+      }
       &:hover {
         color: $info;
+      }
+      i.ion-android-home {
+        font-size: 20px;
       }
     }
     &.selected:not(.with-sub-menu) > a {
@@ -39,7 +45,6 @@ $angle-right: '\f101';
         color: $danger-light;
       }
     }
-
   }
 }
 
@@ -59,7 +64,7 @@ $angle-right: '\f101';
   .al-sidebar-list {
     margin: 0;
     overflow: hidden;
-    padding: 18px 0 0 0;
+    padding: 40px 0 0 0;
     list-style: none;
   }
 
@@ -115,7 +120,7 @@ $angle-right: '\f101';
     height: 42px;
     padding-left: 18px;
     text-shadow: none;
-    font-size: 13px;
+    font-size: 14px;
     text-decoration: none;
     color: $sidebar-text;
     line-height: 42px;
@@ -123,12 +128,15 @@ $angle-right: '\f101';
     overflow: hidden;
     cursor: pointer;
     &:hover {
-      color: $info;
+      color: $danger;
       b {
-        color: $info;
+        color: $danger;
       }
     }
     i {
+      // margin-top: 10px;
+      font-size: 26px;
+      font-weight: $font-bold;
       margin-right: 18px;
       width: 16px;
       display: inline-block;
