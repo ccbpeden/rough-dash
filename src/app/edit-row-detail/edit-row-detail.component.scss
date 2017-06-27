@@ -2,6 +2,10 @@
 
 .container{
   padding: 0em;
+  hr {
+    margin-left: -1em;
+    margin-right: 1em;
+  }
 }
 
 .edit-detail-section{
@@ -19,28 +23,37 @@
   color: $info;
   display: inline-block;
   text-align: center;
-  .ion{
+  i {
     padding-top: .5em;
     font-size: 4.5em;
   }
 }
 
 .detail-center-column{
+  text-align: center;
   margin-top: 2em;
-  .ion{
+  i {
     padding-left: 1em;
     font-size: 2em;
+  }
+  hr {
+    margin-left: 1em;
   }
 }
 
 .detail-right-column{
+  display: inline;
   margin-top: .9em;
   .dashboard-button{
-    position: absolute;
-    transform: translateY(50%);
-    text-align: right;
-    padding: 0em, 2em, 0em, 2em;
+    margin-top: .8em;
+    position: relative;
+    // transform: translateY(50%);
+    text-align: center;
+    // padding: 0em, 2em, 0em, 2em;
     color: $danger;
     font-size: 3em;
+    i {
+      // padding: 0 2em 0 2em;
+    }
   }
 }
