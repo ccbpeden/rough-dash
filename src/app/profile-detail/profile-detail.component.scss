@@ -5,16 +5,12 @@
 }
 
 .detail-header{
-  padding: 2.5em 0em 2em .5em;
+  padding: 2.5em 0em 2em 0em;
 }
 
 .jumbotron{
   padding: 4em 6em 4em 6em;
   position: relative;
-}
-
-.col-lg-7{
-  padding-left: 7px;
 }
 
 .submit-button-section{
@@ -37,4 +33,14 @@
   width: 100%;
   padding: 2em 0em 2em 0em;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .detail-header {
+    padding: 1em 0em 1em 0em;
+  }
+  .jumbotron {
+    padding: 1em 1em .5em 1em;
+    position: relative;
+  }
 }
