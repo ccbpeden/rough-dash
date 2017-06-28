@@ -22,11 +22,19 @@ export class EditorComponent implements OnInit {
       });
    }
 
-   checkCollapse(){
+   checkSidebarCollapse(){
      if (this.isMenuCollapsed){
        return "sidebar-collapsed";
      } else {
        return "sidebar";
+     }
+   }
+
+   checkDetailCollapse(){
+     if (this.isMenuCollapsed){
+       return "col detail-section-collapsed";
+     } else {
+       return "col detail-section";
      }
    }
 

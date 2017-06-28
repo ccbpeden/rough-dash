@@ -14,6 +14,10 @@
   margin-left: $sidebar-width;
 }
 
+.detail-section-collapsed {
+  margin-left: 0em;
+}
+
 
 
 .sidebar-collapsed {
@@ -83,18 +87,12 @@
 }
 .dropdown-menu{
   background-color: $primary;
-  // color: $legris;
-}
-
-.dropdown-text{
-  // color: $legris;
 }
 
 .ion{
   font-size: 2rem;
   color: $legris;
   padding-left: .5em;
-  // vertical-align: middle;
 }
 .fa{
   color: $info;
