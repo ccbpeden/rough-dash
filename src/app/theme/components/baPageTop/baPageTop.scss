@@ -247,6 +247,12 @@
   }
 
   @media (max-width: $resXXS) {
+    .page-top {
+      padding-left: 10px;
+      img.smaller-logo{
+        height: 1.25em;
+      }
+    }
     .user-profile {
       min-width: 136px;
     }
@@ -254,11 +260,13 @@
       margin-right: 10px;
     }
     a.collapse-menu-link {
-      margin-left: 10px;
+      display: none;
     }
-
     .al-skin-dropdown {
       display: none;
+    }
+    .ion{
+      padding: .3em .25em 0em .25em;
     }
   }
 
