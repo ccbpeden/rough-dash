@@ -38,11 +38,21 @@
 input.upgrade-account-button{
   display: block;
   margin: 0 auto;
-  width: 150px;
+  width: 15em;
 }
 
 input.save-settings-button{
   display: block;
   margin: 0 auto;
-  width: 20em;
+  width: 15em;
+}
+
+@media (max-width: 600px) {
+  .detail-header {
+    padding: 1em 0em 1em 0em;
+  }
+  .jumbotron {
+    padding: 1em 1em .5em 1em;
+    position: relative;
+  }
 }
