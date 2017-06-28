@@ -1,10 +1,10 @@
 @import '../theme/sass/auth';
 
-.logo-section{
+.logo-section {
   margin-top: 75px;
   display: block;
   text-align: center;
-  img{
+  img {
     padding-top: 3em;
     position: relative;
     display: block;
@@ -13,38 +13,47 @@
   }
 }
 
-.tagline-section{
+.tagline-section {
   margin: 20px 0 30px 0;
   text-align: center;
-  h1{
+  h1 {
     color: black;
   }
-  h6{
+  h6 {
     color: black;
   }
 }
 
 
-.home-blurb{
+.home-blurb {
   text-align: center;
 }
 
-.login-section{
+.login-section {
   margin: 0 auto;
   text-align: center;
 }
 
-.login-inputs{
+.login-inputs {
   margin: 5px 0 5px 0;
   display: inline-block;
   width: 263px;
 }
 
-.login-button{
+.login-button {
   margin: 15px 0 0 0;
   height: 35px;
 }
 
-.third-party-logins{
+.third-party-logins {
   margin: 20px 0 20px 0;
+}
+
+@media (max-width: 600px) {
+  .logo-section {
+    margin-top: 0;
+    img {
+      padding-top: 1em;
+    }
+  }
 }
