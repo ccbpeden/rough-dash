@@ -9,6 +9,7 @@
 }
 
 .sidebar{
+  position: fixed;
   background-color: $sidebar;
   padding: 3.2em 0 0 1em;
   width: $sidebar-width;
@@ -16,6 +17,8 @@
 }
 
 .sidebar-collapsed{
+  position: fixed;
+  height: 100vh;
   background-color: $sidebar;
   padding: 3.2em 0 0 1em;
   width: 6em;
@@ -83,7 +86,11 @@
 }
 
 .body-commence{
-  padding: 1em 0em 0em 0em;
+  margin: 1em 0em 0em $sidebar-width;
+}
+
+.body-commence-collapsed {
+  margin: 1em 0em 0em 6em;
 }
 
 @media (max-width: $resXS) {
@@ -94,5 +101,8 @@
     .menu-label, .fa {
       display: none;
     }
+  }
+  .body-commence {
+    margin: 0 0 0 3.5em;
   }
 }

@@ -1,6 +1,6 @@
 <ba-page-top></ba-page-top>
 <div class="row commence-content">
-  <div class="sidebar" [class]="checkCollapse()">
+  <div class="sidebar" [class]="checkSidebarCollapse()">
       <div class="menu-item">
         <a routerLink="profile"><i class="ion ion-ios-world-outline"></i><span class="menu-label">Profile</span></a>
       </div>
@@ -20,7 +20,7 @@
         <a (click)="logout()"><i class="ion ion-ios-world-outline"></i><span class="menu-label">Logout</span></a>
       </div>
   </div>
-  <div class="col col-sm-9 body-commence">
+  <div [class]="checkDetailCollapse()">
     <router-outlet></router-outlet>
   </div>
 <ba-back-top position="200"></ba-back-top>
