@@ -160,6 +160,7 @@ $angle-right: '\f101';
   }
 
   .slimScrollBar, .slimScrollRail {
+    display: none !important;
     border-radius: 0 !important;
     width: $sidebar-scroll-width !important;
     left: $sidebar-width - $sidebar-scroll-width;
