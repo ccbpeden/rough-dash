@@ -5,7 +5,7 @@
 }
 
 .detail-header{
-  padding: 2.5em 0em 2em .5em;
+  padding: 2.5em 0em 2em 0em;
 }
 
 .space-break{
@@ -13,13 +13,25 @@
 }
 
 .jumbotron{
-  margin-left: .5em;
-  width: 60em;
+  padding: 4em 6em 4em 6em;
   padding: 8em;
 }
 
 input.save-settings{
   display: block;
   margin: 0 auto;
-  width: 20em;
+  width: 15em;
+}
+
+@media (max-width: 600px) {
+  .detail-header {
+    padding: 1em 0em 1em 0em;
+  }
+  .email-data {
+    padding-right: 0em;
+  }
+  .jumbotron {
+    padding: 1em 1em .5em 1em;
+    position: relative;
+  }
 }
