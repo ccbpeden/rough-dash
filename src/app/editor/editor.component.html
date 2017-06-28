@@ -2,7 +2,7 @@
 <!-- <div class="container"> -->
 
   <div class="row commence-content">
-    <div class="sidebar" [class]="checkCollapse()">
+    <div class="sidebar" [class]="checkSidebarCollapse()">
       <!-- ngfor directive here for each association -->
       <div class="dropdown">
         <div class="menu-item" data-toggle="collapse" data-target=#collapse1>
@@ -53,7 +53,7 @@
         </div>
       </div>
     </div>
-    <div class="col detail-section">
+    <div class="col detail-section" [class]="checkDetailCollapse()">
       <div class="header">
         <h2>Manage TrueTours</h2>
       </div>
