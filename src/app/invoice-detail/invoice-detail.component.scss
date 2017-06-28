@@ -1,35 +1,45 @@
 @import '../theme/sass/conf/conf.scss';
 
-.container{
+.container {
   padding: 0em;
 }
 
-.detail-header{
-  padding: 2.5em 0em 1em 1em;
+.detail-header {
+  padding: 2.5em 0em 2em 0em;
 }
 
-.table{
+.table-responsive {
+  margin-right: 2em;
+}
+
+.table {
   color: $legris;
   width: 90%;
   text-align: center;
 }
 
-.invoice{
+.invoice {
   text-align: center;
   width: 45%;
 }
 
-.status{
+.status {
   text-align: center;
   width: 15%;
 }
 
-.date{
+.date {
   text-align: center;
   width: 15%;
 }
 
-.amount{
+.amount {
   text-align: center;
   width: 15%;
+}
+
+@media (max-width: 600px) {
+  .detail-header {
+    padding: 1em 0em 1em 0em;
+  }
 }
