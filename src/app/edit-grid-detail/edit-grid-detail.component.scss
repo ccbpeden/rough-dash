@@ -22,8 +22,12 @@
   background-color: $sidebar;
   color: $info;
   font-size: 6em;
-  .ion{
-    padding-top: .5em;
+  img {
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+    display: inline-block;
+    width: 1.5em;
   }
 }
 
