@@ -1,21 +1,17 @@
 @import '../theme/sass/conf/conf.scss';
 
-.container{
-  padding: 0em;
-  hr {
-    margin-left: -1em;
-    margin-right: 1em;
-  }
+.edit-detail-section{
+  margin-left: 2em;
 }
 
-.edit-detail-section{
-  height: 10em;
+.end-detail{
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 
 .tour-title{
-  margin-top: .5em;
-  font-size: 1.3em;
+  margin-left: .75em;
 }
 
 .detail-left-column{
@@ -23,9 +19,12 @@
   color: $info;
   display: inline-block;
   text-align: center;
-  i {
-    padding-top: .5em;
-    font-size: 4.5em;
+  img {
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+    display: inline-block;
+    width: 4.5em;
   }
 }
 
