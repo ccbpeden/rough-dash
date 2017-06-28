@@ -1,5 +1,8 @@
 @import '../theme/sass/conf/conf.scss';
 
+.commence-content {
+  margin: 0 1em 0 .8em;
+}
 
 .detail-body{
   text-align: center;
@@ -60,5 +63,11 @@
       color: $danger-light;
       font-size: 1.25em;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .commence-content {
+    margin: 0 0em 0 0em;
   }
 }

@@ -6,8 +6,12 @@
   text-align: right;
 }
 
-.commence-content{
+.commence-content {
   padding-top: 6em;
+}
+
+.detail-section {
+  margin-left: $sidebar-width;
 }
 
 
@@ -17,12 +21,14 @@
   padding: 3.2em 0 0 1em;
   width: 6em;
   overflow: hidden;
+  height: 100vh;
   .menu-label, .fa {
     display: none;
   }
 }
 
 .sidebar{
+  position: fixed;
   background-color: $sidebar;
   padding: 2.9em 0 0 1em;
   width: $sidebar-width;
@@ -39,20 +45,27 @@
 
 .menu-item{
   padding: 0.5em 0 0.25em .5em;
-  &:hover {
-    color: $danger !important;
-    background-color: $sidebar-dark;
+  i, .menu-label {
+    &:hover {
+      color: $danger !important;
+    }
   }
 }
 
 .sub-menu-item{
   padding-top: 1em;
+  &:hover {
+    color: $danger !important;
+  }
 }
 
 .menu-label{
+  transform: translateY(-50%);
+  top: 50%;
+  position: relative;
   padding-left: 1em;
-  font-size: 1em;
-  vertical-align: middle;
+  display: inline-block;
+  font-size: .5em;
   color: $legris;
 }
 
@@ -70,18 +83,18 @@
 }
 .dropdown-menu{
   background-color: $primary;
-  color: $legris;
+  // color: $legris;
 }
 
 .dropdown-text{
-  color: $legris;
+  // color: $legris;
 }
 
 .ion{
   font-size: 2rem;
   color: $legris;
   padding-left: .5em;
-  vertical-align: middle;
+  // vertical-align: middle;
 }
 .fa{
   color: $info;
@@ -106,6 +119,10 @@
       display: none;
     }
   }
+  .detail-section {
+    margin-left: 6em;
+  }
+
   .header{
     padding-left: 0;
     h2{

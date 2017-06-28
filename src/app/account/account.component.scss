@@ -85,3 +85,14 @@
 .body-commence{
   padding: 1em 0em 0em 0em;
 }
+
+@media (max-width: $resXS) {
+  .sidebar {
+    padding: 3.2em 0 0 1em;
+    width: 6em;
+    overflow: hidden;
+    .menu-label, .fa {
+      display: none;
+    }
+  }
+}
