@@ -22,11 +22,19 @@ export class AccountComponent implements OnInit {
       });
    }
 
-   checkCollapse(){
+   checkSidebarCollapse(){
      if (this.isMenuCollapsed){
        return "sidebar-collapsed";
      } else {
        return "sidebar";
+     }
+   }
+
+   checkDetailCollapse(){
+     if (this.isMenuCollapsed){
+       return "col col-sm-9 body-commence-collapsed";
+     } else {
+       return "col col-sm-9 body-commence";
      }
    }
 
