@@ -28,34 +28,44 @@
   }
 }
 
-.collapse{
+.collapse {
   padding-left: 3.5em;
   a{
     padding-top: 1em;
   }
 }
 
-
-.menu-item{
-  padding: 0.5em 0 0.5em .5em;
-  &:hover {
-    i, .menu-label {
-      color: $danger !important;
-    }
-    background-color: $sidebar-dark;
-  }
-}
-
-.sub-menu-item{
-  padding-top: 1em;
-}
-
-.menu-label{
+.menu-label {
   padding-left: 1em;
   font-size: 1em;
   vertical-align: middle;
   color: $legris;
 }
+
+.menu-item {
+  padding: 0.5em 0 0.5em .5em;
+  &:hover {
+    i, .menu-label {
+      color: $primary !important;
+    }
+    background-color: $danger;
+  }
+}
+
+.selected-menu-item {
+  padding: 0.5em 0 0.5em .5em;
+  background-color: $danger;
+  .menu-label, .ion {
+    color: $primary;
+  }
+  &:hover {
+    i, .menu-label {
+      color: $primary !important;
+    }
+    background-color: $danger-dark;
+  }
+}
+
 
 .menu-caret{
   width: 25%;

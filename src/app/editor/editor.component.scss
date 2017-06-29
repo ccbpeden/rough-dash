@@ -70,9 +70,9 @@
   li {
     &:hover {
       i, .menu-label {
-        color: $danger !important;
+        color: $primary !important;
       }
-      background-color: $sidebar-dark;
+      background-color: $danger;
     }
     margin: 1em 0 1em 0;
   }
@@ -90,7 +90,7 @@
     li {
       padding: 1em 0 1em 1em;
       &:hover {
-        color: $danger !important;
+        color: $primary !important;
       }
     }
   }

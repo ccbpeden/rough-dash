@@ -31,7 +31,8 @@ $angle-right: '\f101';
         padding-bottom: 5px;
       }
       &:hover {
-        color: $info;
+        color: $primary;
+        background-color: $danger;
       }
       i.ion-android-home {
         font-size: 20px;
@@ -39,10 +40,10 @@ $angle-right: '\f101';
     }
     &.selected:not(.with-sub-menu) > a {
       border: none;
-      background-color: $info;
+      background-color: $danger;
       color: $primary;
       &:hover {
-        color: $danger-light;
+        color: $danger-dark;
       }
     }
   }
@@ -84,7 +85,7 @@ $angle-right: '\f101';
     float: none;
     padding: 0;
     &.selected:not(.with-sub-menu) {
-      background-color: $info;
+      background-color: $danger;
       a.al-sidebar-list-link {
         color: $primary;
         b {
@@ -128,7 +129,8 @@ $angle-right: '\f101';
     overflow: hidden;
     cursor: pointer;
     &:hover {
-      color: $danger;
+      background-color: $danger;
+      color: $primary;
       b {
         color: $danger;
       }

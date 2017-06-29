@@ -14,6 +14,7 @@ import { GlobalState } from '../global.state';
 export class AccountComponent implements OnInit {
 
   public isMenuCollapsed:boolean = false;
+  public selectedDetail = "profile";
 
   constructor(private router: Router, private route: ActivatedRoute, private authService: AuthService, private modalService: NgbModal, private _state:GlobalState,) {
       this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
@@ -43,5 +44,18 @@ export class AccountComponent implements OnInit {
    }
 
    ngOnInit() {
+   }
+
+   setSelectedDetail(detail){
+     this.selectedDetail = detail;
+     console.log(detail);
+   }
+
+   isSelectedDetail(detail){
+     if(this.selectedDetail === detail){
+       return "selected-menu-item";
+     } else {
+       return "menu-item";
+     }
    }
 }
