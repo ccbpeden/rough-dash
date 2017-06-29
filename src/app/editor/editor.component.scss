@@ -18,16 +18,21 @@
   margin-left: 0em;
 }
 
-
-
 .sidebar-collapsed {
   background-color: $sidebar;
   padding: 3.2em 0 0 1em;
-  width: 6em;
+  width: 5.5em;
   overflow: hidden;
   height: 100vh;
-  .menu-label, .fa {
+  .menu-label, .fa, {
     display: none;
+  }
+  .active {
+    ul {
+      li {
+        display: none;
+      }
+    }
   }
 }
 
@@ -37,6 +42,9 @@
   padding: 2.9em 0 0 1em;
   width: $sidebar-width;
   height: 100vh;
+  ul{
+      list-style: none;
+  }
 }
 
 .collapse{
@@ -57,21 +65,42 @@
   }
 }
 
-.sub-menu-item{
-  padding-top: 1em;
-  &:hover {
-    color: $danger !important;
-  }
-}
-
 .menu-label{
   transform: translateY(-50%);
   top: 50%;
   position: relative;
   padding-left: 1em;
   display: inline-block;
-  font-size: .5em;
+  font-size: 1.1em;
   color: $legris;
+}
+
+.menu-list {
+  cursor: pointer;
+  padding-left: .2em;
+  li {
+    &:hover {
+      i, .menu-label {
+        color: $danger !important;
+      }
+      background-color: $sidebar-dark;
+    }
+    margin: 1em 0 1em 0;
+  }
+}
+
+.active {
+  ul {
+    background-color: $sidebar;
+    list-style: none;
+    display: block !important;
+    li {
+      padding: 1em 0 1em 1em;
+      &:hover {
+        color: $danger !important;
+      }
+    }
+  }
 }
 
 .menu-caret{
@@ -80,14 +109,6 @@
   padding-right: 3em;
   padding-top: 1em;
   text-align: right;
-}
-
-.dropdown{
-  position: relative;
-  margin: 0;
-}
-.dropdown-menu{
-  background-color: $primary;
 }
 
 .ion{

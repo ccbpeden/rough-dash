@@ -12,6 +12,8 @@ import { GlobalState } from '../global.state';
   styleUrls: ['./editor.component.scss']
 })
 export class EditorComponent implements OnInit {
+  menuList:any;
+  selected:any;
   viewAsList = true;
   viewAsGrid = false;
   public isMenuCollapsed:boolean = false;
@@ -20,6 +22,20 @@ export class EditorComponent implements OnInit {
         this.isMenuCollapsed = isCollapsed;
         console.log(isCollapsed);
       });
+    this.menuList = [
+      {
+        "name" : "Community Account 1",
+        "subMenu" : ["TrueTour1", "TrueTour2", "TrueTour3"]
+      },
+      {
+        "name" : "Community Account 2",
+        "subMenu" : ["TrueTour1", "TrueTour2", "TrueTour3"]
+      },
+      {
+        "name" : "Community Account 4",
+        "subMenu" : ["TrueTour1", "TrueTour2", "TrueTour3"]
+      },
+    ]
    }
 
    checkSidebarCollapse(){
@@ -36,6 +52,15 @@ export class EditorComponent implements OnInit {
      } else {
        return "col detail-section";
      }
+   }
+
+   select(item){
+     this.selected = (this.selected === item ? null : item);
+     this.isMenuCollapsed = false;
+   }
+
+   isActive(item){
+     return this.selected === item;
    }
 
   ngOnInit() {

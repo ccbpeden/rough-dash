@@ -3,55 +3,13 @@
 
   <div class="row commence-content">
     <div class="sidebar" [class]="checkSidebarCollapse()">
-      <!-- ngfor directive here for each association -->
-      <div class="dropdown">
-        <div class="menu-item" data-toggle="collapse" data-target=#collapse1>
-          <i class="ion ion-ios-world-outline"><p class="menu-label">Community Account</p></i>
-        </div>
-        <div class="collapse" id="collapse1">
-          <div class="sub-menu-item">
-            <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
-          </div>
-          <div class="sub-menu-item">
-            <a class="sub-menu-item" href="#">Another Item</a><br>
-          </div>
-          <div class="sub-menu-item">
-            <a class="sub-menu-item" href="#">A Third Item</a><br>
-          </div>
-        </div>
-      </div>
-      <div class="dropdown">
-        <div class="menu-item" data-toggle="collapse" data-target=#collapse2>
-          <i class="ion ion-ios-world-outline"><p class="menu-label">Community Account</p></i>
-        </div>
-        <div class="collapse" id="collapse2">
-          <div class="sub-menu-item">
-            <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
-          </div>
-          <div class="sub-menu-item">
-            <a class="sub-menu-item" href="#">Another Item</a><br>
-          </div>
-          <div class="sub-menu-item">
-            <a class="sub-menu-item" href="#">A Third Item</a><br>
-          </div>
-        </div>
-      </div>
-      <div class="dropdown">
-        <div class="menu-item" data-toggle="collapse" data-target=#collapse3>
-          <i class="ion ion-ios-world-outline"><p class="menu-label">Community Account</p></i>
-        </div>
-        <div class="collapse" id="collapse3">
-          <div class="sub-menu-item">
-            <a class="sub-menu-item" href="#">Dropdown Menu Item</a><br>
-          </div>
-          <div class="sub-menu-item">
-            <a class="sub-menu-item" href="#">Another Item</a><br>
-          </div>
-          <div class="sub-menu-item">
-            <a class="sub-menu-item" href="#">A Third Item</a><br>
-          </div>
-        </div>
-      </div>
+      <ul class="menu-list">
+        <li *ngFor="let menuItem of menuList" (click)="select(menuItem.name)" [ngClass]="{active: isActive(menuItem.name)}"> <i class="ion ion-ios-world-outline"></i><span class="menu-label">{{menuItem.name}}</span>
+          <ul style="display:none;">
+            <li *ngFor="let child of menuItem.subMenu">{{child}}</li>
+          </ul>
+        </li>
+      </ul>
     </div>
     <div class="col detail-section" [class]="checkDetailCollapse()">
       <div class="header">
