@@ -1,0 +1,233 @@
+{
+  "users": [
+    {
+    "uid": "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+    "email": "charles@pancakecreative.com",
+    "password": "pancake",
+    "accountLevel": "1",
+    },
+    {
+    "uid": "hjIFCtYqbmXD7Ovp9zBksdzPGMm1",
+    "email": "john@pancakecreative.com",
+    "password": "pancake",
+    "accountLevel": "1",
+    }
+  ],
+  "userProfile": [
+    {
+      "uid": "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "company": "Pancake Creative",
+      "avatarImageUrl" : "gs://visiting-media-dashboard-demo.appspot.com/11741066_10154105554607942_7484789988765273335_o.jpg",
+      "firstName" : "Charles",
+      "lastName" : "Peden",
+      "website" : "www.pancakecreative.com",
+      "phoneNumber" : "5037209334",
+    },
+    {
+      "uid": "hjIFCtYqbmXD7Ovp9zBksdzPGMm1",
+      "company": "Pancake Creative",
+      "avatarImageUrl" : "gs://visiting-media-dashboard-demo.appspot.com/11741066_10154105554607942_7484789988765273335_o.jpg",
+      "firstName" : "John",
+      "lastName" : "Buckingham",
+      "website" : "www.pancakecreative.com",
+      "phoneNumber" : "1234567890",
+    }
+  ],
+  "addresses":[
+    {
+      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "id" : "1",
+      "addressLineOne" : "1234 Somewhere Street",
+      "addressLineTwo" : "Apt. 34",
+      "city" : "Portland",
+      "state" : "OR",
+      "zip" : "97215",
+      "country" : "United States of America",
+    }
+  ],
+  "cardInfos":[
+    {
+      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "addressReferenceId" : "1",
+      "cardholderFirstName" : "Charles",
+      "cardholderMiddleInit" : "C",
+      "cardholderLastName" : "Peden",
+      "cardNumber" : "4400664912345678",
+      "cardExpiry" : "12/17",
+      "cardCCV" : "234",
+      "cardIdenifier" : "BusinessVisa"
+    }
+  ],
+  "partnerLists":[
+    {
+      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "displayMap" : "true",
+      "partners" : [
+        {
+          "partnerReferenceUid" : "hjIFCtYqbmXD7Ovp9zBksdzPGMm1"
+        }
+      ]
+    }
+  ],
+  "mapsDirections":[
+    {
+      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "zip" : "97215",
+      "physicalAddress" : "false",
+      "lat" : {
+        "actual" : "",
+        "default" : "",
+      },
+      "long" : {
+        "actual" : "",
+        "default" : "",
+      }
+    }
+  ],
+  "listingProfiles" : [
+    {
+      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "profileTitle" : "Charlie's Fancy Farm",
+      "profileStatus" : "1",
+      "profileDescription" : "Charming Pied A Terre on Mars",
+      "profileCategoryReference" : "1",
+      "tags" : "cake, justice, home",
+      "telephone" : "5037209334",
+      "email" : "charles@pancakecreative.com",
+      "website" : "www.pancakecreative.com",
+      "loadingPageLogo" : {
+        "url" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20161031115044/logo-1.png",
+        "title" : "loco",
+        "caption" : "de gustibus non est disputandem",
+        "altText" : "fortuna audens iuvat",
+        "description" : "suaviter et fortior",
+        "galleryLinkUrl" : "",
+        "galleryLinkTarget" : "1",
+        "galleryLinkOnClickEffect" : "1",
+      }
+    }
+  ],
+  "Categories" : [
+    {
+      "categoryId" : "1",
+      "categoryName" : "Shacks and Caves"
+    }
+  ],
+  "InfoLinks" : [
+    {
+      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "gPlusUrl" : "",
+      "facebookUrl" : "",
+      "twitterUrl" : "",
+      "instagramUrl" : "",
+      "pinterestUrl" : "",
+      "customLinks" : [
+        {
+          "link" : "",
+          "detailText" : "",
+          "linkable" : "true",
+        }
+      ],
+      "hours" : [
+        {
+          "Monday" : "Some Time",
+          "Tuesday" : "Not Likely",
+          "Wednesday" : "After Tea",
+          "Thursday" : "Before Siesta",
+          "Friday" : "Till Lunch",
+          "Saturday" : "Not a Chance",
+          "Sunday" : "Tis the Lord's Day"
+        }
+      ]
+    }
+  ],
+  "promoBanner" : [
+    {
+      "bannerUrl" : "",
+      "bannerType" : "Image",
+      "bannerTitle" : "American Beauty",
+      "bannerDesc" : "Like A Cement Hole",
+      "bannerImgUrl" : "",
+    }
+  ],
+  "menuControls" : [
+    {
+      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "menuLinks" : [
+        {
+          "iconStyle" : "ion-loop",
+          "newTab" : "false",
+          "title" : "360 Photos",
+          "menuItemURL" : "360-photos",
+          "enabled" : "true",
+          "order" : "1"
+        },
+        {
+          "iconStyle" : "ion-ios-recording-outline",
+          "newTab" : "false",
+          "title" : "Virtual Reality",
+          "menuItemURL" : "https://visitingmedia.com/vr-viewers/#viewer",
+          "enabled" : "true",
+          "order" : "2"
+        },
+        {
+          "iconStyle" : "ion-ios-camera-outline",
+          "newTab" : "false",
+          "title" : "Photo Gallery",
+          "menuItemURL" : "photo-gallery",
+          "enabled" : "true",
+          "order" : "3"
+        },
+        {
+          "iconStyle" : "ion-ios-film-outline",
+          "newTab" : "false",
+          "title" : "Video Gallery",
+          "menuItemURL" : "vid-gallery",
+          "enabled" : "true",
+          "order" : "4"
+        },
+        {
+          "iconStyle" : "ion-ios-people-outline",
+          "newTab" : "false",
+          "title" : "Partner List",
+          "menuItemURL" : "partners",
+          "enabled" : "true",
+          "order" : "5"
+        },
+        {
+          "iconStyle" : "ion-map",
+          "newTab" : "false",
+          "title" : "Map & Directions",
+          "menuItemURL" : "map-directions",
+          "enabled" : "true",
+          "order" : "6"
+        },
+        {
+          "iconStyle" : "ion-ios-information-outline",
+          "newTab" : "false",
+          "title" : "Information & Links",
+          "menuItemURL" : "info-links",
+          "enabled" : "true",
+          "order" : "7"
+        },
+        {
+          "iconStyle" : "ion-ios-star-outline",
+          "newTab" : "false",
+          "title" : "Promo Banner",
+          "menuItemURL" : "promo-banner",
+          "enabled" : "true",
+          "order" : "8"
+        }
+      ]
+    }
+  ],
+  "360Photos" :[
+    {
+      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "profileReferenceID" : "",
+      "groupName" : "Lovely Hut",
+      "sceneURL" : "https://360.visitingmedia.com/lumos-wine-company",
+      "sceneDescription" :"I remember you, in the mountains..."
+    }
+  ]
+}
