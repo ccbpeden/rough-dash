@@ -4,13 +4,13 @@
     "uid": "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
     "email": "charles@pancakecreative.com",
     "password": "pancake",
-    "accountLevel": "1",
+    "accountLevel": "1"
     },
     {
     "uid": "hjIFCtYqbmXD7Ovp9zBksdzPGMm1",
     "email": "john@pancakecreative.com",
     "password": "pancake",
-    "accountLevel": "1",
+    "accountLevel": "1"
     }
   ],
   "userProfile": [
@@ -21,7 +21,7 @@
       "firstName" : "Charles",
       "lastName" : "Peden",
       "website" : "www.pancakecreative.com",
-      "phoneNumber" : "5037209334",
+      "phoneNumber" : "5037209334"
     },
     {
       "uid": "hjIFCtYqbmXD7Ovp9zBksdzPGMm1",
@@ -30,19 +30,19 @@
       "firstName" : "John",
       "lastName" : "Buckingham",
       "website" : "www.pancakecreative.com",
-      "phoneNumber" : "1234567890",
+      "phoneNumber" : "1234567890"
     }
   ],
   "addresses":[
     {
       "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "id" : "1",
+      "profileReferenceID" : "0",
       "addressLineOne" : "1234 Somewhere Street",
       "addressLineTwo" : "Apt. 34",
       "city" : "Portland",
       "state" : "OR",
       "zip" : "97215",
-      "country" : "United States of America",
+      "country" : "United States of America"
     }
   ],
   "cardInfos":[
@@ -61,6 +61,7 @@
   "partnerLists":[
     {
       "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "profileReferenceID" : "0",
       "displayMap" : "true",
       "partners" : [
         {
@@ -72,21 +73,23 @@
   "mapsDirections":[
     {
       "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "profileReferenceID" : "0",
       "zip" : "97215",
       "physicalAddress" : "false",
       "lat" : {
         "actual" : "",
-        "default" : "",
+        "default" : ""
       },
       "long" : {
         "actual" : "",
-        "default" : "",
+        "default" : ""
       }
     }
   ],
   "listingProfiles" : [
     {
       "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "profileReferenceID" : "0",
       "profileTitle" : "Charlie's Fancy Farm",
       "profileStatus" : "1",
       "profileDescription" : "Charming Pied A Terre on Mars",
@@ -103,7 +106,7 @@
         "description" : "suaviter et fortior",
         "galleryLinkUrl" : "",
         "galleryLinkTarget" : "1",
-        "galleryLinkOnClickEffect" : "1",
+        "galleryLinkOnClickEffect" : "1"
       }
     }
   ],
@@ -116,6 +119,7 @@
   "InfoLinks" : [
     {
       "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "profileReferenceID" : "0",
       "gPlusUrl" : "",
       "facebookUrl" : "",
       "twitterUrl" : "",
@@ -125,7 +129,7 @@
         {
           "link" : "",
           "detailText" : "",
-          "linkable" : "true",
+          "linkable" : "true"
         }
       ],
       "hours" : [
@@ -143,16 +147,19 @@
   ],
   "promoBanner" : [
     {
+      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "profileReferenceID" : "0",
       "bannerUrl" : "",
       "bannerType" : "Image",
       "bannerTitle" : "American Beauty",
       "bannerDesc" : "Like A Cement Hole",
-      "bannerImgUrl" : "",
+      "bannerImgUrl" : ""
     }
   ],
   "menuControls" : [
     {
       "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "profileReferenceID" : "0",
       "menuLinks" : [
         {
           "iconStyle" : "ion-loop",
@@ -224,10 +231,57 @@
   "360Photos" :[
     {
       "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "profileReferenceID" : "",
+      "profileReferenceID" : "0",
       "groupName" : "Lovely Hut",
-      "sceneURL" : "https://360.visitingmedia.com/lumos-wine-company",
-      "sceneDescription" :"I remember you, in the mountains..."
+      "scenes" : [
+        {
+          "sceneURL" : "https://360.visitingmedia.com/lumos-wine-company",
+          "sceneDescription" :"I remember you, in the mountains...",
+          "sceneName" : "Some Name Here",
+          "sceneDefaultView" : "1"
+        },
+        {
+          "sceneURL" : "https://360.visitingmedia.com/airlie-winery",
+          "sceneDescription" :"Here are some grapes",
+          "sceneName" : "Some Other Name Here",
+          "sceneDefaultView" : "1"
+        }
+      ]
+    }
+  ],
+  "PhotoGalleries" : [
+    {
+      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "profileReferenceId" : "1",
+      "photoGalleryTitle" : "Look Ma, Some Pix!",
+      "images" : [
+        {
+          "imageURL" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20170117154013/The-Scottish-National-War-Memorial.jpg",
+          "imageTitle" : "Palazzo Crescentini",
+          "imageCaption" : "Just a little shade.",
+          "altText" : "und die Momerathes Ausgrabe",
+          "galleryLinkUrl" : "",
+          "galleryLinkTarget" : "1",
+          "galleryLinkOnClickEffect" : "1"
+        }
+      ]
+    }
+  ],
+  "VideoGalleries" : [
+    {
+      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
+      "profileReferenceId" : "1",
+      "VideoGalleryTitle" : "I made a vid!",
+      "videos" : [
+        {
+          "videoUrl" : "https://www.youtube.com/watch?v=p-EhvLwdD-4",
+          "videoThumbnail" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20160830144949/GOPR1237.jpg"
+        },
+        {
+          "videoUrl" : "https://youtu.be/oDsxw0uSfC0",
+          "videoThumbnail" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20150820204859/33600173-jinguo-ren.jpeg"
+        }
+      ]
     }
   ]
 }
