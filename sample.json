@@ -4,39 +4,38 @@
     "uid": "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
     "email": "charles@pancakecreative.com",
     "password": "pancake",
-    "accountLevel": "1"
+    "accountLevel": "1",
+    "company": "Pancake Creative",
+    "avatarImageUrl" : "gs://visiting-media-dashboard-demo.appspot.com/11741066_10154105554607942_7484789988765273335_o.jpg",
+    "firstName" : "Charles",
+    "lastName" : "Peden",
+    "website" : "www.pancakecreative.com",
+    "phoneNumber" : "5037209334",
+    "addressReferenceId" : "0"
     },
     {
     "uid": "hjIFCtYqbmXD7Ovp9zBksdzPGMm1",
     "email": "john@pancakecreative.com",
     "password": "pancake",
-    "accountLevel": "1"
+    "accountLevel": "1",
+    "company": "Pancake Creative",
+    "avatarImageUrl" : "gs://visiting-media-dashboard-demo.appspot.com/11741066_10154105554607942_7484789988765273335_o.jpg",
+    "firstName" : "John",
+    "lastName" : "Buckingham",
+    "website" : "www.pancakecreative.com",
+    "phoneNumber" : "1234567890",
+    "addressReferenceId" : "0"
     }
   ],
-  "userProfile": [
+  "trueTours" : [
     {
-      "uid": "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "company": "Pancake Creative",
-      "avatarImageUrl" : "gs://visiting-media-dashboard-demo.appspot.com/11741066_10154105554607942_7484789988765273335_o.jpg",
-      "firstName" : "Charles",
-      "lastName" : "Peden",
-      "website" : "www.pancakecreative.com",
-      "phoneNumber" : "5037209334"
-    },
-    {
-      "uid": "hjIFCtYqbmXD7Ovp9zBksdzPGMm1",
-      "company": "Pancake Creative",
-      "avatarImageUrl" : "gs://visiting-media-dashboard-demo.appspot.com/11741066_10154105554607942_7484789988765273335_o.jpg",
-      "firstName" : "John",
-      "lastName" : "Buckingham",
-      "website" : "www.pancakecreative.com",
-      "phoneNumber" : "1234567890"
+      "tourName" : "My Fancy Tour",
+      "referenceUserId": "0"
     }
   ],
   "addresses":[
     {
-      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "profileReferenceID" : "0",
+      "referenceUserId" : "0",
       "addressLineOne" : "1234 Somewhere Street",
       "addressLineTwo" : "Apt. 34",
       "city" : "Portland",
@@ -47,8 +46,8 @@
   ],
   "cardInfos":[
     {
-      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "addressReferenceId" : "1",
+      "referenceUserId" : "0",
+      "addressReferenceId" : "0",
       "cardholderFirstName" : "Charles",
       "cardholderMiddleInit" : "C",
       "cardholderLastName" : "Peden",
@@ -60,20 +59,18 @@
   ],
   "partnerLists":[
     {
-      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "profileReferenceID" : "0",
+      "tTReferenceID" : "0",
       "displayMap" : "true",
       "partners" : [
         {
-          "partnerReferenceUid" : "hjIFCtYqbmXD7Ovp9zBksdzPGMm1"
+          "partnerReferenceId" : "1"
         }
       ]
     }
   ],
   "mapsDirections":[
     {
-      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "profileReferenceID" : "0",
+      "tTReferenceID" : "0",
       "zip" : "97215",
       "physicalAddress" : "false",
       "lat" : {
@@ -86,10 +83,9 @@
       }
     }
   ],
-  "listingProfiles" : [
+  "Profiles" : [
     {
-      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "profileReferenceID" : "0",
+      "tTReferenceID" : "0",
       "profileTitle" : "Charlie's Fancy Farm",
       "profileStatus" : "1",
       "profileDescription" : "Charming Pied A Terre on Mars",
@@ -112,14 +108,15 @@
   ],
   "Categories" : [
     {
-      "categoryId" : "1",
       "categoryName" : "Shacks and Caves"
+    },
+    {
+      "categoryName" : "Huts and Holes"
     }
   ],
   "InfoLinks" : [
     {
-      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "profileReferenceID" : "0",
+      "tTReferenceID" : "0",
       "gPlusUrl" : "",
       "facebookUrl" : "",
       "twitterUrl" : "",
@@ -147,8 +144,7 @@
   ],
   "promoBanner" : [
     {
-      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "profileReferenceID" : "0",
+      "tTReferenceID" : "0",
       "bannerUrl" : "",
       "bannerType" : "Image",
       "bannerTitle" : "American Beauty",
@@ -158,8 +154,7 @@
   ],
   "menuControls" : [
     {
-      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "profileReferenceID" : "0",
+      "tTReferenceID" : "0",
       "menuLinks" : [
         {
           "iconStyle" : "ion-loop",
@@ -230,8 +225,7 @@
   ],
   "360Photos" :[
     {
-      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "profileReferenceID" : "0",
+      "tTReferenceID" : "0",
       "groupName" : "Lovely Hut",
       "scenes" : [
         {
@@ -251,8 +245,7 @@
   ],
   "PhotoGalleries" : [
     {
-      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "profileReferenceId" : "1",
+      "tTReferenceID" : "1",
       "photoGalleryTitle" : "Look Ma, Some Pix!",
       "images" : [
         {
@@ -269,8 +262,7 @@
   ],
   "VideoGalleries" : [
     {
-      "uid" : "Kc8k0Mo0jFT5RBYicU0XvHqgFH53",
-      "profileReferenceId" : "1",
+      "tTReferenceID" : "1",
       "VideoGalleryTitle" : "I made a vid!",
       "videos" : [
         {
