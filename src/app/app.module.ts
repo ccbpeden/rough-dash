@@ -20,6 +20,8 @@ import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { LoginComponent } from './login/login.component';
 import { LoginModalComponent } from './login-modal/login-modal.component';
+import { UserService } from './providers/user.service';
+
 
 
 
@@ -32,7 +34,10 @@ export const firebaseConfig = {
 
 const APP_PROVIDERS = [
   AppState,
-  GlobalState
+  GlobalState,
+  AuthService,
+  NgbActiveModal,
+  UserService,
 ];
 
 export type StoreType = {
@@ -63,7 +68,7 @@ export type StoreType = {
   ],
   bootstrap: [AppComponent],
   providers: [ // expose our Services and Providers into Angular's dependency injection
-    APP_PROVIDERS, AuthService, NgbActiveModal
+    APP_PROVIDERS
   ],
   entryComponents: [
     LoginModalComponent,
