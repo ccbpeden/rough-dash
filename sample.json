@@ -90,16 +90,14 @@
       "telephone" : "5037209334",
       "email" : "charles@pancakecreative.com",
       "website" : "www.pancakecreative.com",
-      "loadingPageLogo" : {
-        "url" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20161031115044/logo-1.png",
-        "title" : "loco",
-        "caption" : "de gustibus non est disputandem",
-        "altText" : "fortuna audens iuvat",
-        "description" : "suaviter et fortior",
-        "galleryLinkUrl" : "",
-        "galleryLinkTarget" : "1",
-        "galleryLinkOnClickEffect" : "1"
-      }
+      "loadingPageLogoUrl" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20161031115044/logo-1.png",
+      "loadingPageLogoTitle" : "loco",
+      "loadingPageLogoCaption" : "de gustibus non est disputandem",
+      "loadingPageLogoAltText" : "fortuna audens iuvat",
+      "loadingPageLogoDescription" : "suaviter et fortior",
+      "loadingPageLogoGalleryLinkUrl" : "",
+      "loadingPageLogoGalleryLinkTarget" : "1",
+      "loadingPageLogoGalleryLinkOnClickEffect" : "1"
     }
   ],
   "Categories" : [
@@ -125,17 +123,13 @@
           "linkable" : true
         }
       ],
-      "hours" : [
-        {
-          "Monday" : "Some Time",
-          "Tuesday" : "Not Likely",
-          "Wednesday" : "After Tea",
-          "Thursday" : "Before Siesta",
-          "Friday" : "Till Lunch",
-          "Saturday" : "Not a Chance",
-          "Sunday" : "Tis the Lord's Day"
-        }
-      ]
+      "Monday" : "Some Time",
+      "Tuesday" : "Not Likely",
+      "Wednesday" : "After Tea",
+      "Thursday" : "Before Siesta",
+      "Friday" : "Till Lunch",
+      "Saturday" : "Not a Chance",
+      "Sunday" : "Tis the Lord's Day"
     }
   ],
   "banners" : [
@@ -222,57 +216,61 @@
       "tTReferenceID" : "0"
     }
   ],
-  "360Photos" :[
+  "Galleries" : [
     {
-      "tTReferenceID" : "0",
-      "groupName" : "Lovely Hut",
-      "scenes" : [
-        {
-          "sceneURL" : "https://360.visitingmedia.com/lumos-wine-company",
-          "sceneDescription" :"I remember you, in the mountains...",
-          "sceneName" : "Some Name Here",
-          "sceneDefaultView" : "1"
-        },
-        {
-          "sceneURL" : "https://360.visitingmedia.com/airlie-winery",
-          "sceneDescription" :"Here are some grapes",
-          "sceneName" : "Some Other Name Here",
-          "sceneDefaultView" : "1"
-        }
-      ]
+      "galleryName": "Lovely Hut",
+      "tTReferenceID": "0",
+      "galleryType": "360"
+    },
+    {
+      "galleryName": "Look Ma, Some Pix!",
+      "tTReferenceID": "0",
+      "galleryType": "photo"
+    },
+    {
+      "galleryName": "I made a vid!",
+      "tTReferenceID": "0",
+      "galleryType": "video"
     }
   ],
-  "PhotoGalleries" : [
+  "360Photos" : [
     {
-      "tTReferenceID" : "1",
-      "photoGalleryTitle" : "Look Ma, Some Pix!",
-      "images" : [
-        {
-          "imageURL" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20170117154013/The-Scottish-National-War-Memorial.jpg",
-          "imageTitle" : "Palazzo Crescentini",
-          "imageCaption" : "Just a little shade.",
-          "altText" : "und die Momerathes Ausgrabe",
-          "galleryLinkUrl" : "",
-          "galleryLinkTarget" : "1",
-          "galleryLinkOnClickEffect" : "1"
-        }
-      ]
+      "sceneURL" : "https://360.visitingmedia.com/lumos-wine-company",
+      "sceneDescription" :"I remember you, in the mountains...",
+      "sceneName" : "Some Name Here",
+      "sceneDefaultView" : "1",
+      "galleryReferenceId" : "0"
+    },
+    {
+      "sceneURL" : "https://360.visitingmedia.com/airlie-winery",
+      "sceneDescription" :"Here are some grapes",
+      "sceneName" : "Some Other Name Here",
+      "sceneDefaultView" : "1",
+      "galleryReferenceId" : "0"
     }
   ],
-  "VideoGalleries" : [
+  "Photos" : [
     {
-      "tTReferenceID" : "1",
-      "VideoGalleryTitle" : "I made a vid!",
-      "videos" : [
-        {
-          "videoUrl" : "https://www.youtube.com/watch?v=p-EhvLwdD-4",
-          "videoThumbnail" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20160830144949/GOPR1237.jpg"
-        },
-        {
-          "videoUrl" : "https://youtu.be/oDsxw0uSfC0",
-          "videoThumbnail" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20150820204859/33600173-jinguo-ren.jpeg"
-        }
-      ]
+      "imageURL" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20170117154013/The-Scottish-National-War-Memorial.jpg",
+      "imageTitle" : "Palazzo Crescentini",
+      "imageCaption" : "Just a little shade.",
+      "altText" : "und die Momerathes Ausgrabe",
+      "galleryLinkUrl" : "",
+      "galleryLinkTarget" : "1",
+      "galleryLinkOnClickEffect" : "1",
+      "galleryReferenceId" : "1"
+    }
+  ],
+  "Videos" : [
+    {
+      "videoUrl" : "https://www.youtube.com/watch?v=p-EhvLwdD-4",
+      "videoThumbnail" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20160830144949/GOPR1237.jpg",
+      "galleryReferenceId" : "2"
+    },
+    {
+      "videoUrl" : "https://youtu.be/oDsxw0uSfC0",
+      "videoThumbnail" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20150820204859/33600173-jinguo-ren.jpeg",
+      "galleryReferenceId" : "2"
     }
   ]
 }
