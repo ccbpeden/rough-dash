@@ -73,14 +73,10 @@
       "tTReferenceID" : "0",
       "zip" : "97215",
       "physicalAddress" : "false",
-      "lat" : {
-        "actual" : "",
-        "default" : ""
-      },
-      "long" : {
-        "actual" : "",
-        "default" : ""
-      }
+      "actualLat" : "",
+      "defaultLat" : "",
+      "actualLong" : "",
+      "defaultLong" : ""
     }
   ],
   "Profiles" : [
