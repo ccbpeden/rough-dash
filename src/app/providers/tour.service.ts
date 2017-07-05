@@ -14,7 +14,7 @@ export class TourService {
     return this.trueTours;
   }
 
-  newTrueTour(user: User) {
+  newTrueTour(trueTour: Tour) {
     this.trueTours.push(user);
   }
 
