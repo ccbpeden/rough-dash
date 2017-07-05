@@ -2,7 +2,7 @@ export class PartnerList {
 
   tTReferenceID: string;
   displayMap: string;
-  partners: array;
+  partners: Object[];
 
   constructor(values: Object = {}) {
     Object.assign(this, values);

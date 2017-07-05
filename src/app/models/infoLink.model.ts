@@ -6,7 +6,7 @@ export class InfoLink {
   instagramUrl: string;
   gPlusUrl: string;
   facebookUrl: string;
-  customLinks: [];
+  customLinks: Object[];
   Friday: string;
   Monday: string;
   Saturday: string;
