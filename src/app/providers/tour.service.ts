@@ -3,14 +3,14 @@ import { Tour } from '../models/tour.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
-export class UserService {
+export class TourService {
   private trueTours: FirebaseListObservable<any[]>;
 
   constructor(private db: AngularFireDatabase) {
-    this.trueTours = db.list('trueTours');
+    this.trueTours = db.list('/trueTours');
   }
 
-  getUsers() {
+  getTours() {
     return this.trueTours;
   }
 
