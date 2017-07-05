@@ -3,7 +3,7 @@ import { threeSixtyPhoto } from '../models/360Photo.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
-export class threeSixtyPhotoService {
+export class ThreeSixtyPhotoService {
   private threeSixtyPhotos: FirebaseListObservable<any[]>;
 
   constructor(private db: AngularFireDatabase) {
