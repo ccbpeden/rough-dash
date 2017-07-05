@@ -7,7 +7,7 @@ export class UserService {
   private users: FirebaseListObservable<any[]>;
 
   constructor(private db: AngularFireDatabase) {
-    this.users = db.list('users');
+    this.users = db.list('/users');
   }
 
   getUsers() {
