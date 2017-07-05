@@ -1,4 +1,4 @@
-export class 360Photo {
+export class ThreeSixtyPhoto {
 
   galleryReferenceId: string;
   sceneDefaultView: string;
