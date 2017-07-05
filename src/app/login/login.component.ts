@@ -25,11 +25,11 @@ export class LoginComponent implements OnInit {
         if(user.length > 0){
           console.log(user);
           console.log("there is a user associated");
+          this.router.navigate(['pages']);
         } else {
           console.log("no user associated");
         }
       })
-      // this.router.navigate(['pages']);
     })
   }
   googleLogin(){
