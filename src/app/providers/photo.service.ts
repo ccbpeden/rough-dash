@@ -10,7 +10,7 @@ export class PhotoService {
     this.photos = db.list('/photos');
   }
 
-  getGalleries() {
+  getPhotos() {
     return this.photos;
   }
 
