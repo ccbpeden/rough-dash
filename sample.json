@@ -152,75 +152,78 @@
       "bannerImgUrl" : ""
     }
   ],
-  "menuControls" : [
+  "menuLinks" : [
     {
-      "tTReferenceID" : "0",
-      "menuLinks" : [
-        {
-          "iconStyle" : "ion-loop",
-          "newTab" : "false",
-          "title" : "360 Photos",
-          "menuItemURL" : "360-photos",
-          "enabled" : "true",
-          "order" : "1"
-        },
-        {
-          "iconStyle" : "ion-ios-recording-outline",
-          "newTab" : "false",
-          "title" : "Virtual Reality",
-          "menuItemURL" : "https://visitingmedia.com/vr-viewers/#viewer",
-          "enabled" : "true",
-          "order" : "2"
-        },
-        {
-          "iconStyle" : "ion-ios-camera-outline",
-          "newTab" : "false",
-          "title" : "Photo Gallery",
-          "menuItemURL" : "photo-gallery",
-          "enabled" : "true",
-          "order" : "3"
-        },
-        {
-          "iconStyle" : "ion-ios-film-outline",
-          "newTab" : "false",
-          "title" : "Video Gallery",
-          "menuItemURL" : "vid-gallery",
-          "enabled" : "true",
-          "order" : "4"
-        },
-        {
-          "iconStyle" : "ion-ios-people-outline",
-          "newTab" : "false",
-          "title" : "Partner List",
-          "menuItemURL" : "partners",
-          "enabled" : "true",
-          "order" : "5"
-        },
-        {
-          "iconStyle" : "ion-map",
-          "newTab" : "false",
-          "title" : "Map & Directions",
-          "menuItemURL" : "map-directions",
-          "enabled" : "true",
-          "order" : "6"
-        },
-        {
-          "iconStyle" : "ion-ios-information-outline",
-          "newTab" : "false",
-          "title" : "Information & Links",
-          "menuItemURL" : "info-links",
-          "enabled" : "true",
-          "order" : "7"
-        },
-        {
-          "iconStyle" : "ion-ios-star-outline",
-          "newTab" : "false",
-          "title" : "Promo Banner",
-          "menuItemURL" : "promo-banner",
-          "enabled" : "true",
-          "order" : "8"
-        }
-      ]
+      "iconStyle" : "ion-loop",
+      "newTab" : "false",
+      "title" : "360 Photos",
+      "menuItemURL" : "360-photos",
+      "enabled" : "true",
+      "order" : "1",
+      "tTReferenceID" : "0"
+    },
+    {
+      "iconStyle" : "ion-ios-recording-outline",
+      "newTab" : "false",
+      "title" : "Virtual Reality",
+      "menuItemURL" : "https://visitingmedia.com/vr-viewers/#viewer",
+      "enabled" : "true",
+      "order" : "2",
+      "tTReferenceID" : "0"
+    },
+    {
+      "iconStyle" : "ion-ios-camera-outline",
+      "newTab" : "false",
+      "title" : "Photo Gallery",
+      "menuItemURL" : "photo-gallery",
+      "enabled" : "true",
+      "order" : "3",
+      "tTReferenceID" : "0"
+    },
+    {
+      "iconStyle" : "ion-ios-film-outline",
+      "newTab" : "false",
+      "title" : "Video Gallery",
+      "menuItemURL" : "vid-gallery",
+      "enabled" : "true",
+      "order" : "4",
+      "tTReferenceID" : "0"
+    },
+    {
+      "iconStyle" : "ion-ios-people-outline",
+      "newTab" : "false",
+      "title" : "Partner List",
+      "menuItemURL" : "partners",
+      "enabled" : "true",
+      "order" : "5",
+      "tTReferenceID" : "0"
+    },
+    {
+      "iconStyle" : "ion-map",
+      "newTab" : "false",
+      "title" : "Map & Directions",
+      "menuItemURL" : "map-directions",
+      "enabled" : "true",
+      "order" : "6",
+      "tTReferenceID" : "0"
+    },
+    {
+      "iconStyle" : "ion-ios-information-outline",
+      "newTab" : "false",
+      "title" : "Information & Links",
+      "menuItemURL" : "info-links",
+      "enabled" : "true",
+      "order" : "7",
+      "tTReferenceID" : "0"
+    },
+    {
+      "iconStyle" : "ion-ios-star-outline",
+      "newTab" : "false",
+      "title" : "Promo Banner",
+      "menuItemURL" : "promo-banner",
+      "enabled" : "true",
+      "order" : "8",
+      "tTReferenceID" : "0"
     }
   ],
   "360Photos" :[
