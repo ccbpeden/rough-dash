@@ -20,7 +20,7 @@ import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { LoginComponent } from './login/login.component';
 import { LoginModalComponent } from './login-modal/login-modal.component';
-import { UserService } from './providers/user.service';
+
 
 
 
@@ -37,7 +37,6 @@ const APP_PROVIDERS = [
   GlobalState,
   AuthService,
   NgbActiveModal,
-  UserService,
 ];
 
 export type StoreType = {
