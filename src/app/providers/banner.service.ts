@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Banner } from '../models/promoBanner.model';
+import { Banner } from '../models/banner.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
