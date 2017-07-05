@@ -44,7 +44,7 @@
       "country" : "United States of America"
     }
   ],
-  "cardInfos":[
+  "cards":[
     {
       "referenceUserId" : "0",
       "addressReferenceId" : "0",
@@ -54,7 +54,7 @@
       "cardNumber" : "4400664912345678",
       "cardExpiry" : "12/17",
       "cardCCV" : "234",
-      "cardIdenifier" : "BusinessVisa"
+      "cardIdentifier" : "BusinessVisa"
     }
   ],
   "partnerLists":[
