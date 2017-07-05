@@ -60,7 +60,7 @@
   "partnerLists":[
     {
       "tTReferenceID" : "0",
-      "displayMap" : "true",
+      "displayMap" : true,
       "partners" : [
         {
           "partnerReferenceId" : "1"
@@ -68,11 +68,11 @@
       ]
     }
   ],
-  "mapsDirections":[
+  "maps":[
     {
       "tTReferenceID" : "0",
       "zip" : "97215",
-      "physicalAddress" : "false",
+      "physicalAddress" : false,
       "actualLat" : "",
       "defaultLat" : "",
       "actualLong" : "",
@@ -122,7 +122,7 @@
         {
           "link" : "",
           "detailText" : "",
-          "linkable" : "true"
+          "linkable" : true
         }
       ],
       "hours" : [
@@ -151,73 +151,73 @@
   "menuLinks" : [
     {
       "iconStyle" : "ion-loop",
-      "newTab" : "false",
+      "newTab" : false,
       "title" : "360 Photos",
       "menuItemURL" : "360-photos",
-      "enabled" : "true",
+      "enabled" : true,
       "order" : "1",
       "tTReferenceID" : "0"
     },
     {
       "iconStyle" : "ion-ios-recording-outline",
-      "newTab" : "false",
+      "newTab" : false,
       "title" : "Virtual Reality",
       "menuItemURL" : "https://visitingmedia.com/vr-viewers/#viewer",
-      "enabled" : "true",
+      "enabled" : true,
       "order" : "2",
       "tTReferenceID" : "0"
     },
     {
       "iconStyle" : "ion-ios-camera-outline",
-      "newTab" : "false",
+      "newTab" : false,
       "title" : "Photo Gallery",
       "menuItemURL" : "photo-gallery",
-      "enabled" : "true",
+      "enabled" : true,
       "order" : "3",
       "tTReferenceID" : "0"
     },
     {
       "iconStyle" : "ion-ios-film-outline",
-      "newTab" : "false",
+      "newTab" : false,
       "title" : "Video Gallery",
       "menuItemURL" : "vid-gallery",
-      "enabled" : "true",
+      "enabled" : true,
       "order" : "4",
       "tTReferenceID" : "0"
     },
     {
       "iconStyle" : "ion-ios-people-outline",
-      "newTab" : "false",
+      "newTab" : false,
       "title" : "Partner List",
       "menuItemURL" : "partners",
-      "enabled" : "true",
+      "enabled" : true,
       "order" : "5",
       "tTReferenceID" : "0"
     },
     {
       "iconStyle" : "ion-map",
-      "newTab" : "false",
+      "newTab" : false,
       "title" : "Map & Directions",
       "menuItemURL" : "map-directions",
-      "enabled" : "true",
+      "enabled" : true,
       "order" : "6",
       "tTReferenceID" : "0"
     },
     {
       "iconStyle" : "ion-ios-information-outline",
-      "newTab" : "false",
+      "newTab" : false,
       "title" : "Information & Links",
       "menuItemURL" : "info-links",
-      "enabled" : "true",
+      "enabled" : true,
       "order" : "7",
       "tTReferenceID" : "0"
     },
     {
       "iconStyle" : "ion-ios-star-outline",
-      "newTab" : "false",
+      "newTab" : false,
       "title" : "Promo Banner",
       "menuItemURL" : "promo-banner",
-      "enabled" : "true",
+      "enabled" : true,
       "order" : "8",
       "tTReferenceID" : "0"
     }
