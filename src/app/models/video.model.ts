@@ -1,4 +1,4 @@
-export class Banner {
+export class Video {
 
   galleryReferenceId: string;
   videoThumbnail: string;
