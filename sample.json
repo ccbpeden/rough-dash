@@ -79,7 +79,7 @@
       "defaultLong" : ""
     }
   ],
-  "Profiles" : [
+  "profiles" : [
     {
       "tTReferenceID" : "0",
       "profileTitle" : "Charlie's Fancy Farm",
@@ -100,7 +100,7 @@
       "loadingPageLogoGalleryLinkOnClickEffect" : "1"
     }
   ],
-  "Categories" : [
+  "categories" : [
     {
       "categoryName" : "Shacks and Caves"
     },
@@ -108,7 +108,7 @@
       "categoryName" : "Huts and Holes"
     }
   ],
-  "InfoLinks" : [
+  "infoLinks" : [
     {
       "tTReferenceID" : "0",
       "gPlusUrl" : "",
@@ -216,7 +216,7 @@
       "tTReferenceID" : "0"
     }
   ],
-  "Galleries" : [
+  "galleries" : [
     {
       "galleryName": "Lovely Hut",
       "tTReferenceID": "0",
@@ -249,7 +249,7 @@
       "galleryReferenceId" : "0"
     }
   ],
-  "Photos" : [
+  "photos" : [
     {
       "imageURL" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20170117154013/The-Scottish-National-War-Memorial.jpg",
       "imageTitle" : "Palazzo Crescentini",
@@ -261,7 +261,7 @@
       "galleryReferenceId" : "1"
     }
   ],
-  "Videos" : [
+  "videos" : [
     {
       "videoUrl" : "https://www.youtube.com/watch?v=p-EhvLwdD-4",
       "videoThumbnail" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20160830144949/GOPR1237.jpg",
