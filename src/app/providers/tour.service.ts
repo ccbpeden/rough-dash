@@ -15,7 +15,7 @@ export class TourService {
   }
 
   newTrueTour(trueTour: Tour) {
-    this.trueTours.push(user);
+    this.trueTours.push(trueTour);
   }
 
   getTrueTourByKey(key: string){
@@ -25,7 +25,7 @@ export class TourService {
   getTrueTourByUid(uid: string) {
     return this.db.list('/trueTours', {
       query: {
-        orderByChild: 'uid',
+        orderByChild: 'referenceUserId',
         equalTo: uid
       }
     })
