@@ -142,7 +142,7 @@
       ]
     }
   ],
-  "promoBanner" : [
+  "banners" : [
     {
       "tTReferenceID" : "0",
       "bannerUrl" : "",
