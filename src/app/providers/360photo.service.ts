@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { threeSixtyPhoto } from '../models/360Photo.model';
+import { ThreeSixtyPhoto } from '../models/360Photo.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
