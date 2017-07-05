@@ -3,7 +3,7 @@ import { InfoLink } from '../models/infoLink.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
-export class InfoLinkListService {
+export class InfoLinkService {
   private infoLinks: FirebaseListObservable<any[]>;
 
   constructor(private db: AngularFireDatabase) {
@@ -44,5 +44,5 @@ export class InfoLinkListService {
     let infoLinkInFirebase = this.getInfoLinkListByKey(key);
     infoLinkInFirebase.remove();
   }
-  
+
 }
