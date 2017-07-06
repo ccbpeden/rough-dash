@@ -9,7 +9,9 @@ export class User {
   website: string;
   phoneNumber: string;
   uid: string;
-  
+  invoicePref: boolean;
+  updatesPref: boolean;
+
   constructor(values: Object = {}) {
     Object.assign(this, values);
   }
