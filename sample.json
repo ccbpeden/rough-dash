@@ -6,12 +6,14 @@
     "password": "pancake",
     "accountLevel": "1",
     "company": "Pancake Creative",
-    "avatarImageUrl" : "gs://visiting-media-dashboard-demo.appspot.com/11741066_10154105554607942_7484789988765273335_o.jpg",
+    "avatarImageUrl" : "https://vignette1.wikia.nocookie.net/starwars/images/4/49/AbominableChewbacca-SWT.png/revision/latest?cb=20131107054306",
     "firstName" : "Charles",
     "lastName" : "Peden",
     "website" : "www.pancakecreative.com",
     "phoneNumber" : "5037209334",
-    "addressReferenceId" : "0"
+    "addressReferenceId" : "0",
+    "updatesPref" : false,
+    "invoicePref" : false
     },
     {
     "uid": "hjIFCtYqbmXD7Ovp9zBksdzPGMm1",
