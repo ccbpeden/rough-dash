@@ -20,10 +20,8 @@ export class LoginComponent implements OnInit {
   }
   login(email, password) {
     this.authService.loginWithEmail(email, password).then((data) => {
-      console.log(data.uid);
       this.userService.getUserByUid(data.uid).subscribe(user => {
         if(user.length > 0){
-          console.log(user);
           console.log("there is a user associated");
           this.router.navigate(['pages']);
         } else {
@@ -34,14 +32,13 @@ export class LoginComponent implements OnInit {
   }
   googleLogin(){
     this.authService.loginWithGoogle().then((data) => {
-      // console.log(data.user.uid);
     if(this.userService.getUserByUid(data.user.uid)){
       console.log("there is a user associated");
+      this.router.navigate(['pages']);
     } else {
       console.log("no user associated");
     }
     });
-      // this.router.navigate(['pages']);
   }
 
   facebookLogin(){
