@@ -5,6 +5,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 @Injectable()
 export class TourService {
   private trueTours: FirebaseListObservable<any[]>;
+  private currentTourKey;
 
   constructor(private db: AngularFireDatabase) {
     this.trueTours = db.list('/trueTours');
@@ -29,6 +30,10 @@ export class TourService {
         equalTo: uid
       }
     })
+  }
+
+  setCurrentTourKey(key) {
+    this.currentTourKey = key;
   }
 
   editTrueTour(key: string, values: Object = {}) {
