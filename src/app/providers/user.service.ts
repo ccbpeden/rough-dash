@@ -32,13 +32,7 @@ export class UserService {
   }
 
   editUser(key: string, values: Object = {}) {
-    let userInFirebase = this.getUserByKey(key);
-    if(!userInFirebase){
-      return null;
-    }
-    userInFirebase.update(key, {values});
-
-    return userInFirebase;
+    this.users.update(key, values);
   }
 
   deleteUser(key: string) {
