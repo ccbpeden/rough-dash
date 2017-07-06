@@ -1,24 +1,24 @@
 <ba-page-top></ba-page-top>
 <div class="row commence-content">
   <div class="sidebar" [class]="checkSidebarCollapse()">
-      <div (click)="setSelectedDetail('profile')" [class]="isSelectedDetail('profile')">
-        <a routerLink="profile"><i class="ion ion-ios-world-outline"></i><span class="menu-label">Profile</span></a>
-      </div>
-      <div (click)="setSelectedDetail('email')" [class]="isSelectedDetail('email')">
-        <a routerLink="email"><i class="ion ion-ios-world-outline"></i><span class="menu-label">Email</span></a>
-      </div>
-      <div (click)="setSelectedDetail('password')" [class]="isSelectedDetail('password')">
-        <a routerLink="password"><i class="ion ion-ios-world-outline"></i><span class="menu-label">Password</span></a>
-      </div>
-      <div (click)="setSelectedDetail('billing')" [class]="isSelectedDetail('billing')">
-        <a routerLink="billing"><i class="ion ion-ios-world-outline"></i><span class="menu-label">Billing</span></a>
-      </div>
-      <div (click)="setSelectedDetail('invoices')" [class]="isSelectedDetail('invoices')">
-        <a routerLink="invoice"><i class="ion ion-ios-world-outline"></i><span class="menu-label">Invoices</span></a>
-      </div>
-      <div class="menu-item">
-        <a (click)="logout()"><i class="ion ion-ios-world-outline"></i><span class="menu-label">Logout</span></a>
-      </div>
+    <div (click)="setSelectedDetail('profile')" [class]="isSelectedDetail('profile')">
+      <i class="ion ion-ios-world-outline"></i><span class="menu-label">Profile</span>
+    </div>
+    <div (click)="setSelectedDetail('email')" [class]="isSelectedDetail('email')">
+      <i class="ion ion-ios-world-outline"></i><span class="menu-label">Email</span>
+    </div>
+    <div (click)="setSelectedDetail('password')" [class]="isSelectedDetail('password')">
+      <i class="ion ion-ios-world-outline"></i><span class="menu-label">Password</span>
+    </div>
+    <div (click)="setSelectedDetail('billing')" [class]="isSelectedDetail('billing')">
+      <i class="ion ion-ios-world-outline"></i><span class="menu-label">Billing</span>
+    </div>
+    <div (click)="setSelectedDetail('invoices')" [class]="isSelectedDetail('invoices')">
+      <i class="ion ion-ios-world-outline"></i><span class="menu-label">Invoices</span>
+    </div>
+    <div class="menu-item">
+      <i class="ion ion-ios-world-outline"></i><span class="menu-label">Logout</span>
+    </div>
   </div>
   <div [class]="checkDetailCollapse()">
     <router-outlet></router-outlet>

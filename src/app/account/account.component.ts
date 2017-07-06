@@ -49,6 +49,7 @@ export class AccountComponent implements OnInit {
    setSelectedDetail(detail){
      this.selectedDetail = detail;
      console.log(detail);
+     this.router.navigate(['account/'+detail]);
    }
 
    isSelectedDetail(detail){
