@@ -32,6 +32,7 @@ export class UserService {
   }
 
   editUser(key: string, values: Object = {}) {
+    console.log("user service editUser activated");
     this.users.update(key, values);
   }
 
