@@ -7,18 +7,18 @@
       <div class="jumbotron">
         <div class="form-group">
           <label for="emailAddress">Email Address:</label>
-          <input class="form-control" type="password" name="emailAddress" value="">
+          <input #email class="form-control" type="email" name="emailAddress" value={{user?.email}}>
         </div>
         <div class="billing-choice">
           <div class="form-check">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="invoice">
+              <input #invoicePref class="form-check-input" type="checkbox" checked={{user?.invoicePref}}>
               Email me when my invoice is available
             </label>
           </div>
           <div class="form-check disabled">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="promotions">
+              <input #updatesPref class="form-check-input" type="checkbox" checked={{user?.updatesPref}}>
               Notify me of latest updates and promotions
             </label>
           </div>
@@ -27,7 +27,7 @@
           <div class="save-settings">
             <div class="form-group">
               <label for="saveSettings"></label>
-              <input class="form-control save-settings"type="button" name="name" value="Save Settings">
+              <button class="form-control save-settings" (click)="updateUser(email.value, invoicePref.checked, updatesPref.checked)">Save Settings</button>
             </div>
           </div>
         </div>
