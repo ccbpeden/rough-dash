@@ -5,37 +5,35 @@
   <div class="row">
     <div class="col-12 col-md-12 col-lg-7 profile-data">
       <div class="jumbotron">
-        <form>
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input #firstName class="form-control" type="text" name="firstName" value={{user?.firstName}}>
-          </div>
-          <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input #lastName class="form-control" type="text" name="lastName" value={{user?.lastName}}>
-          </div>
-          <div class="form-group">
-            <label for="website">Website</label>
-            <input #website class="form-control" type="text" name="website" value={{user?.website}}>
-          </div>
-          <div class="form-group">
-            <label for="company">Company</label>
-            <input #company class="form-control" type="text" name="company" value={{user?.company}}>
-          </div>
-          <div class="form-group">
-            <label for="Phone #">Phone #</label>
-            <input #phoneNumber class="form-control" type="text" name="Phone #" value={{user?.phoneNumber}}>
-          </div>
-          <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-              <div class="form-group submit-button-section">
-                <button class="clearfix form-control submit-button" (click)="updateUser(firstName.value, lastName.value, website.value, company.value, phoneNumber.value)">Save Profile</button>
-              </div>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input #firstName class="form-control" type="text" name="firstName" value={{user?.firstName}}>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input #lastName class="form-control" type="text" name="lastName" value={{user?.lastName}}>
+        </div>
+        <div class="form-group">
+          <label for="website">Website</label>
+          <input #website class="form-control" type="text" name="website" value={{user?.website}}>
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input #company class="form-control" type="text" name="company" value={{user?.company}}>
+        </div>
+        <div class="form-group">
+          <label for="Phone #">Phone #</label>
+          <input #phoneNumber class="form-control" type="text" name="Phone #" value={{user?.phoneNumber}}>
+        </div>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <div class="form-group submit-button-section">
+              <button class="clearfix form-control submit-button" (click)="updateUser(firstName.value, lastName.value, website.value, company.value, phoneNumber.value)">Save Profile</button>
             </div>
-            <div class="col-3"></div>
           </div>
-        </form>
+          <div class="col-3"></div>
+        </div>
       </div>
     </div>
     <div class="col-12 col-lg-5 profile-image">
