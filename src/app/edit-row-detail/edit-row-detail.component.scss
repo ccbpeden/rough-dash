@@ -11,7 +11,7 @@
 
 
 .tour-title{
-  margin-left: .75em;
+  margin: 0 0 2em .5em;
 }
 
 .detail-left-column{
@@ -25,12 +25,16 @@
     position: relative;
     display: inline-block;
     width: 4.5em;
+    margin: 0 1em 0 1em;
   }
 }
 
 .detail-center-column{
-  text-align: center;
-  margin-top: 2em;
+  text-align: left;
+  margin: 1.5em 0 1.5em 2em;
+  h3 {
+    margin-left: 1em;
+  }
   i {
     padding-left: 1em;
     font-size: 2em;
@@ -41,15 +45,14 @@
 }
 
 .detail-right-column{
-  display: inline;
   margin-top: .9em;
+  text-align: right;
   .dashboard-button{
     margin-top: .8em;
-    position: relative;
-    text-align: center;
     color: $danger;
     font-size: 3em;
     i {
+      padding: 0 .5em 0 .5em;
     }
   }
 }
