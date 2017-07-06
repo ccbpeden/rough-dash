@@ -11,6 +11,7 @@ import { BillingDetailComponent } from '../billing-detail/billing-detail.compone
 import { PasswordDetailComponent } from '../password-detail/password-detail.component';
 import { EmailDetailComponent } from '../email-detail/email-detail.component';
 import { ProfileDetailComponent } from '../profile-detail/profile-detail.component';
+import { LoginComponent } from '../login/login.component';
 // noinspection TypeScriptValidateTypes
 
 // export function loadChildren(path) { return System.import(path); };
@@ -54,6 +55,10 @@ export const routes: Routes = [
       { path: 'email', component: EmailDetailComponent },
       { path: 'profile', component: ProfileDetailComponent },
     ]
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 
