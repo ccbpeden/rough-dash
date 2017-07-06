@@ -47,7 +47,7 @@ export const routes: Routes = [
     component: AccountComponent,
     canActivate: [AuthService],
     children: [
-      { path: '', redirectTo: 'invoice', pathMatch: 'full'},
+      { path: '', redirectTo: 'profile', pathMatch: 'full'},
       { path: 'invoice', component: InvoiceDetailComponent },
       { path: 'billing', component: BillingDetailComponent },
       { path: 'password', component: PasswordDetailComponent },
