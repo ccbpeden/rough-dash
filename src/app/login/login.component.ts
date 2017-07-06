@@ -32,18 +32,27 @@ export class LoginComponent implements OnInit {
   }
   googleLogin(){
     this.authService.loginWithGoogle().then((data) => {
-    if(this.userService.getUserByUid(data.user.uid)){
-      console.log("there is a user associated");
-      this.router.navigate(['pages']);
-    } else {
-      console.log("no user associated");
-    }
-    });
+      this.userService.getUserByUid(data.uid).subscribe(user => {
+        if(user.length > 0){
+          console.log("there is a user associated");
+          this.router.navigate(['pages']);
+        } else {
+          console.log("no user associated");
+        }
+      })
+    })
   }
 
   facebookLogin(){
     this.authService.loginWithFacebook().then((data) => {
-      this.router.navigate(['pages']);
+      this.userService.getUserByUid(data.uid).subscribe(user => {
+        if(user.length > 0){
+          console.log("there is a user associated");
+          this.router.navigate(['pages']);
+        } else {
+          console.log("no user associated");
+        }
+      })
     })
   }
 }
