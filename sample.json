@@ -32,7 +32,8 @@
   "trueTours" : [
     {
       "tourName" : "My Fancy Tour",
-      "referenceUserId": "0"
+      "referenceUserId": "0",
+      "featuredImage" : "https://s3-us-west-2.amazonaws.com/visitingmedia-cdn/uploads/20160819150536/1959233_10205156616817395_8722017361200524266_n-150x150.jpg"
     }
   ],
   "addresses":[
