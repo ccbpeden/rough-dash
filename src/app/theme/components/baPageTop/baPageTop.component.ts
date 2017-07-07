@@ -1,15 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../../providers/auth.service';
 import { GlobalState } from '../../../global.state';
 import { Router } from '@angular/router';
+import { UserService } from '../../../providers/user.service';
+import { User } from '../../../models/user.model';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'ba-page-top',
   templateUrl: './baPageTop.html',
   styleUrls: ['./baPageTop.scss']
 })
-export class BaPageTop {
+export class BaPageTop implements OnInit {
 
+  private uid: string;
+  private user: User;
+  private userKey: string;
+  private userImageUrl: string;
+  private defaultUserImageUrl = "/assets/images/user-icon.png";
   public isScrolled:boolean = false;
   public isMenuCollapsed:boolean = false;
   public query = '';
@@ -24,9 +32,25 @@ export class BaPageTop {
   public filteredList = [];
   public elementRef;
 
-  constructor(private _state:GlobalState, private authService: AuthService, private router: Router) {
-    this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
-      this.isMenuCollapsed = isCollapsed;
+  constructor(private _state:GlobalState, private authService: AuthService, private router: Router, private userService: UserService, private db: AngularFireDatabase) {
+    this.authService.user.subscribe((auth) => {
+      this.uid = auth.uid;
+    });
+  }
+
+  ngOnInit() {
+    this.userService.getUserByUid(this.uid).subscribe((user) => {
+      if(user.length > 0)
+      {
+        this.user = user[0];
+        this.userKey = user[0].$key;
+        console.log(this.user);
+        if(this.user.avatarImageUrl){
+          this.userImageUrl = this.user.avatarImageUrl;
+        } else {
+          this.userImageUrl = this.defaultUserImageUrl;
+        }
+      };
     });
   }
 
