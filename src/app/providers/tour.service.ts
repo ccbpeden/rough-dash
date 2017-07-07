@@ -34,6 +34,11 @@ export class TourService {
 
   setCurrentTourKey(key) {
     this.currentTourKey = key;
+    console.log("currentTourKey set");
+  }
+
+  returnCurrentTourKey(){
+    return this.currentTourKey;
   }
 
   editTrueTour(key: string, values: Object = {}) {
