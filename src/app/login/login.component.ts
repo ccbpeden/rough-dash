@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
       this.userService.getUserByUid(data.uid).subscribe(user => {
         if(user.length > 0){
           console.log("there is a user associated");
-          this.router.navigate(['pages']);
+          this.router.navigate(['editor']);
         } else {
           console.log("no user associated");
         }
@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
       this.userService.getUserByUid(data.uid).subscribe(user => {
         if(user.length > 0){
           console.log("there is a user associated");
-          this.router.navigate(['pages']);
+          this.router.navigate(['editor']);
         } else {
           console.log("no user associated");
         }
@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
       this.userService.getUserByUid(data.uid).subscribe(user => {
         if(user.length > 0){
           console.log("there is a user associated");
-          this.router.navigate(['pages']);
+          this.router.navigate(['editor']);
         } else {
           console.log("no user associated");
         }
