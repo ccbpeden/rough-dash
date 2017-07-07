@@ -1,8 +1,8 @@
 <div class="row commence-content">
-  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+  <div *ngFor="let tour of trueTours" class="col-12 col-md-6 col-lg-4">
     <div class="card detail-body">
       <div class="detail-title">
-        <h4>True Tour Name {{tourName}}</h4>
+        <a (click)="setTourKey(tour.$key)" href="#/pages/dashboard"><h3>{{tour.tourName}}</h3></a>
       </div>
       <div class="row">
         <div class="detail-status-icons">
@@ -12,122 +12,7 @@
           <i class="fa fa-bullhorn" aria-hidden="true"></i>
         </div>
         <div class="detail-image">
-          <img src="/assets/images/no-image-icon-13.png" alt="no image icon" />
-        </div>
-      </div>
-      <div class="dashboard-button-area">
-        <i class="ion-gear-a" aria-hidden="true" (click)="goToDashboard()"></i>
-        <i class="ion-android-share-alt" aria-hidden="true"></i>
-        <i class="ion-android-open" aria-hidden="true"></i>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-    <div class="card detail-body">
-      <div class="detail-title">
-        <h4>True Tour Name {{tourName}}</h4>
-      </div>
-      <div class="row">
-        <div class="detail-status-icons">
-          <i class="fa fa-credit-card" aria-hidden="true"></i><br>
-          <i class="fa fa-cutlery" aria-hidden="true"></i><br>
-          <i class="fa fa-compass" aria-hidden="true"></i><br>
-          <i class="fa fa-bullhorn" aria-hidden="true"></i>
-        </div>
-        <div class="detail-image">
-          <img src="/assets/images/no-image-icon-13.png" alt="no image icon" />
-        </div>
-      </div>
-      <div class="dashboard-button-area">
-        <i class="ion-gear-a" aria-hidden="true" (click)="goToDashboard()"></i>
-        <i class="ion-android-share-alt" aria-hidden="true"></i>
-        <i class="ion-android-open" aria-hidden="true"></i>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-    <div class="card detail-body">
-      <div class="detail-title">
-        <h4>True Tour Name {{tourName}}</h4>
-      </div>
-      <div class="row">
-        <div class="detail-status-icons">
-          <i class="fa fa-credit-card" aria-hidden="true"></i><br>
-          <i class="fa fa-cutlery" aria-hidden="true"></i><br>
-          <i class="fa fa-compass" aria-hidden="true"></i><br>
-          <i class="fa fa-bullhorn" aria-hidden="true"></i>
-        </div>
-        <div class="detail-image">
-          <img src="/assets/images/no-image-icon-13.png" alt="no image icon" />
-        </div>
-      </div>
-      <div class="dashboard-button-area">
-        <i class="ion-gear-a" aria-hidden="true" (click)="goToDashboard()"></i>
-        <i class="ion-android-share-alt" aria-hidden="true"></i>
-        <i class="ion-android-open" aria-hidden="true"></i>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-    <div class="card detail-body">
-      <div class="detail-title">
-        <h4>True Tour Name {{tourName}}</h4>
-      </div>
-      <div class="row">
-        <div class="detail-status-icons">
-          <i class="fa fa-credit-card" aria-hidden="true"></i><br>
-          <i class="fa fa-cutlery" aria-hidden="true"></i><br>
-          <i class="fa fa-compass" aria-hidden="true"></i><br>
-          <i class="fa fa-bullhorn" aria-hidden="true"></i>
-        </div>
-        <div class="detail-image">
-          <img src="/assets/images/no-image-icon-13.png" alt="no image icon" />
-        </div>
-      </div>
-      <div class="dashboard-button-area">
-        <i class="ion-gear-a" aria-hidden="true" (click)="goToDashboard()"></i>
-        <i class="ion-android-share-alt" aria-hidden="true"></i>
-        <i class="ion-android-open" aria-hidden="true"></i>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-    <div class="card detail-body">
-      <div class="detail-title">
-        <h4>True Tour Name {{tourName}}</h4>
-      </div>
-      <div class="row">
-        <div class="detail-status-icons">
-          <i class="fa fa-credit-card" aria-hidden="true"></i><br>
-          <i class="fa fa-cutlery" aria-hidden="true"></i><br>
-          <i class="fa fa-compass" aria-hidden="true"></i><br>
-          <i class="fa fa-bullhorn" aria-hidden="true"></i>
-        </div>
-        <div class="detail-image">
-          <img src="/assets/images/no-image-icon-13.png" alt="no image icon" />
-        </div>
-      </div>
-      <div class="dashboard-button-area">
-        <i class="ion-gear-a" aria-hidden="true" (click)="goToDashboard()"></i>
-        <i class="ion-android-share-alt" aria-hidden="true"></i>
-        <i class="ion-android-open" aria-hidden="true"></i>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-    <div class="card detail-body">
-      <div class="detail-title">
-        <h4>True Tour Name {{tourName}}</h4>
-      </div>
-      <div class="row">
-        <div class="detail-status-icons">
-          <i class="fa fa-credit-card" aria-hidden="true"></i><br>
-          <i class="fa fa-cutlery" aria-hidden="true"></i><br>
-          <i class="fa fa-compass" aria-hidden="true"></i><br>
-          <i class="fa fa-bullhorn" aria-hidden="true"></i>
-        </div>
-        <div class="detail-image">
-          <img src="/assets/images/no-image-icon-13.png" alt="no image icon" />
+          <img src={{tour.featuredImage}} alt="no image icon" onError="this.src='/assets/images/no-image-icon-13.png'"/>
         </div>
       </div>
       <div class="dashboard-button-area">
