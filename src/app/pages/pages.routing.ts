@@ -49,7 +49,7 @@ export const routes: Routes = [
     canActivate: [AuthService],
     children: [
       { path: '', redirectTo: 'profile', pathMatch: 'full'},
-      { path: 'invoice', component: InvoiceDetailComponent },
+      { path: 'invoices', component: InvoiceDetailComponent },
       { path: 'billing', component: BillingDetailComponent },
       { path: 'password', component: PasswordDetailComponent },
       { path: 'email', component: EmailDetailComponent },
