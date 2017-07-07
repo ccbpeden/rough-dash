@@ -26,22 +26,22 @@
           </div>
         </div>
       </div>
-      <div class="card-block">
+      <div *ngFor="let menuItem of menuLinks" class="card-block">
         <div class="row">
-          <div class="col-1 text-xs-center">
-            <input class="form-control" type="checkbox" name="name" value="">
+          <div class="col-1">
+            <input class="form-control" type="checkbox" name="name" checked={{menuItem?.enabled}}>
           </div>
-          <div class="col-2 text-xs-center">
-            <i class="ion ion-ios-world-outline"></i>
+          <div class="col-2">
+            <i class={{menuItem?.iconStyle}}></i>
           </div>
-          <div class="col-4 text-xs-center">
-            <input class="form-control" type="text" name="title" value="">
+          <div class="col-4">
+            <input class="form-control" type="text" name="title" value={{menuItem?.title}}>
           </div>
-          <div class="col-3 text-xs-center">
-            <input class="form-control" type="text" name="url" value="">
+          <div class="col-3">
+            <input class="form-control" type="text" name="url" value={{menuItem?.menuItemURL}}>
           </div>
-          <div class="col-2 text-xs-center">
-            <input class="form-control" type="checkbox" name="name" value="">
+          <div class="col-2">
+            <input class="form-control" type="checkbox" name="name" checked={{menuItem?.newTab}}>
           </div>
         </div>
       </div>

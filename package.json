@@ -30,6 +30,7 @@
   },
   "private": true,
   "dependencies": {
+    "@agm/core": "^1.0.0-beta.0",
     "@angular/animations": "^4.2.2",
     "@angular/common": "^4.2.2",
     "@angular/compiler": "^4.2.2",
