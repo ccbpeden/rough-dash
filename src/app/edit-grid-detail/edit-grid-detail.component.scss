@@ -59,9 +59,9 @@
   font-size: 3.5em;
   color: $danger;
   i{
+    padding: 0 .7em 0 .7em;
     &:hover {
       color: $danger-light;
-      font-size: 1.25em;
     }
   }
 }
