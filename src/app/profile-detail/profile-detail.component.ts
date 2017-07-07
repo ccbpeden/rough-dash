@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../providers/user.service';
 import { User } from '../models/user.model';
 import { AuthService } from '../providers/auth.service';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database'
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-profile-detail',
