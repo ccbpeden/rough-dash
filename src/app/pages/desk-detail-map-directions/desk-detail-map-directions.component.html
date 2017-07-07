@@ -1,3 +1,27 @@
-<p>
-  desk-detail-map-directions works!
-</p>
+<div class="row">
+  <div class="col detail-header">
+    <h2>Map Location</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="jumbotron">
+      <div class="map">
+        <agm-map [latitude]="defaultLat" [longitude]="defaultLong">
+          <agm-marker [latitude]="defaultLat" [longitude]="defaultLong"></agm-marker>
+        </agm-map>
+      </div>
+      <div class="form-group">
+        <label for="LocationArea">Location Area</label>
+        <input #LocationArea class="form-control" type="text" name="LocationArea" value="">
+      </div>
+      <div class="form-group">
+        <label for="zipCode">Zip Code</label>
+        <input #zipCode class="form-control" type="text" name="zipCode" value="">
+      </div>
+      <div class="space-break">
+        <input class="form-control save-settings-button" type="button" name="saveSettings" value="Save Settings">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+@import '../../theme/sass/conf/conf.scss';
+
+.detail-header{
+  padding-top: 2.5em;
+  padding-bottom: 2em;
+}
+
+.space-break{
+  padding-top: 5em;
+}
+
+input.save-settings-button{
+  display: block;
+  margin: 0 auto;
+  width: 15em;
+}
+
+agm-map {
+  height: 300px;
+}
