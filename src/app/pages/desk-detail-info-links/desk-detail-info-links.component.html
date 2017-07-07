@@ -1,3 +1,26 @@
-<p>
-  desk-detail-info-links works!
-</p>
+<!-- <div class="container clearfix"> -->
+  <div class="row">
+    <div class="col social-media">
+      <div class="detail-header">
+        <h2>Information & Links</h2>
+      </div>
+      <div class="jumbotron">
+        <div class="form-group">
+          <label for="facebookUserName">Facebook Username</label>
+          <input #facebook class="form-control" type="text" name="facebookUserName" value={{infoLink?.facebookUrl}}>
+        </div>
+        <div class="form-group">
+          <label for="twitterUserName">Twitter Username</label>
+          <input #twitter class="form-control" type="text" name="twitterUserName" value={{infoLink?.twitterUrl}}>
+        </div>
+        <div class="form-group">
+          <label for="googlePlusUserName">Google Plus Username</label>
+          <input #google class="form-control" type="text" name="googlePlusUserName" value={{infoLink?.gPlusUrl}}>
+        </div>
+        <div class="form-group">
+          <label for="instagramUserName">Instagram Username</label>
+          <input #instagram class="form-control" type="text" name="instagramUserName" value={{infoLink?.instagramUrl}}>
+        </div>
+      </div>
+    </div>
+  </div>
