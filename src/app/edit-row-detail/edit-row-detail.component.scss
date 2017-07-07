@@ -54,6 +54,11 @@
     i {
       padding: 0 .5em 0 .5em;
     }
+    a {
+      i {
+        color: $danger;
+      }
+    }
   }
 }
 

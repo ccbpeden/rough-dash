@@ -57,11 +57,20 @@
   margin-top: .5em;
   margin-bottom: .5em;
   font-size: 3.5em;
-  color: $danger;
   i{
+    color: $danger;
     padding: 0 .7em 0 .7em;
     &:hover {
       color: $danger-light;
+    }
+  }
+  a{
+    i{
+      color: $danger;
+      padding: 0 .7em 0 .7em;
+      &:hover {
+        color: $danger-light;
+      }
     }
   }
 }
