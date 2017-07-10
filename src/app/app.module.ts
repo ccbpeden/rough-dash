@@ -1,26 +1,28 @@
+// imports
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, ApplicationRef } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { NgModule, ApplicationRef } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { NgaModule } from './theme/nga.module';
+import { NgbActiveModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { routing } from './app.routing';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
-import { RouterModule } from '@angular/router';
 import { AppState, InternalStateType } from './app.service';
 import { GlobalState } from './global.state';
-import { NgaModule } from './theme/nga.module';
-import { NgbActiveModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { masterFirebaseConfig } from './api-keys';
 import { TranslateService } from '@ngx-translate/core';
 import * as firebase from 'firebase/app';
 import { AuthService } from './providers/auth.service';
-
-import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
+
+// declarations
+import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 
-
+// firebase api key
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,

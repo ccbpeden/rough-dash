@@ -1,8 +1,10 @@
+// imports
 import { NgModule }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
-
 import { routing }       from './pages.routing';
 import { NgaModule } from '../theme/nga.module';
+
+// declarations
 import { AppTranslationModule } from '../app.translation.module';
 import { Pages } from './pages.component';
 import { EditorComponent } from './editor/editor.component';
@@ -16,7 +18,7 @@ import { EmailDetailComponent } from './email-detail/email-detail.component';
 import { ProfileDetailComponent } from './profile-detail/profile-detail.component';
 import { LoginModalComponent } from './login-modal/login-modal.component';
 
-
+// providers
 import { AuthService } from '../providers/auth.service';
 import { UserService } from '../providers/user.service';
 import { ThreeSixtyPhotoService } from '../providers/360photo.service';
