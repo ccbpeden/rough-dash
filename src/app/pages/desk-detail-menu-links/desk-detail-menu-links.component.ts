@@ -11,7 +11,7 @@ import { MenuLinkService } from '../../providers/menuLink.service';
 })
 export class DeskDetailMenuLinksComponent implements OnInit, OnDestroy {
   private tourKey: string;
-  private menuLinks;
+  public menuLinks;
   private menuLinksSubscription: ISubscription;
 
   constructor(private tourService: TourService, private menuLinkService: MenuLinkService) {

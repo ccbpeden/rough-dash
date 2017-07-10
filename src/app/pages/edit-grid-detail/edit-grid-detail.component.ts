@@ -22,7 +22,7 @@ export class EditGridDetailComponent implements OnInit, OnDestroy {
   private uid;
   private user: User;
   private userKey;
-  private trueTours: Tour[];
+  public trueTours: Tour[];
 
   constructor(private router: Router, private authService: AuthService, private userService: UserService, private tourService: TourService, private galleryService: GalleryService, private globalState: GlobalState) {
     this.authSubscription = this.authService.user.subscribe((auth) => {

@@ -18,7 +18,7 @@ export class DeskDetailInfoLinksComponent implements OnInit {
   private user: User;
   private userKey;
   private tourKey;
-  private infoLink;
+  public infoLink;
 
   constructor(private router: Router, private authService: AuthService, private userService: UserService, private tourService: TourService, private infoLinkService: InfoLinkService) {
     this.authService.user.subscribe((auth) => {

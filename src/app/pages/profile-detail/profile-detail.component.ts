@@ -16,7 +16,7 @@ export class ProfileDetailComponent implements OnInit, OnDestroy {
   defaultUserImageUrl = "/assets/images/user-icon.png";
   userImageUrl: string;
   private uid;
-  private user: User;
+  public user: User;
   private userKey;
 
 

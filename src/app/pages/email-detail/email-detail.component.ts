@@ -12,7 +12,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 })
 export class EmailDetailComponent implements OnInit, OnDestroy {
   private uid;
-  private user: User;
+  public user: User;
   private userKey;
   private authSubscription: ISubscription;
   private userSubscription: ISubscription;

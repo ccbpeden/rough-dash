@@ -16,7 +16,7 @@ export class BaPageTop implements OnInit {
   private uid: string;
   private user: User;
   private userKey: string;
-  private userImageUrl: string;
+  public userImageUrl: string;
   private defaultUserImageUrl = "/assets/images/user-icon.png";
   public isScrolled:boolean = false;
   public isMenuCollapsed:boolean = false;
