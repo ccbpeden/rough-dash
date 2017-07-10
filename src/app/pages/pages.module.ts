@@ -36,7 +36,7 @@ import { VideoService } from '../providers/video.service';
 
 @NgModule({
   imports: [CommonModule, AppTranslationModule, NgaModule, routing],
-  declarations: [Pages, EditorComponent, EditRowDetailComponent, EditGridDetailComponent, AccountComponent, InvoiceDetailComponent, BillingDetailComponent, PasswordDetailComponent, EmailDetailComponent, ProfileDetailComponent],
+  declarations: [Pages, EditorComponent, EditRowDetailComponent, EditGridDetailComponent, AccountComponent, InvoiceDetailComponent, BillingDetailComponent, PasswordDetailComponent, EmailDetailComponent, ProfileDetailComponent, LoginModalComponent],
   providers: [AuthService, UserService, ThreeSixtyPhotoService, AddressService, BannerService, CardService, CategoryService, GalleryService, InfoLinkService, MapService, MenuLinkService, PartnerListService, PhotoService, ProfileService, TourService, VideoService],
   entryComponents: [
     LoginModalComponent,
