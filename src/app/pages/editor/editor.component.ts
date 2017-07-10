@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ISubscription } from 'rxjs/Subscription';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { LoginModalComponent } from '../login-modal/login-modal.component';
@@ -11,13 +12,14 @@ import { GlobalState } from '../../global.state';
   templateUrl: './editor.component.html',
   styleUrls: ['./editor.component.scss']
 })
-export class EditorComponent implements OnInit {
+export class EditorComponent implements OnInit, OnDestroy {
+  private subscription: ISubscription;
   menuList:any;
   selected:any;
   viewAsList = true;
   viewAsGrid = false;
   public isMenuCollapsed:boolean = false;
-  constructor(private router: Router, private route: ActivatedRoute, private _state:GlobalState,) {
+  constructor(private router: Router, private route: ActivatedRoute, private _state:GlobalState, private authService: AuthService, private modalService: NgbModal) {
       this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
         this.isMenuCollapsed = isCollapsed;
         console.log(isCollapsed);
@@ -36,6 +38,15 @@ export class EditorComponent implements OnInit {
         "subMenu" : ["TrueTour1", "TrueTour2", "TrueTour3"]
       },
     ]
+    this.subscription = this.authService.user.subscribe(
+      (auth) => {
+        if(auth == null){
+          const activeModal = this.modalService.open(LoginModalComponent, {size: 'sm', backdrop: 'static', windowClass: 'login-modal'});
+          console.log(auth);
+        } else {
+          console.log(auth);
+        }
+      });
    }
 
    checkSidebarCollapse(){
@@ -64,5 +75,9 @@ export class EditorComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }
