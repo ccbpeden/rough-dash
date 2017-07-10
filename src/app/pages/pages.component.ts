@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 import { AuthService } from '../providers/auth.service';
 import { BaMenuService } from '../theme';
 import { PAGES_MENU } from './pages.menu';
-import { LoginModalComponent } from './../login-modal/login-modal.component';
+import { LoginModalComponent } from './login-modal/login-modal.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
