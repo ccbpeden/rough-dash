@@ -14,17 +14,18 @@ import { GlobalState } from '../../global.state';
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent implements OnInit, OnDestroy {
-  private subscription: ISubscription;
+  private authSubscription: ISubscription;
   public isMenuCollapsed:boolean = false;
   public selectedDetail = "profile";
 
-  constructor(private router: Router, private route: ActivatedRoute, private authService: AuthService, private modalService: NgbModal, private _state:GlobalState,) {
-  this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
-    this.isMenuCollapsed = isCollapsed;
-    console.log(isCollapsed);
-  });
-
-  this.subscription = this.authService.user.subscribe(
+  constructor(private router: Router, private route: ActivatedRoute, private authService: AuthService, private modalService: NgbModal, private globalState:GlobalState,) {
+  // subscription to determine whether menu is collapsed
+    this.globalState.subscribe('menu.isCollapsed', (isCollapsed) => {
+      this.isMenuCollapsed = isCollapsed;
+      console.log(isCollapsed);
+    });
+  // subscription to determine whether or not to invoke login modal
+  this.authSubscription = this.authService.user.subscribe(
     (auth) => {
       if(auth == null){
         const activeModal = this.modalService.open(LoginModalComponent, {size: 'sm', backdrop: 'static', windowClass: 'login-modal'});
@@ -35,6 +36,7 @@ export class AccountComponent implements OnInit, OnDestroy {
     });
    }
 
+   // class assignment code for sidebar
    checkSidebarCollapse(){
      if (this.isMenuCollapsed){
        return "sidebar-collapsed";
@@ -43,6 +45,7 @@ export class AccountComponent implements OnInit, OnDestroy {
      }
    }
 
+    // class assignment code for detail
    checkDetailCollapse(){
      if (this.isMenuCollapsed){
        return "col col-sm-9 body-commence-collapsed";
@@ -56,8 +59,6 @@ export class AccountComponent implements OnInit, OnDestroy {
      this.router.navigate(['']);
    }
 
-   ngOnInit() {
-   }
 
    setSelectedDetail(detail){
      this.selectedDetail = detail;
@@ -73,7 +74,10 @@ export class AccountComponent implements OnInit, OnDestroy {
      }
    }
 
+   ngOnInit() {
+   }
+
    ngOnDestroy() {
-     this.subscription.unsubscribe();
+     this.authSubscription.unsubscribe();
    }
 }

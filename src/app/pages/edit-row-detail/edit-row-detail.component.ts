@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ISubscription } from 'rxjs/Subscription';
 import { Router } from '@angular/router';
 import { AuthService } from '../../providers/auth.service';
 import { User } from '../../models/user.model';
@@ -13,14 +14,17 @@ import { GlobalState } from '../../global.state';
   templateUrl: './edit-row-detail.component.html',
   styleUrls: ['./edit-row-detail.component.scss']
 })
-export class EditRowDetailComponent implements OnInit {
+export class EditRowDetailComponent implements OnInit, OnDestroy {
+  private authSubscription: ISubscription;
+  private userSubscription: ISubscription;
+  private tourSubscription: ISubscription;
   private uid;
   private user: User;
   private userKey;
   private trueTours: Tour[];
 
   constructor(private router: Router, private authService: AuthService, private userService: UserService, private tourService: TourService, private galleryService: GalleryService, private globalState: GlobalState) {
-    this.authService.user.subscribe((auth) => {
+    this.authSubscription = this.authService.user.subscribe((auth) => {
       if(auth){
         this.uid = auth.uid;
       }
@@ -28,14 +32,14 @@ export class EditRowDetailComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.userService.getUserByUid(this.uid).subscribe((user) => {
+    this.userSubscription = this.userService.getUserByUid(this.uid).subscribe((user) => {
       if(user.length > 0)
       {
         this.user = user[0];
         this.userKey = user[0].$key;
       };
     });
-    this.tourService.getTrueTourByUid(this.userKey).subscribe((returnedTours) => {
+    this.tourSubscription = this.tourService.getTrueTourByUid(this.userKey).subscribe((returnedTours) => {
       if(returnedTours.length > 0)
       {
         this.trueTours = returnedTours;
@@ -50,5 +54,11 @@ export class EditRowDetailComponent implements OnInit {
 
   setTourKey(key){
     this.tourService.setCurrentTourKey(key);
+  }
+
+  ngOnDestroy() {
+    this.authSubscription.unsubscribe();
+    this.userSubscription.unsubscribe();
+    this.tourSubscription.unsubscribe();
   }
 }

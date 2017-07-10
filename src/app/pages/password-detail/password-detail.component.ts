@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ISubscription } from 'rxjs/Subscription';
 import { UserService } from '../../providers/user.service';
 import { User } from '../../models/user.model';
 import { AuthService } from '../../providers/auth.service';
@@ -9,7 +10,9 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
   templateUrl: './password-detail.component.html',
   styleUrls: ['./password-detail.component.scss']
 })
-export class PasswordDetailComponent implements OnInit {
+export class PasswordDetailComponent implements OnInit, OnDestroy {
+  private authSubscription: ISubscription;
+  private userSubscription: ISubscription;
   private uid;
   private user: User;
   private userKey;
@@ -38,6 +41,11 @@ export class PasswordDetailComponent implements OnInit {
         // this.userService.editUser(userKey, {password: newPwd});
     //   }
     // }
+  }
+
+  ngOnDestroy() {
+    this.authSubscription.unsubscribe();
+    this.userSubscription.unsubscribe();
   }
 
 }

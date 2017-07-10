@@ -11,6 +11,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   selector: 'pages',
   styleUrls: ['./pages.scss'],
   template: `
+    // sidebar from theme/components/ba-Sidebar pagetop from theme/components/ba-page-top
     <ba-sidebar></ba-sidebar>
     <ba-page-top></ba-page-top>
     <div class="al-main">
@@ -22,6 +23,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
       <div class="al-footer-main clearfix">
       </div>
     </footer>
+    // scroll to top element from theme/components/ba-back-top
     <ba-back-top position="200"></ba-back-top>
     `
 })
