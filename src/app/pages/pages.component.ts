@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ISubscription } from 'rxjs/Subscription';
 import { Routes } from '@angular/router';
 import { AuthService } from '../providers/auth.service';
 import { BaMenuService } from '../theme';
@@ -25,9 +26,10 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
     `
 })
 export class Pages {
+  private subscription: ISubscription;
 
   constructor(private _menuService: BaMenuService, private authService: AuthService, private modalService: NgbModal,) {
-    this.authService.user.subscribe(
+    this.subscription = this.authService.user.subscribe(
       (auth) => {
         if(auth == null){
           const activeModal = this.modalService.open(LoginModalComponent, {size: 'sm', backdrop: 'static', windowClass: 'login-modal'});
@@ -40,5 +42,9 @@ export class Pages {
 
   ngOnInit() {
     this._menuService.updateMenuByRoutes(<Routes>PAGES_MENU);
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }
