@@ -22,7 +22,9 @@ export class DeskDetailInfoLinksComponent implements OnInit {
 
   constructor(private router: Router, private authService: AuthService, private userService: UserService, private tourService: TourService, private infoLinkService: InfoLinkService) {
     this.authService.user.subscribe((auth) => {
-      this.uid = auth.uid;
+      if(auth){
+        this.uid = auth.uid;
+      }
     });
   }
 

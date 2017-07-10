@@ -21,7 +21,9 @@ export class EditRowDetailComponent implements OnInit {
 
   constructor(private router: Router, private authService: AuthService, private userService: UserService, private tourService: TourService, private galleryService: GalleryService, private globalState: GlobalState) {
     this.authService.user.subscribe((auth) => {
-      this.uid = auth.uid;
+      if(auth){
+        this.uid = auth.uid;
+      }
     });
   }
 

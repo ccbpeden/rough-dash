@@ -34,7 +34,9 @@ export class BaPageTop implements OnInit {
 
   constructor(private _state:GlobalState, private authService: AuthService, private router: Router, private userService: UserService, private db: AngularFireDatabase) {
     this.authService.user.subscribe((auth) => {
-      this.uid = auth.uid;
+      if(auth) {
+        this.uid = auth.uid;
+      }
     });
   }
 
@@ -81,7 +83,7 @@ export class BaPageTop implements OnInit {
 
   public logout() {
     this.authService.logout().then((data) => {
-      this.router.navigate(['login']);
+      console.log("you have logged out");
     })
   }
   public gotoAccount(){
