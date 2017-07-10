@@ -1,0 +1,82 @@
+@import '../../theme/sass/conf/conf.scss';
+
+.commence-content {
+  margin: 0 1em 0 .8em;
+}
+
+.detail-body{
+  text-align: center;
+  margin-bottom: 1em;
+  background-color: $primary;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.detail-title{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: $info;
+}
+
+.detail-image{
+  // margin-left: .3em;
+  height: 2em;
+  width: 60%;
+  background-color: $sidebar;
+  color: $info;
+  font-size: 6em;
+  img {
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+    display: inline-block;
+    width: 1.5em;
+  }
+}
+
+.detail-status-icons{
+  width: 20%;
+  margin-top: 1em;
+  font-size: 1.5em;
+  .fa{
+    color: $info;
+    padding-left: .5em;
+    padding-bottom: .5em;
+    &:hover {
+      color: $danger;
+      font-size: 1.6em;
+    }
+  }
+}
+
+.detail-right-center{
+  width: 20%;
+}
+
+.dashboard-button-area{
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-size: 3.5em;
+  i{
+    color: $danger;
+    padding: 0 .7em 0 .7em;
+    &:hover {
+      color: $danger-light;
+    }
+  }
+  a{
+    i{
+      color: $danger;
+      padding: 0 .7em 0 .7em;
+      &:hover {
+        color: $danger-light;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .commence-content {
+    margin: 0 0em 0 0em;
+  }
+}

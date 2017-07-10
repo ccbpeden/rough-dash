@@ -19,7 +19,7 @@ import { AuthService } from './providers/auth.service';
 import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { LoginComponent } from './login/login.component';
-import { LoginModalComponent } from './login-modal/login-modal.component';
+// import { LoginModalComponent } from './login-modal/login-modal.component';
 
 
 
@@ -49,7 +49,6 @@ export type StoreType = {
   declarations: [
     AppComponent,
     LoginComponent,
-    LoginModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,9 +68,9 @@ export type StoreType = {
   providers: [ // expose our Services and Providers into Angular's dependency injection
     APP_PROVIDERS
   ],
-  entryComponents: [
-    LoginModalComponent,
-  ]
+  // entryComponents: [
+  //   LoginModalComponent,
+  // ]
 })
 export class AppModule {
   constructor(public appState: AppState) {

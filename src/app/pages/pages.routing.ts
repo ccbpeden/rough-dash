@@ -1,17 +1,16 @@
 import { Routes, RouterModule }  from '@angular/router';
 import { Pages } from './pages.component';
 import { ModuleWithProviders } from '@angular/core';
-import { EditorComponent } from '../editor/editor.component';
-import { EditRowDetailComponent } from '../edit-row-detail/edit-row-detail.component';
-import { EditGridDetailComponent } from '../edit-grid-detail/edit-grid-detail.component';
-import { AccountComponent } from '../account/account.component';
+import { EditorComponent } from './editor/editor.component';
+import { EditRowDetailComponent } from './edit-row-detail/edit-row-detail.component';
+import { EditGridDetailComponent } from './edit-grid-detail/edit-grid-detail.component';
+import { AccountComponent } from './account/account.component';
 import { AuthService } from '../providers/auth.service';
-import { InvoiceDetailComponent } from '../invoice-detail/invoice-detail.component';
-import { BillingDetailComponent } from '../billing-detail/billing-detail.component';
-import { PasswordDetailComponent } from '../password-detail/password-detail.component';
-import { EmailDetailComponent } from '../email-detail/email-detail.component';
-import { ProfileDetailComponent } from '../profile-detail/profile-detail.component';
-import { LoginComponent } from '../login/login.component';
+import { InvoiceDetailComponent } from './invoice-detail/invoice-detail.component';
+import { BillingDetailComponent } from './billing-detail/billing-detail.component';
+import { PasswordDetailComponent } from './password-detail/password-detail.component';
+import { EmailDetailComponent } from './email-detail/email-detail.component';
+import { ProfileDetailComponent } from './profile-detail/profile-detail.component';
 // noinspection TypeScriptValidateTypes
 
 // export function loadChildren(path) { return System.import(path); };
@@ -55,10 +54,6 @@ export const routes: Routes = [
       { path: 'email', component: EmailDetailComponent },
       { path: 'profile', component: ProfileDetailComponent },
     ]
-  },
-  {
-    path: 'login',
-    component: LoginComponent
   }
 ];
 
