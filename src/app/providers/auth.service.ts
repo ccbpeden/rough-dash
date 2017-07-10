@@ -30,6 +30,7 @@ export class AuthService implements CanActivate {
   }
 
   logout() {
+    this.router.navigate([ '' ]);
     return this.afAuth.auth.signOut();
   }
 
