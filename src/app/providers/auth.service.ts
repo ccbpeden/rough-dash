@@ -12,11 +12,9 @@ import 'rxjs/add/operator/take';
 @Injectable()
 export class AuthService implements CanActivate {
   user: Observable<firebase.User>;
-  items: FirebaseListObservable<any[]>;
 
   constructor(private afAuth: AngularFireAuth, db: AngularFireDatabase, private router: Router) {
     this.user = afAuth.authState;
-    this.items = db.list('items');
   }
 
   loginWithGoogle() {
