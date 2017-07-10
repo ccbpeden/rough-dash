@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule, AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { FirebaseListObservable } from 'angularfire2/database';
 import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
 import { CanActivate, Router } from '@angular/router';
 import * as firebase from 'firebase/app';
@@ -13,7 +13,7 @@ import 'rxjs/add/operator/take';
 export class AuthService implements CanActivate {
   user: Observable<firebase.User>;
 
-  constructor(private afAuth: AngularFireAuth, db: AngularFireDatabase, private router: Router) {
+  constructor(private afAuth: AngularFireAuth, private router: Router) {
     this.user = afAuth.authState;
   }
 
@@ -34,6 +34,7 @@ export class AuthService implements CanActivate {
   }
 
   canActivate(): Observable<boolean> {
+    console.log("testing routeguard");
     return this.user
       .take(1)
       .map(state => !!state)
