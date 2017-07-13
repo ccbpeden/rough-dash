@@ -69,9 +69,9 @@ export class EditorComponent implements OnInit, OnDestroy {
 
    checkDetailCollapse(){
      if (this.isMenuCollapsed){
-       return "col detail-section-collapsed";
+       return "detail-section-collapsed";
      } else {
-       return "col detail-section";
+       return "detail-section";
      }
    }
 

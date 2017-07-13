@@ -1,42 +1,12 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
 @import '../../theme/sass/conf/conf.scss';
 
-.right-side-buttons{
-  float: right;
-  padding: 4em 2em 0 2em;
-  text-align: right;
-}
-
 .commence-content {
+  @extend .row;
   padding-top: 6em;
 }
 
-.detail-section {
-  margin-left: $sidebar-width;
-}
-
-.detail-section-collapsed {
-  margin-left: 0em;
-}
-
-.sidebar-collapsed {
-  background-color: $sidebar;
-  padding: 3.2em 0 0 1em;
-  width: 5.5em;
-  overflow: hidden;
-  height: 100vh;
-  .menu-label, .fa, {
-    display: none;
-  }
-  .active {
-    ul {
-      li {
-        display: none;
-      }
-    }
-  }
-}
-
-.sidebar{
+.sidebar {
   position: fixed;
   background-color: $sidebar;
   padding: 2.9em 0 0 1em;
@@ -45,23 +15,6 @@
   ul{
       list-style: none;
   }
-}
-
-.collapse{
-  padding-left: 3.5em;
-  a{
-    padding-top: 1em;
-  }
-}
-
-.menu-label{
-  transform: translateY(-50%);
-  top: 60%;
-  position: relative;
-  padding-left: 1em;
-  display: inline-block;
-  font-size: 1.1em;
-  color: $info;
 }
 
 .menu-list {
@@ -96,11 +49,61 @@
   }
 }
 
+.menu-label{
+  transform: translateY(-50%);
+  top: 60%;
+  position: relative;
+  padding-left: 1em;
+  display: inline-block;
+  font-size: 1.1em;
+  color: $info;
+}
+
 .ion {
   font-size: 2rem;
   color: $info;
   padding-left: .5em;
 }
+
+.right-side-buttons{
+  padding: 4em 2em 0 2em;
+  text-align: right;
+}
+
+.detail-section {
+  @extend .col;
+  margin-left: $sidebar-width;
+}
+
+.detail-section-collapsed {
+  @extend .col;
+  margin-left: 0em;
+}
+
+.sidebar-collapsed {
+  background-color: $sidebar;
+  padding: 3.2em 0 0 1em;
+  width: 5.5em;
+  overflow: hidden;
+  height: 100vh;
+  .menu-label, .fa, {
+    display: none;
+  }
+  .active {
+    ul {
+      li {
+        display: none;
+      }
+    }
+  }
+}
+
+// .collapse{
+//   padding-left: 3.5em;
+//   a{
+//     padding-top: 1em;
+//   }
+// }
 
 .detail-header {
   float: left;
