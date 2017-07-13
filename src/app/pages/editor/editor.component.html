@@ -9,21 +9,21 @@
         </li>
       </ul>
     </div>
-    <div class="detail-section" [class]="checkDetailCollapse()">
+    <div [class]="checkDetailCollapse()">
       <div class="detail-header">
         <h2>Manage TrueTours</h2>
       </div>
-      <div class="right-side-buttons">
-        <i (click)="setViewToGrid()"class="ion ion-ios-keypad-outline" aria-hidden="true"></i>
-        <i (click)="setViewToRow()"class="ion ion-ios-list-outline" aria-hidden="true"></i>
+      <div class="detail-top-buttons">
+        <i (click)="setViewToGrid()" class="ion ion-ios-keypad-outline" [ngClass]="{'activated': !viewAsList}" aria-hidden="true"></i>
+        <i (click)="setViewToRow()" class="ion ion-ios-list-outline"[ngClass]="{'activated': viewAsList}" aria-hidden="true"></i>
       </div>
       <hr class="detail-seperator">
       <div class="row no-gutters">
         <div  *ngFor="let tour of trueTours" class="edit-detail-section">
-          <div ngClass="{$viewAsList 'image-row' : 'image-grid'}">
+          <div>
             <img src={{tour.featuredImage}} alt="no image icon" onError="this.src='/assets/images/no-image-icon-13.png'"/>
           </div>
-          <!-- <div ngClass="{$viewAsList 'title-row' : 'title-grid'}">
+          <!-- <div [ngClass]="{$viewAsList 'title-row' : 'title-grid'}">
             <a (click)="setTourKey(tour.$key)" href="#/pages/dashboard"><h3>{{tour.tourName}}</h3></a>
           </div>
           <div ngClass="{$viewAsList 'actions-row' : 'actions-grid'}">
@@ -38,8 +38,8 @@
               <i class="ion-android-share-alt" aria-hidden="true"></i>
               <i class="ion-android-open" aria-hidden="true"></i>
             </div>
-          </div> -->
-          <hr class="end-detail">
+          </div>
+          <hr class="end-detail"> -->
         </div>
       </div>
     </div>

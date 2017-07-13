@@ -28,8 +28,8 @@ export class EditorComponent implements OnInit, OnDestroy {
   menuList:any;
   selected:any;
   viewAsList = true;
-  viewAsGrid = false;
   public isMenuCollapsed:boolean = false;
+
   constructor(private router: Router, private route: ActivatedRoute, private _state:GlobalState, private authService: AuthService, private modalService: NgbModal, private userService: UserService, private tourService: TourService, private galleryService: GalleryService ) {
       this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
         this.isMenuCollapsed = isCollapsed;
@@ -59,7 +59,30 @@ export class EditorComponent implements OnInit, OnDestroy {
       });
    }
 
-   checkSidebarCollapse(){
+   ngOnInit() {
+     this.userSubscription = this.userService.getUserByUid(this.uid).subscribe((user) => {
+       if(user.length > 0)
+       {
+         this.user = user[0];
+         this.userKey = user[0].$key;
+       };
+     });
+     this.tourSubscription = this.tourService.getTrueTourByUid(this.userKey).subscribe((returnedTours) => {
+       if(returnedTours.length > 0)
+       {
+         this.trueTours = returnedTours;
+         console.log(this.trueTours);
+       };
+     });
+   }
+
+   ngOnDestroy() {
+     this.authSubscription.unsubscribe();
+     this.userSubscription.unsubscribe();
+     this.tourSubscription.unsubscribe();
+   }
+
+   checkSidebarCollapse() {
      if (this.isMenuCollapsed){
        return "sidebar-collapsed";
      } else {
@@ -67,7 +90,15 @@ export class EditorComponent implements OnInit, OnDestroy {
      }
    }
 
-   checkDetailCollapse(){
+   setViewToGrid() {
+     this.viewAsList = false;
+   }
+
+   setViewToRow() {
+     this.viewAsList = true;
+   }
+
+   checkDetailCollapse() {
      if (this.isMenuCollapsed){
        return "detail-section-collapsed";
      } else {
@@ -84,30 +115,9 @@ export class EditorComponent implements OnInit, OnDestroy {
      return this.selected === item;
    }
 
-  ngOnInit() {
-    this.userSubscription = this.userService.getUserByUid(this.uid).subscribe((user) => {
-      if(user.length > 0)
-      {
-        this.user = user[0];
-        this.userKey = user[0].$key;
-      };
-    });
-    this.tourSubscription = this.tourService.getTrueTourByUid(this.userKey).subscribe((returnedTours) => {
-      if(returnedTours.length > 0)
-      {
-        this.trueTours = returnedTours;
-        console.log(this.trueTours);
-      };
-    });
-  }
 
   setTourKey(key){
     this.tourService.setCurrentTourKey(key);
   }
 
-  ngOnDestroy() {
-    this.authSubscription.unsubscribe();
-    this.userSubscription.unsubscribe();
-    this.tourSubscription.unsubscribe();
-  }
 }

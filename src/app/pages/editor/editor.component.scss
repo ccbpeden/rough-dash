@@ -2,7 +2,6 @@
 @import '../../theme/sass/conf/conf.scss';
 
 .commence-content {
-  @extend .row;
   padding-top: 6em;
 }
 
@@ -59,24 +58,35 @@
   color: $info;
 }
 
+
+.detail-header {
+  @extend .col;
+  padding: 4em 0 0 2em;
+}
+
+.detail-top-buttons{
+  @extend .col;
+  padding: 4em 2.5em 0 2em;
+  text-align: right;
+}
+
 .ion {
   font-size: 2rem;
   color: $info;
   padding-left: .5em;
 }
 
-.right-side-buttons{
-  padding: 4em 2em 0 2em;
-  text-align: right;
+.activated {
+  color: $danger;
 }
 
 .detail-section {
-  @extend .col;
+  @extend .row;
   margin-left: $sidebar-width;
 }
 
 .detail-section-collapsed {
-  @extend .col;
+  @extend .row;
   margin-left: 0em;
 }
 
@@ -96,18 +106,6 @@
       }
     }
   }
-}
-
-// .collapse{
-//   padding-left: 3.5em;
-//   a{
-//     padding-top: 1em;
-//   }
-// }
-
-.detail-header {
-  float: left;
-  padding: 4em 0 0 2em;
 }
 
 .detail-seperator {
