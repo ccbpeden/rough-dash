@@ -18,7 +18,30 @@
         <a routerLink="edit-row-detail"><i class="ion ion-ios-list-outline" aria-hidden="true"></i></a>
       </div>
       <hr class="detail-seperator">
-      <router-outlet></router-outlet>
+      <div *ngFor="let tour of trueTours">
+        <div class="row no-gutters edit-detail-section">
+          <div class="col-12 col-md-2 col-lg-2 detail-left-column">
+            <img src={{tour.featuredImage}} alt="no image icon" onError="this.src='/assets/images/no-image-icon-13.png'"/>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 detail-center-column">
+            <div class="tour-title">
+              <a (click)="setTourKey(tour.$key)" href="#/pages/dashboard"><h3>{{tour.tourName}}</h3></a>
+            </div>
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+            <i class="fa fa-compass" aria-hidden="true"></i>
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+          </div>
+          <div class="col-12 col-md-3 col-lg-5 detail-right-column">
+              <div class="dashboard-button">
+                <a href="#/pages/dashboard"><i class="ion-gear-a" aria-hidden="true" (click)="setTourKey(tour.$key)"></i></a>
+                <i class="ion-android-share-alt" aria-hidden="true"></i>
+                <i class="ion-android-open" aria-hidden="true"></i>
+              </div>
+          </div>
+        </div>
+        <hr class="end-detail">
+      </div>
     </div>
   </div>
 <ba-back-top position="200"></ba-back-top>
